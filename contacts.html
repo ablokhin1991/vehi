@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО «ВЕХИ» - Контакты</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Логотип ООО «ВЕХИ»">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог продукции</a></li>
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="contacts" class="section">
+      <div class="container">
+        <h1>Контакты</h1>
+        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>Email: info@vehi.ru</p>
+        <p>Адрес: ул. Примерная, 123, Москва, Россия</p>
+        <!-- Блок для интеграции интерактивной карты (например, с API Яндекс.Карт) -->
+        <div id="map">
+          <!-- Карта будет интегрирована здесь -->
+        </div>
+        <!-- Форма обратной связи с CAPTCHA -->
+        <div class="contact-form">
+          <h2>Свяжитесь с нами</h2>
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <div class="captcha">
+              <img src="captcha.php" alt="CAPTCHA">
+              <input type="text" name="captcha" placeholder="Введите код" required>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ООО «ВЕХИ». Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

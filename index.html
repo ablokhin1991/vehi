@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ООО «ВЕХИ» - Деревообработка</title>
+  <title>ООО «ВЕХИ» - Главная</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Yandex.Metrika placeholder -->
   <script type="text/javascript">
-    // Инициализация Яндекс.Метрики (код аналитики вставляется здесь)
+    // Код Яндекс.Метрики можно вставить сюда
   </script>
 </head>
 <body>
@@ -18,24 +18,23 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#about">О компании</a></li>
-          <li><a href="#catalog">Каталог продукции</a></li>
-          <li><a href="#privacy">Политика конфиденциальности</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог продукции</a></li>
+          <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Главная страница -->
+    <!-- Промо-блоки и слайдер на главной странице -->
     <section id="home" class="section">
       <div class="container">
         <h1>Добро пожаловать в ООО «ВЕХИ»</h1>
         <p>Изготовление экологически чистой продукции для дома по адекватным ценам.</p>
         <div class="promo-slider">
-          <!-- Слайдер промо-блоков -->
           <div class="slide">Слайд 1: Продукция высокого качества</div>
           <div class="slide">Слайд 2: Инновационные технологии</div>
           <div class="slide">Слайд 3: Экологическая ответственность</div>
@@ -44,87 +43,13 @@
       </div>
     </section>
 
-    <!-- О компании -->
-    <section id="about" class="section">
+    <!-- Пример блока 3D-обзора (опционально) -->
+    <section id="3d-demo" class="section">
       <div class="container">
-        <h2>О компании</h2>
-        <p>ООО «ВЕХИ» – лидер в деревообработке с 1994 года. Наша миссия — забота об экологии и людях России.</p>
-        <h3>История компании</h3>
-        <ul>
-          <li><strong>1994:</strong> создание погонажного цеха</li>
-          <li><strong>1998:</strong> запуск дверного направления</li>
-          <li><strong>2001:</strong> запуск направления клееной продукции</li>
-          <li><strong>2004:</strong> строительство пилорамы в Архангельской области</li>
-          <li><strong>2007:</strong> открытие оконного направления</li>
-          <li><strong>2010:</strong> выход на DIY сети</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Каталог продукции -->
-    <section id="catalog" class="section">
-      <div class="container">
-        <h2>Каталог продукции</h2>
-        <h3>Двери и комплектующие</h3>
-        <ul>
-          <li>Межкомнатные двери</li>
-          <li>Входные двери</li>
-          <li>Дверные коробки</li>
-          <li>Наличники</li>
-          <li>Доборы</li>
-        </ul>
-        <h3>Клееные изделия</h3>
-        <ul>
-          <li>Мебельный щит</li>
-          <li>Столешницы</li>
-        </ul>
-        <h3>Погонажные и строганые изделия</h3>
-        <p>Подробное описание и фотографии продукции.</p>
-        
-        <!-- 3D-модель продукции -->
-        <div class="model-viewer">
-          <h3>3D-Обзор продукта</h3>
-          <canvas id="3d-viewer" width="800" height="600">
-            Ваш браузер не поддерживает элемент canvas.
-          </canvas>
-        </div>
-      </div>
-    </section>
-
-    <!-- Политика конфиденциальности -->
-    <section id="privacy" class="section">
-      <div class="container">
-        <h2>Политика конфиденциальности</h2>
-        <p>Информация о правилах обработки данных и защите персональных данных.</p>
-      </div>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contacts" class="section">
-      <div class="container">
-        <h2>Контакты</h2>
-        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-        <p>Email: info@vehi.ru</p>
-        <p>Адрес: ул. Примерная, 123, Москва, Россия</p>
-        <!-- Интерактивная карта (например, с использованием API Яндекс.Карт) -->
-        <div id="map">
-          <!-- Карта будет интегрирована здесь -->
-        </div>
-        <!-- Форма обратной связи с CAPTCHA -->
-        <div class="contact-form">
-          <h3>Свяжитесь с нами</h3>
-          <form id="contactForm">
-            <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="email" name="email" placeholder="Ваш email" required>
-            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-            <!-- CAPTCHA placeholder -->
-            <div class="captcha">
-              <img src="captcha.php" alt="CAPTCHA">
-              <input type="text" name="captcha" placeholder="Введите код" required>
-            </div>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+        <h2>3D-Обзор продукта</h2>
+        <canvas id="3d-viewer" width="800" height="600">
+          Ваш браузер не поддерживает элемент canvas.
+        </canvas>
       </div>
     </section>
   </main>
@@ -149,7 +74,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <!-- Подключение библиотеки Three.js для 3D-моделей -->
+  <!-- Подключение Three.js для 3D-обзора -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </body>
 </html>

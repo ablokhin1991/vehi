@@ -1,4 +1,4 @@
-/* styles.css */
+/* Общие стили для всех страниц */
 
 * {
     box-sizing: border-box;
@@ -49,6 +49,7 @@
     margin-bottom: 20px;
   }
   
+  /* Слайдер промо-блоков */
   .promo-slider {
     display: flex;
     overflow-x: auto;
@@ -77,7 +78,7 @@
   
   /* Стили для Popup модального окна */
   .modal {
-    display: none; /* скрыто по умолчанию */
+    display: none;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -106,7 +107,7 @@
     cursor: pointer;
   }
   
-  /* Адаптивная верстка */
+  /* Адаптивные стили */
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;

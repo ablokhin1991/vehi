@@ -1,18 +1,22 @@
 /* script.js */
 
-// Функциональность для Popup модального окна
+// Функциональность для Popup модального окна на всех страницах
 document.addEventListener('DOMContentLoaded', function() {
     const popup = document.getElementById('popup');
     const requestBtn = document.getElementById('requestBtn');
     const closeBtn = document.querySelector('.close-btn');
   
-    requestBtn.addEventListener('click', function() {
-      popup.style.display = 'block';
-    });
+    if (requestBtn) {
+      requestBtn.addEventListener('click', function() {
+        popup.style.display = 'block';
+      });
+    }
   
-    closeBtn.addEventListener('click', function() {
-      popup.style.display = 'none';
-    });
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
   
     window.addEventListener('click', function(e) {
       if (e.target === popup) {
@@ -21,14 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Пример обработки формы обратной связи (здесь можно интегрировать AJAX и валидацию CAPTCHA)
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Обработка данных формы и AJAX-запрос
-    alert('Форма отправлена!');
-  });
+  // Пример обработки формы обратной связи
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Обработка данных формы (например, через AJAX)
+      alert('Форма отправлена!');
+    });
+  }
   
-  // Инициализация 3D‑просмотра с использованием библиотеки Three.js
+  // Инициализация 3D-просмотра с использованием Three.js (если элемент присутствует)
   function init3DViewer() {
     const canvas = document.getElementById('3d-viewer');
     if (!canvas) return;
@@ -42,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const camera = new THREE.PerspectiveCamera(75, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
     camera.position.z = 5;
   
-    // Простая геометрия для демонстрации 3D модели
+    // Демонстрационная 3D модель (вращающийся куб)
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshBasicMaterial({ color: 0x52bc4a, wireframe: true });
     const cube = new THREE.Mesh(geometry, material);
