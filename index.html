@@ -1,77 +1,130 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ООО «ВЕХИ» - Деревообрабатывающая компания</title>
+    <title>ООО «ВЕХИ» - Экологичная деревообработка</title>
+    <meta name="description" content="Производитель экологичных деревянных изделий с 1994 года. Двери, столешницы, погонаж. Работаем с DIY сетями.">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
-    <!-- Мета-теги для SEO -->
-    <meta name="description" content="ООО «ВЕХИ» - производство экологически чистой деревянной продукции с 1994 года">
-    <meta name="keywords" content="двери, деревообработка, мебельный щит, экологичная продукция">
+    <link rel="preload" href="js/script.js" as="image">
 </head>
 <body>
-    <header class="header">
+    <!-- Header -->
+    <header class="main-header">
         <div class="container">
-            <a href="/" class="logo">
-                <img src="images/logo/Vehi_green.svg" alt="Логотип ВЕХИ">
+            <a href="/" class="brand">
+                <img src="images/logo/Vehi_green.svg" alt="Логотип ВЕХИ" width="120" height="60">
+                <span class="sr-only">ООО «ВЕХИ»</span>
             </a>
-            <nav class="nav">
-                <button class="nav-toggle" aria-label="Меню">
+            
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Меню">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-menu">
-                    <li><a href="about.html">О компании</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">О компании</a></li>
+                    <li class="dropdown">
+                        <a href="catalog/doors.html" class="nav-link">Продукция ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="catalog/doors.html">Двери</a></li>
+                            <li><a href="catalog/glued.html">Клееные изделия</a></li>
+                            <li><a href="catalog/joinery.html">Погонаж</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Экологичные деревянные изделия от производителя</h1>
-                <button class="cta-button" data-modal="request">Оставить заявку</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <picture>
+                    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
+                    <img src="assets/images/hero-bg.jpg" alt="Производство деревянных дверей" loading="lazy">
+                </picture>
+                <div class="slide-content">
+                    <h1 class="hero-title">Экологичные решения для вашего дома</h1>
+                    <button class="cta-button" data-modal="lead">Получить КП</button>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Другие секции -->
-    </main>
-
-    <footer class="footer">
+    <!-- Продукция -->
+    <section class="product-categories">
         <div class="container">
-            <p>© 2024 ООО «ВЕХИ»</p>
-            <a href="privacy.html">Политика конфиденциальности</a>
+            <h2 class="section-title">Основные направления</h2>
+            <div class="category-grid">
+                <article class="category-card">
+                    <div class="card-image">
+                        <img src="assets/images/doors-category.jpg" alt="Двери" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Двери и комплектующие</h3>
+                        <ul class="product-list">
+                            <li>Межкомнатные</li>
+                            <li>Входные</li>
+                            <li>Фурнитура</li>
+                        </ul>
+                        <a href="catalog/doors.html" class="card-link">Подробнее →</a>
+                    </div>
+                </article>
+                <!-- Аналогичные блоки для других категорий -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>ООО «ВЕХИ»</h4>
+                    <p>1994-2024<br>Производство экологичной деревянной продукции</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <address>
+                        <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                        <a href="mailto:info@vehi.ru">info@vehi.ru</a>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Модальное окно -->
-    <div class="modal" id="request-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Оставить заявку</h2>
-            <form id="request-form">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Сообщение" required></textarea>
-                <div class="g-recaptcha" data-sitekey="ВАШ_КЛЮЧ"></div>
-                <button type="submit">Отправить</button>
+    <div class="modal" id="leadModal">
+        <div class="modal-dialog">
+            <form id="leadForm" class="modal-form">
+                <h3>Запрос коммерческого предложения</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Ваш запрос" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="YOUR_KEY"></div>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
             </form>
         </div>
     </div>
 
-    <!-- Яндекс.Метрика -->
-    <script>
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        ym(12345678, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

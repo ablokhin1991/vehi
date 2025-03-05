@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Двери и комплектующие - ООО «ВЕХИ»</title>
+    <meta name="description" content="Каталог деревянных дверей: межкомнатные, входные, комплектующие. 3D просмотр моделей.">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Хедер -->
+
+    <main class="catalog-page">
+        <div class="container">
+            <h1 class="page-title">Двери и комплектующие</h1>
+            
+            <div class="product-detail">
+                <div class="model-viewer" id="door-model"></div>
+                
+                <div class="product-info">
+                    <h2>Межкомнатная дверь «Премиум»</h2>
+                    <ul class="specs">
+                        <li>Материал: массив сосны</li>
+                        <li>Размеры: 2000x800 мм</li>
+                        <li>Отделка: экологичный лак</li>
+                    </ul>
+                    <button class="cta-button" data-modal="order">Заказать образец</button>
+                </div>
+            </div>
+
+            <section class="related-products">
+                <h3>Сопутствующие товары</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../assets/images/door-handle.jpg" alt="Ручка" loading="lazy">
+                        <h4>Дверные ручки</h4>
+                        <button class="btn-detail">Подробнее</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+
+    <script type="module">
+        import { ProductViewer } from '../js/three-config.js';
+        new ProductViewer('door-model');
+    </script>
+</body>
+</html>
