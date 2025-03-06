@@ -158,6 +158,7 @@
     margin-top: 20px;
     transition: color 0.3s;
     cursor: pointer;
+    position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
 }
 
