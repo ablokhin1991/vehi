@@ -151,7 +151,7 @@
   /* Стили для слайдера */
 .slider {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -168,9 +168,6 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Равномерное распределение текста */
 }
 
 .slider-left h2 {
@@ -186,11 +183,15 @@
 .column {
     width: 50%;
     padding: 10px;
+    box-sizing: border-box;
+    height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
+    overflow: hidden;
 }
 
 .column p {
     font-size: 18px;
     line-height: 1.5;
+    height: 100%;
 }
 
 .slider-left .btn {
@@ -201,15 +202,12 @@
 /* Изображение справа */
 .slider-right {
     width: 50%;
-    display: flex;
-    justify-content: center; /* Центрируем изображение по горизонтали */
-    align-items: center; /* Выравнивание по вертикали */
 }
 
 .slider-right img {
-    width: auto; /* Ширина авто для пропорционального растяжения */
-    height: 100%; /* Высота изображения всегда будет равна высоте контента */
-    object-fit: cover; /* Сохраняем соотношение сторон */
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Стрелки слайдера */
