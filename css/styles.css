@@ -488,7 +488,7 @@
     display: flex; /* Для центрирования текста */
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center; /* Центрирование по вертикали */
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .left-arrow {
