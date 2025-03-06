@@ -146,6 +146,18 @@
     font-size: 20px;
     margin-bottom: 30px;
   }
+  .cover .btn {
+    background: #fff;
+    color: #52bc4a;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: color 0.3s;
+  }
+  .cover .btn:hover {
+    background: #f0f0f0;
+  }
 
   /* Стили для слайдера */
 .slider {
@@ -195,19 +207,7 @@
     height: 100%;
 }
 
-.slider-left .btn {
-    background-color: #52bc4a;
-    color: #fff;
-    display: inline-block;
-    margin-top: 20px;
-    transition: color 0.3s;
-    cursor: pointer;
-}
 
-.slider-left .btn:hover {
-    background: #45a043;
-    color: #fff;
-  }
 
 /* Изображение справа */
 .slider-right {
