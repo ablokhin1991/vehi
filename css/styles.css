@@ -184,9 +184,6 @@
 }
 
 .slider-left {
-    width: 50%;
-    /*box-sizing: border-box;*/
-    text-align: left;
     display: flex;
     flex-direction: column;
     height: 100%;
