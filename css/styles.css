@@ -108,10 +108,11 @@
     font-size: 14px;
     color: #333;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: transform 0.2s ease, color 0.3s ease; /* Плавный переход */
   }
   .nav ul li a:hover {
     color: #52bc4a;
+    transform: scale(1.1); /* Увеличение на 10% */
   }
   
   /* 2. Обложка */
