@@ -80,13 +80,13 @@
 
   .logo img {
     display: block;
-    height: 50px; /* Подстрой высоту под логотип */
+    height: 40px;
   }
 
   .header-text {
     font-size: 12px;
     color: #888;
-    margin-left: 15px; /* Отступ между логотипом и текстом */
+    margin-left: 15px;
    }
 
   .nav ul {
