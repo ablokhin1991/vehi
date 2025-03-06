@@ -160,6 +160,8 @@
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
+    align-self: flex-start; /* Возвращаем кнопке нормальную ширину */
+    margin-top: auto; /* Отталкиваем кнопку вниз */
 }
 
 .slider-left .btn:hover {
@@ -186,7 +188,9 @@
     width: 50%;
     /*box-sizing: border-box;*/
     text-align: left;
-    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .slider-left h2 {
@@ -198,6 +202,9 @@
 .columns {
     display: flex;
     margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px; /* Равномерные отступы между колонками */
+    flex-grow: 1; /* Растягиваем блок на всю доступную высоту */
 }
 
 .column {
@@ -206,6 +213,12 @@
     /*box-sizing: border-box;*/
     height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
     overflow: hidden;
+
+    flex-grow: 1; /* Все колонки занимают равное пространство */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .column p {
