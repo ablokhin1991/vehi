@@ -179,6 +179,7 @@
 .slider-content {
     display: flex;
     width: 200%; /* Для возможности сдвига */
+    pointer-events: none;
 }
 
 .slider-left {
