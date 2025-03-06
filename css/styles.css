@@ -156,7 +156,7 @@
     border-radius: 5px;
     padding: 12px 30px;
     margin-top: 20px;
-    transition: color 0.3s;
+    transition: 0.3s;
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
