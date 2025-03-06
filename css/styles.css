@@ -481,34 +481,38 @@
     z-index: 3;
 }
 
+/* Расположение стрелок вне контейнера */
 .left-arrow {
-    left: 10px;
+    left: -40px; /* Стрелка слева */
 }
 
 .right-arrow {
-    right: 10px;
+    right: -40px; /* Стрелка справа */
 }
 
+/* Стиль для стрелок */
 .arrow-2 {
     cursor: pointer;
-    height: 120px;
-    width: 80px;
+    height: 60px;  /* Уменьшили размер стрелки в 2 раза */
+    width: 40px;   /* Уменьшили размер стрелки в 2 раза */
     position: relative;
     margin: 20px;
 }
 
+/* Верхняя и нижняя часть стрелок */
 .arrow-2-top, 
 .arrow-2-bottom {
-    background: #337AB7;
-    height: 10px;
-    left: -30px;
+    background: #333; /* Цвет в покое */
+    height: 5px;      /* Уменьшили толщину стрелок */
+    left: -15px;
     position: absolute;
-    top: 60px;
-    width: 100px;
+    top: 30px;        /* Смещение по вертикали для центрирования */
+    width: 60px;      /* Уменьшили длину стрелок */
 }
 
+/* Поворот стрелок */
 .arrow-2-top {
-    top: 64px;
+    top: 32px;
     transform: rotate(45deg);
     transform-origin: bottom right;
 }
@@ -518,6 +522,7 @@
     transform-origin: top right;
 }
 
+/* Анимации и эффект при ховере */
 .arrow-2-top::after, 
 .arrow-2-bottom::after {
     background: #000;
@@ -540,6 +545,7 @@
     transition-delay: 0.15s;
 }
 
+/* Эффект ховера */
 .arrow-2:hover .arrow-2-top::after {
     left: 0;
     transition-delay: 0.15s;
@@ -550,3 +556,8 @@
     transition-delay: 0s;
 }
 
+/* Цвет стрелок при ховере */
+.arrow-2:hover .arrow-2-top, 
+.arrow-2:hover .arrow-2-bottom {
+    background: #52bc4a; /* Цвет при ховере */
+}
