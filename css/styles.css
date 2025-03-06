@@ -160,7 +160,7 @@
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
-    align-self: flex-start; /* Возвращаем кнопке нормальную ширину */
+    margin-left: 0; /* Выравнивание по левому краю */
     margin-top: auto; /* Отталкиваем кнопку вниз */
 }
 
@@ -191,26 +191,33 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: flex-start; /* Выравнивание контента по верху */
 }
 
 .slider-left h2 {
     color: #52bc4a;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.slider-left, .slider-right {
+    height: 100%;
 }
 
 .columns {
-    display: flex;
-    flex-wrap: wrap; /* Позволяет колонкам переноситься, если не хватает места */
-    flex-direction: row; /* Выстраивает элементы в строку */
-    gap: 20px; /* Равномерные отступы между колонками */
-    margin-right: 20px;
+    flex: 1; /* Занимает все доступное пространство */
+    align-items: center; /* Центрирование колонок по вертикали */
+    margin: 20px 0; /* Добавить отступ сверху/снизу */
 }
 
 .column {
-    width: calc(50% - 10px); /* Две колонки в строке с учетом gap */
-    height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
-    overflow: hidden;
+    width: calc(50% - 10px); /* Две колонки с отступом */
+    height: auto; /* Удалить фиксированную высоту */
+    min-height: 4.5em; /* Минимальная высота для 3 строк */
+    margin-right: 20px; /* Добавить отступ справа */
+    display: flex;
+    align-items: center; /* Центрирование текста по вертикали */
+    margin-right: 20px; /* ← удалить это свойство */
 }
 
 .column p {
