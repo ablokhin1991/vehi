@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная | ООО «ВЕХИ»</title>
-    <link rel="stylesheet" href="/vehi/css/styles.css">
+    <title>Vehi B2B</title>
+    <link rel="stylesheet" href="\vehi\css\styles.css">
 </head>
 <body>
-    <div id="header"></div> <!-- Здесь загружается шапка -->
-    
-    <main>
-        <section class="hero">
-            <h1>Добро пожаловать в ООО «ВЕХИ»</h1>
-            <p>Экологически чистая продукция для вашего дома</p>
-        </section>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="\vehi\images\logo\Vehi_green.svg" alt="Vehi">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Партнёрам</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section class="about">
-            <h2>О компании</h2>
-            <p>Основана в 1994 году, мы производим двери, мебельные щиты и другие деревянные изделия.</p>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h1>B2B решения для вашего бизнеса</h1>
+            <p>Эффективные инструменты для роста и развития</p>
+            <a href="#" class="btn">Подробнее</a>
+        </div>
+    </section>
 
-        <section class="products">
-            <h2>Продукция</h2>
-            <ul>
-                <li>Межкомнатные двери</li>
-                <li>Клееные изделия</li>
-                <li>Погонажные изделия</li>
-            </ul>
-        </section>
-    </main>
+    <section class="contacts">
+        <div class="container">
+            <div class="contact-item">
+                <img src="\vehi\images\icon\tel.svg" alt="Телефон">
+                <p>+7 (900) 000-00-00</p>
+            </div>
+            <div class="contact-item">
+                <img src="\vehi\images\icon\mail.svg" alt="Email">
+                <p>info@vehi.ru</p>
+            </div>
+            <div class="contact-item">
+                <img src="\vehi\images\icon\pin.svg" alt="Адрес">
+                <p>Москва, ул. Примерная, д. 1</p>
+            </div>
+        </div>
+    </section>
 
-    <div id="footer"></div> <!-- Здесь загружается подвал -->
-
-    <script>
-        // Загрузка шапки и подвала на все страницы
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("header.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("header").innerHTML = data);
-
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
-        });
-    </script>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Vehi. Все права защищены.</p>
+        </div>
+    </footer>
 </body>
 </html>
