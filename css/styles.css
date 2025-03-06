@@ -155,7 +155,6 @@
     text-decoration: none;
     border-radius: 5px;
     padding: 12px 30px;
-    margin-top: 20px;
     transition: 0.3s;
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
@@ -185,11 +184,9 @@
 }
 
 .slider-left {
-    width: 50%;
-    /*box-sizing: border-box;*/
-    text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* h2 прижат к верхнему краю */
     height: 100%;
 }
 
@@ -199,25 +196,31 @@
     margin-bottom: 20px;
 }
 
+.slider-left, .slider-right {
+    height: 100%;
+}
+
 .columns {
+    flex-grow: 1; /* Занимает всё оставшееся пространство */
     display: flex;
-    flex-wrap: wrap; /* Позволяет колонкам переноситься, если не хватает места */
-    flex-direction: row; /* Выстраивает элементы в строку */
-    gap: 20px; /* Равномерные отступы между колонками */
-    margin-right: 20px;
+    flex-direction: row; /* В строку */
+    gap: 20px;
+    align-items: center; /* Центрирование колонок по высоте */
 }
 
 .column {
-    width: calc(50% - 10px); /* Две колонки в строке с учетом gap */
-    height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
-    overflow: hidden;
+    width: calc(50% - 10px); /* Две колонки в строку */
+    display: flex;
+    align-items: center; /* Выравниваем по высоте */
+    text-align: center;
 }
 
 .column p {
-    color: #333;
-    font-size: 14px;
-    line-height: 1.5;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4.5em; /* 3 строки */
+    overflow: hidden;
 }
 
 /* Изображение справа */
