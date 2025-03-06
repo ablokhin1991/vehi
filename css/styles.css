@@ -156,17 +156,17 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out; /* Плавная анимация при сдвиге */
 }
 
 /* Контент слайдера */
 .slider-content {
     display: flex;
-    width: 200%; /* Для возможности сдвига */
+    width: 200%; /* Для двух слайдов */
 }
 
 .slider-left {
     width: 50%;
-    /*padding: 20px;*/
     box-sizing: border-box;
     text-align: left;
 }
@@ -208,7 +208,7 @@
 .slider-left .btn:hover {
     background: #45a043;
     color: #fff;
-  }
+}
 
 /* Изображение справа */
 .slider-right {
@@ -216,36 +216,40 @@
 }
 
 .slider-right img {
-    width: 50%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-/* Стрелки слайдера */
-.slider-arrow {
+/* Кружки управления слайдером */
+.slider-dots {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
     cursor: pointer;
-    z-index: 3;
+    transition: background-color 0.3s ease;
 }
 
-.left-arrow {
-    left: 10px;
+.dot.active {
+    background-color: #52bc4a; /* Цвет активного кружка */
 }
 
-.right-arrow {
-    right: 10px;
+.dot:hover {
+    background-color: #45a043; /* Цвет при наведении */
 }
 
-/* Анимации */
-.slider-arrow:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
   
   /* 3. Преимущества */
   .advantages {
