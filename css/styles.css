@@ -13,6 +13,12 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .container-slider {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #eee;
     padding: 40px;
   }
