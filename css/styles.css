@@ -160,7 +160,7 @@
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
-    align-self: flex-end;
+    align-self: bottom;
 }
 
 .slider-left .btn:hover {
