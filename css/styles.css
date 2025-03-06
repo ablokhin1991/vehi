@@ -107,7 +107,7 @@
   /* 2. Обложка */
   .cover {
     /* Для фонового изображения замени путь на свой, если необходимо */
-    /*background: url('\vehi\images\cover-bg.jpg') no-repeat center center/cover;*/
+    background: url('\vehi\images\cover-bg.jpg') no-repeat center center/cover;
     position: relative;
     padding: 100px 0;
     text-align: center;
@@ -184,19 +184,14 @@
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Для равномерного распределения текста */
+    height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
+    overflow: hidden;
 }
 
 .column p {
     font-size: 18px;
     line-height: 1.5;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* Ограничивает количество строк */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Добавляет многоточие в случае, если текст превышает три строки */
+    height: 100%;
 }
 
 .slider-left .btn {
