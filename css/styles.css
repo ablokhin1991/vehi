@@ -31,9 +31,22 @@
 
 .top-bar-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.top-bar-contacts {
+    display: flex;
     gap: 20px;
+}
+
+.top-bar-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.top-bar-item a:hover {
+    color: #52bc4a;
 }
 
 .top-bar-item {
