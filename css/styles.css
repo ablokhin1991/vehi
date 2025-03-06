@@ -201,24 +201,15 @@
 
 .columns {
     display: flex;
-    margin-bottom: 20px;
-    flex-direction: column;
+    flex-wrap: wrap; /* Позволяет колонкам переноситься, если не хватает места */
+    flex-direction: row; /* Выстраивает элементы в строку */
     gap: 20px; /* Равномерные отступы между колонками */
-    flex-grow: 1; /* Растягиваем блок на всю доступную высоту */
 }
 
 .column {
-    width: 50%;
-    /*padding: 10px;*/
-    /*box-sizing: border-box;*/
+    width: calc(50% - 10px); /* Две колонки в строке с учетом gap */
     height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
     overflow: hidden;
-
-    flex-grow: 1; /* Все колонки занимают равное пространство */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .column p {
