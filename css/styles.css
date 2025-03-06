@@ -202,7 +202,7 @@
 
 .column {
     width: 50%;
-    padding: 10px;
+    /*padding: 10px;*/
     box-sizing: border-box;
     height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
     overflow: hidden;
