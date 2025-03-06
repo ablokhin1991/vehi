@@ -183,10 +183,20 @@
 .column {
     width: 50%;
     padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Для равномерного распределения текста */
 }
 
 .column p {
     font-size: 18px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Ограничивает количество строк */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Добавляет многоточие в случае, если текст превышает три строки */
 }
 
 .slider-left .btn {
