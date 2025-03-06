@@ -21,10 +21,37 @@
     padding: 20px 0;
     border-bottom: 1px solid #eee;
   }
+  /* Верхний информационный блок */
+.top-bar {
+    background: #f5f5f5;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-bar-item img {
+    width: 16px;
+    height: 16px;
+}
+
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
   }
 
   .logo-container {
