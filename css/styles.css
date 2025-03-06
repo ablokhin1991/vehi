@@ -159,6 +159,20 @@
     background: #f0f0f0;
   }
 
+  .slider-left .btn {
+    background-color: #52bc4a;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.slider-left .btn:hover {
+    background: #45a043;
+    color: #fff;
+  }
+
   /* Стили для слайдера */
 .slider {
     display: flex;
@@ -206,8 +220,6 @@
     line-height: 1.5;
     height: 100%;
 }
-
-
 
 /* Изображение справа */
 .slider-right {
