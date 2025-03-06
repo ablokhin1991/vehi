@@ -160,6 +160,7 @@
     cursor: pointer;
     position: relative;  /* Убедитесь, что добавили position */
     z-index: 10;
+    margin: 0;
     align-self: flex-start; /* Возвращаем кнопке нормальную ширину */
     margin-top: auto; /* Отталкиваем кнопку вниз */
 }
@@ -184,54 +185,52 @@
     width: 200%; /* Для возможности сдвига */
 }
 
-.slider-left {
-    width: 50%;
-    /*box-sizing: border-box;*/
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+.slider-left, .slider-right {
     height: 100%;
+    display: flex;
 }
-
+.slider-left {
+    flex-direction: column;
+    justify-content: space-between; /* Распределение пространства между элементами */
+}
 .slider-left h2 {
     color: #52bc4a;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start; /* Фиксируем заголовок вверху */
 }
-
 .columns {
+    flex: 1 1 auto;
     display: flex;
-    margin-bottom: 20px;
-    flex-wrap: wrap; /* Позволяет колонкам переноситься, если не хватает места */
-    flex-direction: row; /* Выстраивает элементы в строку */
-    gap: 20px; /* Равномерные отступы между колонками */
+    gap: 20px;
+    padding: 15px 0;
+    align-items: flex-start; /* Выравнивание колонок по верхнему краю */
 }
 
 .column {
-    width: 50%;
-    /*padding: 10px;*/
-    /*box-sizing: border-box;*/
-    height: 4.5em; /* Размер примерно равный 3 строкам с учетом line-height */
-    overflow: hidden;
-
-    flex-grow: 1; /* Все колонки занимают равное пространство */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    width: calc(50% - 10px);
+    min-height: 72px; /* Высота для 3 строк (24px * 3) */
+    line-height: 1.5;
+    margin-right: 20px;
 }
 
+.column:last-child {
+    margin-right: 0;
+}
 .column p {
     color: #333;
     font-size: 14px;
     line-height: 1.5;
     height: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Изображение справа */
-.slider-right {
-    width: 50%;
-}
+
 
 .slider-right img {
     width: 100%; /* Занимает всю ширину родителя */
