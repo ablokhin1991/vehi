@@ -165,7 +165,7 @@
 
 .slider-left {
     width: 50%;
-    padding: 20px;
+    /*padding: 20px;*/
     box-sizing: border-box;
     text-align: left;
 }
