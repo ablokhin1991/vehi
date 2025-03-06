@@ -27,20 +27,25 @@
     align-items: center;
   }
 
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
   .logo {
     display: flex;
     align-items: center;
   }
 
   .logo img {
-    height: 50px;
+    display: block;
+    height: 50px; /* Подстрой высоту под логотип */
   }
 
   .header-text {
     font-size: 16px;
     color: #888;
-    margin-left: 15px;
-    /*white-space: nowrap;*/
+    margin-left: 15px; /* Отступ между логотипом и текстом */
    }
 
   .nav ul {
