@@ -1,88 +1,336 @@
-body {
-    font-family: Arial, sans-serif;
+/* Общие стили и сброс */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
     color: #333;
-}
-
-.container {
+    line-height: 1.6;
+  }
+  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.header {
+  }
+  
+  /* 1. Шапка */
+  .header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    background: #fff;
-}
-
-.logo img {
+  }
+  .logo img {
     height: 50px;
-}
-
-.nav ul {
+  }
+  .nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav a {
+  }
+  .nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-}
-
-.hero {
-    background: #52bc4a;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background: white;
+    transition: color 0.3s;
+  }
+  .nav ul li a:hover {
     color: #52bc4a;
-    padding: 10px 20px;
+  }
+  
+  /* 2. Обложка */
+  .cover {
+    /* Для фонового изображения замени путь на свой, если необходимо */
+    background: url('\vehi\images\cover-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+  }
+  .cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 188, 74, 0.7);
+    z-index: 1;
+  }
+  .cover .container {
+    position: relative;
+    z-index: 2;
+  }
+  .cover h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .cover p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .cover .btn {
+    background: #fff;
+    color: #52bc4a;
+    padding: 12px 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
     border-radius: 5px;
-}
-
-.contacts {
+    transition: background 0.3s;
+  }
+  .cover .btn:hover {
+    background: #f0f0f0;
+  }
+  
+  /* 3. Преимущества */
+  .advantages {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .advantages h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #52bc4a;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #52bc4a;
+  }
+  .card p {
+    font-size: 16px;
+  }
+  
+  /* 4. О нас */
+  .about {
+    padding: 60px 0;
+  }
+  .about-container {
     display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background: #f4f4f4;
-}
-
-.contact-item {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  .about-text {
+    flex: 1 1 400px;
+  }
+  .about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #52bc4a;
+  }
+  .about-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .about-text .btn {
+    background: #52bc4a;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .about-text .btn:hover {
+    background: #45a043;
+  }
+  .about-image {
+    flex: 1 1 400px;
+  }
+  .about-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* 5. Этапы взаимодействия */
+  .steps {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .steps h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #52bc4a;
+  }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .step {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .step:hover {
+    transform: translateY(-5px);
+  }
+  .step-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #52bc4a;
+    margin-bottom: 10px;
+  }
+  .step h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .step p {
+    font-size: 14px;
+  }
+  
+  /* 6. Условия сотрудничества */
+  .cooperation {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .cooperation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #52bc4a;
+  }
+  .cooperation p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .cooperation .btn {
+    background: #52bc4a;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .cooperation .btn:hover {
+    background: #45a043;
+  }
+  
+  /* 7. Доставка */
+  .delivery {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .delivery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #52bc4a;
+  }
+  .delivery p {
+    font-size: 16px;
+  }
+  
+  /* 8. Отгрузка товара */
+  .shipment {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .shipment h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #52bc4a;
+  }
+  .shipment p {
+    font-size: 16px;
+  }
+  
+  /* 9. FAQ */
+  .faq {
+    padding: 60px 0;
+    background: #f9f9f9;
+  }
+  .faq h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #52bc4a;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  .faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .faq-item p {
+    font-size: 16px;
+  }
+  
+  /* 10. Подвал */
+  .footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-logo img {
+    height: 50px;
+  }
+  .footer-contacts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .footer-contacts .contact {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.contact-item img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer {
+    gap: 5px;
+    font-size: 14px;
+  }
+  .footer-contacts .contact img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  .footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer-copy {
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-}
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  

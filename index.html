@@ -1,57 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehi B2B</title>
-    <link rel="stylesheet" href="\vehi\css\styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehi B2B</title>
+  <link rel="stylesheet" href="\vehi\css\styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="/" class="logo">
-                <img src="\vehi\images\logo\Vehi_green.svg" alt="Vehi">
-            </a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Партнёрам</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- 1. Шапка с логотипом и меню -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo">
+        <img src="\vehi\images\logo\Vehi_green.svg" alt="Vehi">
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>B2B решения для вашего бизнеса</h1>
-            <p>Эффективные инструменты для роста и развития</p>
-            <a href="#" class="btn">Подробнее</a>
-        </div>
-    </section>
+  <!-- 2. Обложка с кнопкой - рассчитать заказ -->
+  <section class="cover">
+    <div class="container">
+      <h1>Ваш заказ начинается здесь</h1>
+      <p>Профессиональные решения для вашего бизнеса</p>
+      <a href="#" class="btn">Рассчитать заказ</a>
+    </div>
+  </section>
 
-    <section class="contacts">
-        <div class="container">
-            <div class="contact-item">
-                <img src="\vehi\images\icon\tel.svg" alt="Телефон">
-                <p>+7 (900) 000-00-00</p>
-            </div>
-            <div class="contact-item">
-                <img src="\vehi\images\icon\mail.svg" alt="Email">
-                <p>info@vehi.ru</p>
-            </div>
-            <div class="contact-item">
-                <img src="\vehi\images\icon\pin.svg" alt="Адрес">
-                <p>Москва, ул. Примерная, д. 1</p>
-            </div>
+  <!-- 3. Блок - Почему стоит заказать у нас: 6 карточек по 3 в ряд -->
+  <section class="advantages">
+    <div class="container">
+      <h2>Почему стоит заказать у нас</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Высокое качество</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-    </section>
+        <div class="card">
+          <h3>Своевременная доставка</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <h3>Профессиональная команда</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <h3>Индивидуальный подход</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <h3>Гарантия качества</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <h3>Экономия средств</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 Vehi. Все права защищены.</p>
+  <!-- 4. Блок - текст слева, картинка справа (О нас с кнопкой подробнее) -->
+  <section class="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2>О нас</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien arcu. Integer a purus ut neque dictum vestibulum. Sed vitae nisi eget urna convallis ultricies. 
+        </p>
+        <a href="#" class="btn">Подробнее</a>
+      </div>
+      <div class="about-image">
+        <!-- Замени путь к изображению на свой -->
+        <img src="\vehi\images\about.jpg" alt="О нас">
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Блок - Этапы взаимодействия: 4 этапа -->
+  <section class="steps">
+    <div class="container">
+      <h2>Этапы взаимодействия</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Заявка</h3>
+          <p>Оставьте заявку, и мы свяжемся с вами в кратчайшие сроки.</p>
         </div>
-    </footer>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Производство</h3>
+          <p>Наше производство начнёт работу над вашим заказом.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Доставка</h3>
+          <p>Мы оперативно доставим заказ в указанное место.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Готовый заказ</h3>
+          <p>Получите продукт, полностью соответствующий вашим ожиданиям.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Блок - Получите выгодные условия сотрудничества с производителем -->
+  <section class="cooperation">
+    <div class="container">
+      <h2>Получите выгодные условия сотрудничества с производителем</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet arcu vitae urna convallis tincidunt. Обратитесь к нам для получения персонального предложения.
+      </p>
+      <a href="#" class="btn">Узнать подробнее</a>
+    </div>
+  </section>
+
+  <!-- 7. Блок - Доставка -->
+  <section class="delivery">
+    <div class="container">
+      <h2>Доставка</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros ut turpis dictum commodo. Aliquam erat volutpat.
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. Блок - Отгрузка товара -->
+  <section class="shipment">
+    <div class="container">
+      <h2>Отгрузка товара</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros ut turpis dictum commodo. Aliquam erat volutpat.
+      </p>
+    </div>
+  </section>
+
+  <!-- 9. Блок - Часто задаваемые вопросы -->
+  <section class="faq">
+    <div class="container">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq-item">
+        <h3>Вопрос 1: Как оформить заказ?</h3>
+        <p>Ответ: Оставьте заявку на сайте, и наш менеджер свяжется с вами.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Вопрос 2: Какие сроки производства?</h3>
+        <p>Ответ: Сроки зависят от сложности заказа, но мы всегда стараемся выполнить его в кратчайшие сроки.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Вопрос 3: Какие условия оплаты?</h3>
+        <p>Ответ: Мы предлагаем различные варианты оплаты, подбираемые индивидуально для каждого клиента.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Подвал -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <img src="\vehi\images\logo\Vehi_black.svg" alt="Vehi">
+      </div>
+      <div class="footer-contacts">
+        <div class="contact">
+          <img src="\vehi\images\icon\tel.svg" alt="Телефон">
+          <span>+7 (900) 000-00-00</span>
+        </div>
+        <div class="contact">
+          <img src="\vehi\images\icon\mail.svg" alt="Email">
+          <span>info@vehi.ru</span>
+        </div>
+        <div class="contact">
+          <img src="\vehi\images\icon\pin.svg" alt="Адрес">
+          <span>Москва, ул. Примерная, д. 1</span>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 Vehi. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
