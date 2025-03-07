@@ -122,7 +122,8 @@ body {
 
 /* Эффект при наведении на кнопку */
 .btn:hover {
-  background-color: #3f9939;
+  background-color: #ffffff;
+  color: #52bc4a;
 }
 
 /*Стрелки управления */ 
