@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.slider', {
+    loop: true,  // Включаем зацикливание слайдов
     autoplay: {
       delay: 5000,  // Интервал 5 сек.
+      disableOnInteraction: false,  // Слайдер будет продолжать работать даже после взаимодействия
     },
+    speed: 1000,  // Скорость анимации перехода
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    loop: true, // Зацикливание слайдов
+    effect: 'slide', // Выбираем стандартный эффект прокрутки (можно использовать 'fade' или другие)
   });
 });
