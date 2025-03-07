@@ -1,5 +1,5 @@
 /* Основной стиль слайдера */
-.container-slider {
+.slider__wrapper {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
