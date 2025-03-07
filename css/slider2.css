@@ -14,6 +14,13 @@ body {
 /* дополнительные стили для этого примера */
 .swiper-wrapper {
   counter-reset: slide;
+  display: flex; /* Не изменять */
+  transition: transform 0.5s ease; /* Плавная анимация */
+}
+
+/* Обеспечиваем плавный переход и скрытие переполнения */
+.swiper-container {
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -21,6 +28,7 @@ body {
   overflow: hidden;
   position: relative;
   counter-increment: slide;
+  flex-shrink: 0; /* Не позволяет слайду сжиматься */
 }
 
 .swiper-slide::after {
