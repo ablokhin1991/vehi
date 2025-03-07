@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="\vehi\css\slider2.css">
   <script defer src="\vehi\js\include.js"></script>
   <script defer src="\vehi\js\slider2.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/kozyabura/simple-adaptive-slider@master/simple-adaptive-slider.min.js"></script>
 
 
 </head>
@@ -21,54 +20,60 @@
   <div class="slider__wrapper">
     <div class="slider__items">
       <div class="slider__item">
-        <div class="slider__item_inner">
-          <div class="slider__item_img">
-            <img src="images/book1.jpg" alt="Book 1">
-          </div>
-          <div class="slider__item_testimonial">
-            <div class="slider__item_name">Название книги 1</div>
-            <div class="slider__item_post">Автор, год</div>
-            <div class="slider__item_text">Краткое описание книги...</div>
-            <div class="slider__item_action">
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </div>
-        </div>
+        <span class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="slider__item_photo" src="/examples/images/book-cover-1.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">JavaScript. Карманный справочник</span>
+            <span class="slider__item_post">Дэвид Флэнаган, 2015</span>
+            <span class="slider__item_text">
+              Представлены самые важные сведения о синтаксисе языка и показаны примеры его применения....
+            </span>
+            <span class="slider__item_action">
+              <a class="btn" href="#">Купить за 769р.</a>
+            </span>
+          </span>
+        </span>
       </div>
       <div class="slider__item">
-        <div class="slider__item_inner">
-          <div class="slider__item_img">
-            <img src="images/book2.jpg" alt="Book 2">
-          </div>
-          <div class="slider__item_testimonial">
-            <div class="slider__item_name">Название книги 2</div>
-            <div class="slider__item_post">Автор, год</div>
-            <div class="slider__item_text">Краткое описание книги...</div>
-            <div class="slider__item_action">
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </div>
-        </div>
+        <span class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="slider__item_photo" src="/examples/images/book-cover-2.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">JavaScript для профессионалов</span>
+            <span class="slider__item_post">Джон Резиг и др., 2017</span>
+            <span class="slider__item_text">
+              Незаменимое пособие для профессиональных разработчиков веб-приложений на JavaScript...
+            </span>
+            <span class="slider__item_action">
+              <a class="btn" href="#">Купить за 1 441р.</a>
+            </span>
+          </span>
+        </span>
       </div>
       <div class="slider__item">
-        <div class="slider__item_inner">
-          <div class="slider__item_img">
-            <img src="images/book3.jpg" alt="Book 3">
-          </div>
-          <div class="slider__item_testimonial">
-            <div class="slider__item_name">Название книги 3</div>
-            <div class="slider__item_post">Автор, год</div>
-            <div class="slider__item_text">Краткое описание книги...</div>
-            <div class="slider__item_action">
-              <a class="btn" href="#">Купить</a>
-            </div>
-          </div>
-        </div>
+        <span class="slider__item_inner">
+          <span class="slider__item_img">
+            <img class="slider__item_photo" src="/examples/images/book-cover-3.jpg" alt="">
+          </span>
+          <span class="slider__item_testimonial">
+            <span class="slider__item_name">HTML5 и CSS3. Веб-разработка по стандартам нового поколения</span>
+            <span class="slider__item_post">Брайан Хоган, 2014</span>
+            <span class="slider__item_text">
+              HTML5 и CSS3 – будущее веб-разработки, но не обязательно ждать будущего, чтобы начать...
+            </span>
+            <span class="slider__item_action">
+              <a class="btn" href="#">Купить за 199р.</a>
+            </span>
+          </span>
+        </span>
       </div>
     </div>
   </div>
-  <button class="slider__control slider__control_prev" data-slide="prev">&#10094;</button>
-  <button class="slider__control slider__control_next" data-slide="next">&#10095;</button>
+  <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+  <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
 </div>
 
 
