@@ -3,17 +3,17 @@ const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 function goToNextSlide() {
-    // Скрыть текущий слайд
+    // Скрываем текущий слайд
     slides[currentSlide].classList.remove('active');
     
     // Переход к следующему слайду
     currentSlide = (currentSlide + 1) % totalSlides;
 
-    // Показать новый слайд
+    // Показываем следующий слайд
     slides[currentSlide].classList.add('active');
 }
 
-// Устанавливаем первый слайд как активный
+// Устанавливаем первый слайд как активный (начальная позиция)
 slides[currentSlide].classList.add('active');
 
 // Автоматическое переключение слайдов каждые 5 секунд
