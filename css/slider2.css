@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: #eee;
-  padding: 40px 80px 40px 80px;
+  padding: 20px 0;
   border-radius: 5px;
   position: relative; /* Позволяет стрелкам быть внутри этого контейнера */
 }
