@@ -45,7 +45,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #eee;
+  /*background-color: #eee;*/
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 .right-side {
