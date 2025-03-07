@@ -1,0 +1,184 @@
+/* 2. Обложка */
+.cover {
+    /* Для фонового изображения замени путь на свой, если необходимо */
+    background: url('\vehi\images\cover-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+  }
+  .cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .cover .container {
+    position: relative;
+    z-index: 2;
+  }
+  .cover h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .cover p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .container-slider {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 40px 80px 40px 80px;
+    border-radius: 5px;
+    position: relative; /* Позволяет стрелкам быть внутри этого контейнера */
+  }
+
+  .slider-left .btn {
+    background-color: #52bc4a;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;  /* Убедитесь, что добавили position */
+    z-index: 10;
+    margin: 0;
+}
+
+.slider-left .btn:hover {
+    background: #45a043;
+    color: #fff;
+  }
+
+  /* Стили для слайдера */
+.slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: stretch; /* Чтобы левая и правая части выровнялись по высоте */
+}
+
+/* Контент слайдера */
+.slider-content {
+    display: flex;
+    width: 100%; /* Для возможности сдвига нужно 200% */
+    align-items: stretch; /* Растягиваем вложенные блоки по высоте */
+}
+
+.slider-left, .slider-right {
+    height: 100%;
+    display: flex;
+}
+/* Правая часть: картинка на всю высоту */
+.slider-right {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;   /* Чтобы картинка была по центру вертикали, если нужна */
+  justify-content: center;
+}
+
+/* Настраиваем .slider-left как вертикальный flex-контейнер, 
+   чтобы h2 был сверху, кнопка внизу, а columns занимал всё оставшееся пространство */
+   .slider-left {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* h2 вверху, .columns посередине, .btn внизу */
+    align-items: flex-start;     /* Выровнять по левому краю горизонтально */
+}
+
+.slider-left h2 {
+    color: #52bc4a;
+    font-size: 32px;
+    margin: 0 0 10px 0; /* Можно скорректировать отступ снизу */
+
+}
+/* Блок с двумя колонками — располагаем их в строку с зазором */
+.columns {
+  display: flex;
+  gap: 20px;
+  /* Никакой дополнительной «высотной» магии не нужно —
+     блок columns сам окажется между h2 и кнопкой за счёт space-between */
+}
+
+/* Каждая колонка */
+.column {
+  /* Можно задать фикс. ширину или позволить растягиваться по содержимому */
+  flex: 0 0 auto;
+  /* Если нужно сократить текст до 3 строк: */
+  display: flex;            /* чтобы центрировать текст по вертикали, если нужно */
+  align-items: center;      /* вертикальное центрирование текста в колонке */
+  justify-content: center;  /* горизонтальное центрирование текста, при желании */
+  text-align: center;       /* если хотите центрировать сам текст */
+  padding: 10px;            /* небольшой отступ внутри колонки */
+  background-color: #fff;   /* или уберите, если не нужно выделять колонки */
+  border-radius: 4px;       /* необязательно, просто для вида */
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+/* Ограничение текста в 3 строки */
+.column p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Изображение справа */
+
+
+.slider-right img {
+    width: 100%; /* Занимает всю ширину родителя */
+    height: 100%; /* Занимает всю высоту родителя */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+    border-radius: 8px;
+}
+/* Стрелки слайдера */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7); /* Светлый фон */
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3; 
+    border-radius: 50%; /* Сделаем стрелки круглыми */
+    width: 40px; /* Фиксированная ширина */
+    height: 40px; /* Фиксированная высота */
+    display: flex; /* Для центрирования текста */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    transition: color 0.3s;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+/* Анимации */
+.slider-arrow:hover {
+    background: rgba(82, 188, 74, 0.8); /* Изменение фона при ховере */
+    color: #fff; /* Цвет стрелок при ховере */
+}
+
