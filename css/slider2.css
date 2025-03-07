@@ -1,6 +1,5 @@
 .slider {
   width: 90%;
-  max-width: 1200px;
   margin: 40px auto;
   position: relative;
   overflow: hidden;
@@ -13,12 +12,12 @@
 
 .slider__items {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   width: 300%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slider__item {
-  flex: 0 0 100%;
+  flex: 0 0 33.333%;
   display: flex;
   justify-content: center;
   align-items: center;

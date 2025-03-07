@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(() => {
     index = (index + 1) % totalSlides;
     updateSlider();
-  }, 5000); // Автопрокрутка каждые 5 секунд
+  }, 5000);
 });
