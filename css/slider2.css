@@ -83,6 +83,7 @@ body {
   width: 49%;
   overflow: hidden;
   margin-left: 2%; /* Добавляем отступ между левой и правой частью */
+  padding: 20px;
 }
 
 .right-side img {
