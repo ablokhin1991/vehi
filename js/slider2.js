@@ -1,20 +1,32 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-function goToNextSlide() {
-    // Скрываем текущий слайд
-    slides[currentSlide].classList.remove('active');
-    
-    // Переход к следующему слайду
-    currentSlide = (currentSlide + 1) % totalSlides;
-
-    // Показываем следующий слайд
-    slides[currentSlide].classList.add('active');
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
 }
 
-// Устанавливаем первый слайд как активный (начальная позиция)
-slides[currentSlide].classList.add('active');
+// Функция для перехода к следующему слайду
+function goToNextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
 
-// Автоматическое переключение слайдов каждые 5 секунд
+// Функция для перехода к предыдущему слайду
+function goToPrevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Назначаем события клика на кнопки
+nextBtn.addEventListener('click', goToNextSlide);
+prevBtn.addEventListener('click', goToPrevSlide);
+
+// Автопереключение каждые 5 секунд
 setInterval(goToNextSlide, 5000);
+
+// Устанавливаем первый слайд как активный
+showSlide(currentSlide);

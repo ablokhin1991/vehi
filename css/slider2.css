@@ -91,3 +91,33 @@ body {
 .btn:hover {
   background-color: #0056b3;
 }
+
+/*Стрелки управления */ 
+/* Стили кнопок управления */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Левая кнопка */
+.prev-btn {
+  left: 10px;
+}
+
+/* Правая кнопка */
+.next-btn {
+  right: 10px;
+}
