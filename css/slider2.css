@@ -110,7 +110,7 @@ body {
   position: relative;
   padding: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)) top;
-  background-size: 100% 80px; /* Высота затемнения */
+  /*background-size: 100% 80px; /* Высота затемнения */
   background-repeat: no-repeat;
 }
 
