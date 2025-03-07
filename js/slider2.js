@@ -25,8 +25,5 @@ function goToPrevSlide() {
 nextBtn.addEventListener('click', goToNextSlide);
 prevBtn.addEventListener('click', goToPrevSlide);
 
-// Автопереключение каждые 5 секунд
-setInterval(goToNextSlide, 5000);
-
 // Устанавливаем первый слайд как активный
 showSlide(currentSlide);
