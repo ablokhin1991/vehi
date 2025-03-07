@@ -50,13 +50,13 @@ body {
 
 /* Первый слайд */
 .slide:nth-child(1) .left-side {
-  background: radial-gradient(circle at 20% 30%, #f5fd86, transparent),
-              radial-gradient(circle at 80% 20%, #52bc4a, transparent),
-              radial-gradient(circle at 50% 80%, #4a9245, transparent),
-              radial-gradient(circle at 30% 60%, #b2eaae, transparent),
-              radial-gradient(circle at 30% 60%, #5ed9d0, transparent);
-  background-blend-mode: screen;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url("/vehi/images/img/doors-2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 /* Второй слайд */
 .slide:nth-child(2) .left-side {
