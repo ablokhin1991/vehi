@@ -46,13 +46,38 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /*background-color: #eee;*/
-  background: radial-gradient(circle at 20% 30%, #f5fd86, transparent),
-                radial-gradient(circle at 80% 20%, #52bc4a, transparent),
-                radial-gradient(circle at 50% 80%, #4a9245, transparent),
-                radial-gradient(circle at 30% 60%, #b2eaae, transparent),
-                radial-gradient(circle at 30% 60%, #5ed9d0, transparent);
-    background-blend-mode: screen;
 }
+
+/* Первый слайд */
+.slide:nth-child(1) .left-side {
+  background: radial-gradient(circle at 20% 30%, #f5fd86, transparent),
+              radial-gradient(circle at 80% 20%, #52bc4a, transparent),
+              radial-gradient(circle at 50% 80%, #4a9245, transparent),
+              radial-gradient(circle at 30% 60%, #b2eaae, transparent),
+              radial-gradient(circle at 30% 60%, #5ed9d0, transparent);
+  background-blend-mode: screen;
+}
+
+/* Второй слайд */
+.slide:nth-child(2) .left-side {
+  background: radial-gradient(circle at 20% 30%, #ff9a9e, transparent),
+              radial-gradient(circle at 80% 20%, #fad0c4, transparent),
+              radial-gradient(circle at 50% 80%, #fbc2eb, transparent),
+              radial-gradient(circle at 30% 60%, #a18cd1, transparent),
+              radial-gradient(circle at 30% 60%, #fbc2eb, transparent);
+  background-blend-mode: screen;
+}
+
+/* Третий слайд */
+.slide:nth-child(3) .left-side {
+  background: radial-gradient(circle at 20% 30%, #ffdde1, transparent),
+              radial-gradient(circle at 80% 20%, #ee9ca7, transparent),
+              radial-gradient(circle at 50% 80%, #ffdde1, transparent),
+              radial-gradient(circle at 30% 60%, #ff9a9e, transparent),
+              radial-gradient(circle at 30% 60%, #fad0c4, transparent);
+  background-blend-mode: screen;
+}
+
 
 .right-side {
   width: 49%;
