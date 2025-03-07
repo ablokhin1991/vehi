@@ -1,21 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let slider = document.querySelector('.slider__items');
-  let slides = document.querySelectorAll('.slider__item');
+  const slider = document.querySelector('.slider__items');
+  const slides = document.querySelectorAll('.slider__item');
+  const prevBtn = document.querySelector('.slider__control_prev');
+  const nextBtn = document.querySelector('.slider__control_next');
   let index = 0;
-
-  document.querySelector('.slider__control_next').addEventListener('click', function (e) {
-    e.preventDefault();
-    index = (index + 1) % slides.length;
-    updateSlider();
-  });
-
-  document.querySelector('.slider__control_prev').addEventListener('click', function (e) {
-    e.preventDefault();
-    index = (index - 1 + slides.length) % slides.length;
-    updateSlider();
-  });
+  const totalSlides = slides.length;
 
   function updateSlider() {
     slider.style.transform = `translateX(-${index * 100}%)`;
   }
+
+  nextBtn.addEventListener('click', function () {
+    index = (index + 1) % totalSlides;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener('click', function () {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  });
+
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateSlider();
+  }, 5000); // Автопрокрутка каждые 5 секунд
 });
