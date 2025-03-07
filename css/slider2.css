@@ -41,7 +41,7 @@ body {
 }
 
 .left-side {
-  width: 50%;
+  width: 49%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -49,8 +49,9 @@ body {
 }
 
 .right-side {
-  width: 50%;
+  width: 49%;
   overflow: hidden;
+  margin-left: 2%; /* Добавляем отступ между левой и правой частью */
 }
 
 .right-side img {
