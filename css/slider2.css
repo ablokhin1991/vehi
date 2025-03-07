@@ -15,8 +15,14 @@
 
 .slider-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Центрируем элементы */
   align-items: center;
+  gap: 20px; /* Отступ между колонками */
+}
+
+.slider-left,
+.slider-right {
+  width: calc(50% - 10px); /* Равномерное деление с учетом gap */
 }
 
 .slider-left {
