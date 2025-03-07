@@ -107,7 +107,23 @@ body {
   color: #fff;
   line-height: 1.5;
   flex-grow: 1;
+  position: relative;
+  padding: 20px;
+  z-index: 2; /* Оставляем выше затемняющего слоя */
 }
+
+.description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px; /* Высота затемнения */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  z-index: 1; /* Увеличил, чтобы слой был выше фона, но ниже текста */
+}
+
+
 
 /* Стили кнопки */
 .btn {
