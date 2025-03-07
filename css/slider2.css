@@ -12,18 +12,18 @@ body {
 }
 
 /* дополнительные стили для этого примера */
-.slider__items {
+.swiper-wrapper {
   counter-reset: slide;
 }
 
-.slider__item {
+.swiper-slide {
   height: 320px;
   overflow: hidden;
   position: relative;
   counter-increment: slide;
 }
 
-.slider__item::after {
+.swiper-slide::after {
   content: counter(slide);
   position: absolute;
   top: 10px;
@@ -40,23 +40,23 @@ img {
   max-width: 100%;
 }
 
-.slider__item:nth-child(1) {
+.swiper-slide:nth-child(1) {
   background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
 }
 
-.slider__item:nth-child(2) {
+.swiper-slide:nth-child(2) {
   background: linear-gradient(to right, #dd1818, #333333);
 }
 
-.slider__item:nth-child(3) {
+.swiper-slide:nth-child(3) {
   background: linear-gradient(to right, #093028, #237a57);
 }
 
-.slider__item:nth-child(4) {
+.swiper-slide:nth-child(4) {
   background: linear-gradient(to right, #243B55, #141E30);
 }
 
-.slider__item {
+.swiper-slide {
   height: 320px;
   overflow: hidden;
   position: relative;
@@ -80,7 +80,6 @@ img {
 .slider__item_img {
   flex: 0 0 100px;
   max-width: 100px;
-
 }
 
 .slider__item_testimonial {
@@ -111,7 +110,7 @@ img {
 }
 
 @media (min-width: 576px) {
-  .slider__item {
+  .swiper-slide {
     height: 310px;
   }
 

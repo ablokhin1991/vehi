@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vehi B2B</title>
+  <!-- Подключение стилей Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="\vehi\css\styles.css">
   <link rel="stylesheet" href="\vehi\css\slider2.css">
   <script defer src="\vehi\js\include.js"></script>
   <script defer src="\vehi\js\slider2.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-adaptive-slider@1.0.1/dist/simple-adaptive-slider.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/simple-adaptive-slider@1.0.1/dist/simple-adaptive-slider.min.js"></script>
-
+  <!-- Подключение скриптов Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
 
@@ -20,64 +21,62 @@
   <div id="header"></div>
 
 <!-- 2. Обложка с кнопкой - рассчитать заказ -->
-<div class="slider">
-  <div class="slider__wrapper">
-    <div class="slider__items">
-      <div class="slider__item">
-        <span class="slider__item_inner">
-          <span class="slider__item_img">
-            <img class="slider__item_photo" src="/images/img/doors.webp" alt="">
+<div class="swiper-container slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slider__item">
+      <span class="slider__item_inner">
+        <span class="slider__item_img">
+          <img class="slider__item_photo" src="/images/img/doors.webp" alt="">
+        </span>
+        <span class="slider__item_testimonial">
+          <span class="slider__item_name">JavaScript. Карманный справочник</span>
+          <span class="slider__item_post">Дэвид Флэнаган, 2015</span>
+          <span class="slider__item_text">
+            Представлены самые важные сведения о синтаксисе языка и показаны примеры его применения....
           </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">JavaScript. Карманный справочник</span>
-            <span class="slider__item_post">Дэвид Флэнаган, 2015</span>
-            <span class="slider__item_text">
-              Представлены самые важные сведения о синтаксисе языка и показаны примеры его применения....
-            </span>
-            <span class="slider__item_action">
-              <a class="btn" href="#">Купить за 769р.</a>
-            </span>
+          <span class="slider__item_action">
+            <a class="btn" href="#">Купить за 769р.</a>
           </span>
         </span>
-      </div>
-      <div class="slider__item">
-        <span class="slider__item_inner">
-          <span class="slider__item_img">
-            <img class="slider__item_photo" src="/examples/images/book-cover-2.jpg" alt="">
+      </span>
+    </div>
+    <div class="swiper-slide slider__item">
+      <span class="slider__item_inner">
+        <span class="slider__item_img">
+          <img class="slider__item_photo" src="/examples/images/book-cover-2.jpg" alt="">
+        </span>
+        <span class="slider__item_testimonial">
+          <span class="slider__item_name">JavaScript для профессионалов</span>
+          <span class="slider__item_post">Джон Резиг и др., 2017</span>
+          <span class="slider__item_text">
+            Незаменимое пособие для профессиональных разработчиков веб-приложений на JavaScript...
           </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">JavaScript для профессионалов</span>
-            <span class="slider__item_post">Джон Резиг и др., 2017</span>
-            <span class="slider__item_text">
-              Незаменимое пособие для профессиональных разработчиков веб-приложений на JavaScript...
-            </span>
-            <span class="slider__item_action">
-              <a class="btn" href="#">Купить за 1 441р.</a>
-            </span>
+          <span class="slider__item_action">
+            <a class="btn" href="#">Купить за 1 441р.</a>
           </span>
         </span>
-      </div>
-      <div class="slider__item">
-        <span class="slider__item_inner">
-          <span class="slider__item_img">
-            <img class="slider__item_photo" src="/examples/images/book-cover-3.jpg" alt="">
+      </span>
+    </div>
+    <div class="swiper-slide slider__item">
+      <span class="slider__item_inner">
+        <span class="slider__item_img">
+          <img class="slider__item_photo" src="/examples/images/book-cover-3.jpg" alt="">
+        </span>
+        <span class="slider__item_testimonial">
+          <span class="slider__item_name">HTML5 и CSS3. Веб-разработка по стандартам нового поколения</span>
+          <span class="slider__item_post">Брайан Хоган, 2014</span>
+          <span class="slider__item_text">
+            HTML5 и CSS3 – будущее веб-разработки, но не обязательно ждать будущего, чтобы начать...
           </span>
-          <span class="slider__item_testimonial">
-            <span class="slider__item_name">HTML5 и CSS3. Веб-разработка по стандартам нового поколения</span>
-            <span class="slider__item_post">Брайан Хоган, 2014</span>
-            <span class="slider__item_text">
-              HTML5 и CSS3 – будущее веб-разработки, но не обязательно ждать будущего, чтобы начать...
-            </span>
-            <span class="slider__item_action">
-              <a class="btn" href="#">Купить за 199р.</a>
-            </span>
+          <span class="slider__item_action">
+            <a class="btn" href="#">Купить за 199р.</a>
           </span>
         </span>
-      </div>
+      </span>
     </div>
   </div>
-  <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-  <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+  <div class="swiper-button-next slider__control slider__control_next"></div>
+  <div class="swiper-button-prev slider__control slider__control_prev"></div>
 </div>
 
 
