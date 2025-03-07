@@ -50,12 +50,13 @@ body {
 
 /* Первый слайд */
 .slide:nth-child(1) .left-side {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
               url("/vehi/images/img/doors-2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 
 /* Второй слайд */
