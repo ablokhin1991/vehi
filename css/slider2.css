@@ -102,8 +102,8 @@ body {
 
 /* Стили описания */
 .description {
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: #fff;
   line-height: 1.5;
   flex-grow: 1;
 }
