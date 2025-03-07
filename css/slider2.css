@@ -8,8 +8,9 @@
 .container-slider {
   width: 90%;
   max-width: 1200px;
-  border: 2px solid #000;
+  border-radius: 8px;
   padding: 20px;
+  background-color: #eee;
 }
 
 .slider-content {
