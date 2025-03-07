@@ -76,6 +76,7 @@
 }
 
 .slider-left, .slider-right {
+    flex: 1; /* Обе части займут равное пространство */
     height: 100%;
     display: flex;
 }
