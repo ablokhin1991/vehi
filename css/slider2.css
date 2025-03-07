@@ -69,7 +69,7 @@ body {
 
 /* Стили описания */
 .description {
-  font-size: 1rem;
+  font-size: 14px;
   color: #555;
   line-height: 1.5;
   flex-grow: 1;
@@ -77,8 +77,9 @@ body {
 
 /* Стили кнопки */
 .btn {
-  background-color: #007bff;
+  background-color: #52bc4a;
   color: white;
+  font-size: 14px;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -89,7 +90,7 @@ body {
 
 /* Эффект при наведении на кнопку */
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #3f9939;
 }
 
 /*Стрелки управления */ 
