@@ -189,30 +189,39 @@
     height: 100%;
     display: flex;
 }
-.slider-left {
+
+/* Настраиваем .slider-left как вертикальный flex-контейнер, 
+   чтобы h2 был сверху, кнопка внизу, а columns занимал всё оставшееся пространство */
+   .slider-left {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Распределение пространства между элементами */
+    justify-content: flex-start; /* h2 у верхнего края */
+    align-items: flex-start;     /* выравниваем контент слева */
 }
+
 .slider-left h2 {
     color: #52bc4a;
     font-size: 32px;
     margin: 0;
     padding: 0;
     align-self: flex-start; /* Фиксируем заголовок вверху */
+    margin-bottom: 0; /* чтобы не было лишнего отступа под заголовком */
+
 }
+/* Делаем .columns гибким блоком, который заполняет всё пространство между h2 и кнопкой */
 .columns {
-    flex: 1 1 auto;
-    display: flex;
-    gap: 20px;
-    padding: 15px 0;
-    align-items: flex-start; /* Выравнивание колонок по верхнему краю */
+  flex: 1 1 auto;      /* чтобы занять всё доступное пространство по высоте */
+  display: flex;
+  flex-direction: row; /* чтобы колонки располагались в строку */
+  align-items: center; /* вертикальное выравнивание по центру внутри columns */
+  gap: 20px;           /* зазор между колонками */
+  margin: 20px 0;      /* небольшой вертикальный отступ сверху/снизу */
 }
 
 .column {
-    width: calc(50% - 10px);
-    min-height: 72px; /* Высота для 3 строк (24px * 3) */
-    line-height: 1.5;
-    margin-right: 20px;
+  flex: 0 0 auto;   /* чтобы колонки не растягивались равномерно */
+  margin-right: 20px; /* отступ справа для каждой колонки */
+  /* при желании можно задать фиксированную ширину или минимальную, если нужно */
 }
 
 .column:last-child {
