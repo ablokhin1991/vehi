@@ -6,7 +6,8 @@ body {
 }
 
 .slider {
-  max-width: 800px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 /* дополнительные стили для этого примера */
