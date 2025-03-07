@@ -46,7 +46,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /*background-color: #eee;*/
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: radial-gradient(circle at 20% 30%, #f5fd86, transparent),
+                radial-gradient(circle at 80% 20%, #52bc4a, transparent),
+                radial-gradient(circle at 50% 80%, #4a9245, transparent),
+                radial-gradient(circle at 30% 60%, #b2eaae, transparent),
+                radial-gradient(circle at 30% 60%, #5ed9d0, transparent);
+    background-blend-mode: screen;
 }
 
 .right-side {
