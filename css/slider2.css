@@ -62,7 +62,8 @@ body {
 
 /* Стили заголовка */
 .title {
-  font-size: 2rem;
+  font-size: 36px;
+  color: #52bc4a;
   font-weight: bold;
   margin-bottom: 10px;
 }
