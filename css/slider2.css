@@ -52,12 +52,16 @@ h2 {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-block; /* Убедиться, что кнопка не блочная */
+  width: auto; /* Сбрасывает возможное наследование ширины */
+  max-width: max-content; /* Ограничивает ширину по содержимому */
   padding: 10px 20px;
   border: 2px solid #000;
   text-decoration: none;
   text-align: center;
+  white-space: nowrap; /* Чтобы текст не переносился */
 }
+
 
 .slider-right {
   width: 40%;
