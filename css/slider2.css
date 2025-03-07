@@ -119,6 +119,7 @@ body {
   text-align: center;
   border-radius: 5px;
   width: 150px;
+  transition: background 0.3s;
   z-index: 100;
 }
 
