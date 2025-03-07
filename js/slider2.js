@@ -3,14 +3,18 @@ const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 function goToNextSlide() {
+    // Скрыть текущий слайд
+    slides[currentSlide].classList.remove('active');
+    
+    // Переход к следующему слайду
     currentSlide = (currentSlide + 1) % totalSlides;
-    updateSliderPosition();
+
+    // Показать новый слайд
+    slides[currentSlide].classList.add('active');
 }
 
-function updateSliderPosition() {
-    const offset = -currentSlide * 100; // Каждый слайд - 100% ширины
-    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
-}
+// Устанавливаем первый слайд как активный
+slides[currentSlide].classList.add('active');
 
 // Автоматическое переключение слайдов каждые 5 секунд
 setInterval(goToNextSlide, 5000);
