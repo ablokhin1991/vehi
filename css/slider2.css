@@ -1,41 +1,45 @@
-.cover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-}
-
-.container-slider {
+/* Основной стиль слайдера */
+.slider {
   width: 90%;
-  max-width: 1200px;
-  border-radius: 8px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+}
+
+.slider__item {
+  min-width: 100%;
+  display: flex;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.slider__item_inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.slider__item_left {
+  flex: 1;
   padding: 20px;
-  background-color: #eee;
 }
 
-.slider-content {
-  display: flex;
-  justify-content: center; /* Центрируем элементы */
-  align-items: center;
-  gap: 20px; /* Отступ между колонками */
+.slider__item_right {
+  flex: 1;
+  padding: 20px;
 }
 
-.slider-left,
-.slider-right {
-  width: calc(50% - 10px); /* Равномерное деление с учетом gap */
-}
-
-.slider-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  color: #52bc4a;
+.slider__item img {
+  width: 100%;
+  height: auto;
 }
 
 .columns {
@@ -45,69 +49,38 @@ h2 {
 }
 
 .column {
-  width: 45%;
-  padding: 20px;
-  border: 2px solid #000;
-  text-align: center;
+  flex: 1;
+  padding: 10px;
 }
 
 .btn {
-  display: inline-block; /* Убедиться, что кнопка не блочная */
-  width: auto; /* Сбрасывает возможное наследование ширины */
-  max-width: max-content; /* Ограничивает ширину по содержимому */
+  background-color: #008CBA;
+  color: #fff;
+  text-align: center;
   padding: 10px 20px;
-  border: 2px solid #000;
   text-decoration: none;
-  text-align: center;
-  white-space: nowrap; /* Чтобы текст не переносился */
+  display: inline-block;
 }
 
-
-.slider-right {
-  width: 40%;
-  text-align: center;
+.btn:hover {
+  background-color: #006f8c;
 }
 
-.slider-right img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-
-/* Стрелки слайдера */
 .slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #333;
-    background: rgba(255, 255, 255, 0.7); /* Светлый фон */
-    padding: 10px;
-    cursor: pointer;
-    z-index: 3; 
-    border-radius: 50%; /* Сделаем стрелки круглыми */
-    width: 40px; /* Фиксированная ширина */
-    height: 40px; /* Фиксированная высота */
-    display: flex; /* Для центрирования текста */
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
-    transition: color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .left-arrow {
-    left: 20px;
+  left: 10px;
 }
 
 .right-arrow {
-    right: 20px;
+  right: 10px;
 }
-
-/* Анимации */
-.slider-arrow:hover {
-    background: rgba(82, 188, 74, 0.8); /* Изменение фона при ховере */
-    color: #fff; /* Цвет стрелок при ховере */
-}
-
