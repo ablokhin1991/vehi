@@ -148,10 +148,10 @@ body {
 
 /* Левая кнопка */
 .prev-btn {
-  left: 0px;
+  left: -20px;
 }
 
 /* Правая кнопка */
 .next-btn {
-  right: 0px;
+  right: -20px;
 }
