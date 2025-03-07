@@ -1,77 +1,67 @@
-/* Основные стили */
+/* Общие стили */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
 }
 
+/* Контейнер слайдера */
 .slider {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 50px auto;
   position: relative;
-}
-
-/* Контейнер всех слайдов */
-.slider__wrapper {
   overflow: hidden;
-  position: relative;
 }
 
-/* Общий стиль для слайдов */
+/* Обёртка всех слайдов */
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Каждый отдельный слайд */
 .slider__item {
-  height: 320px;
+  min-width: 100%;
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  text-align: center;
-  background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-}
-
-/* Градиенты для разных слайдов */
-.slider__item:nth-child(2) {
-  background: linear-gradient(to right, #dd1818, #333333);
-}
-
-/* Содержимое слайда */
-.slider__item_inner {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  color: white;
+  background: linear-gradient(45deg, #085078, #85d8ce);
   padding: 20px;
 }
 
-.slider__item_img img {
-  max-width: 100px;
+/* Внутреннее содержимое */
+.slider__content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.slider__content img {
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
+  margin-right: 20px;
 }
 
-.slider__item_testimonial {
-  margin-top: 10px;
+.slider__text {
+  color: white;
 }
 
-.slider__item_name {
-  font-size: 20px;
-  font-weight: bold;
+.slider__text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.slider__item_post {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.slider__item_text {
+.slider__text p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 
 /* Кнопка */
 .btn {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -80,7 +70,7 @@ body {
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Стрелки */
@@ -112,18 +102,14 @@ body {
 }
 
 /* Адаптивность */
-@media (min-width: 576px) {
-  .slider__item_inner {
-    flex-direction: row;
-    text-align: left;
+@media (max-width: 600px) {
+  .slider__content {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .slider__item_img {
-    flex: 0 0 150px;
-    max-width: 150px;
-  }
-
-  .slider__item_testimonial {
-    margin-left: 20px;
+  .slider__content img {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
