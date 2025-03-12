@@ -240,7 +240,7 @@
 .step-number {
   width: 42px;
   height: 42px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 21px;
@@ -249,11 +249,9 @@
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  margin-bottom: 0px;
-  margin-right: 8px;
+  margin-bottom: 10px;
 }
 .step h3 {
-  display: inline-flex;
   color: #3DB845;
   font-size: 20px;
   font-weight: 600;
