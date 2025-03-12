@@ -288,6 +288,7 @@
   .cooperation p {
     font-size: 16px;
     margin-bottom: 30px;
+    text-align: left;
   }
   .cooperation .btn {
     background: #52bc4a;
