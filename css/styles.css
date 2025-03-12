@@ -220,6 +220,13 @@
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
   }
+  @media (max-width: 768px) { /* Для планшетов и мобильных */
+    .steps-grid {
+        grid-template-columns: 1fr; /* Одна колонка */
+        grid-template-rows: auto; /* Автоматические строки */
+    }
+  }
+
   .step {
     background: #fff;
     padding: 20px;
