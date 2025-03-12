@@ -251,6 +251,12 @@
   position: relative;
   margin-bottom: 10px;
 }
+/* Добавляем новый класс для выравнивания элементов в строку */
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .step h3 {
   color: #3DB845;
   font-size: 20px;
