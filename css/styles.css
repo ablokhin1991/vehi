@@ -194,6 +194,7 @@
   }
   .about-text .btn:hover {
     background: #45a043;
+    color: #fff;
   }
   .about-image {
     flex: 1 1 400px;
