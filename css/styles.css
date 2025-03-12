@@ -298,7 +298,6 @@
     font-size: 18px;
     border-radius: 5px;
     transition: background 0.3s;
-    align-self: flex-start;
   }
   .cooperation .btn:hover {
     background: #45a043;
