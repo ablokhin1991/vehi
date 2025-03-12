@@ -237,6 +237,11 @@
 .step:hover {
   transform: translateY(-5px);
 }
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .step-number {
   width: 42px;
   height: 42px;
