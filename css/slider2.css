@@ -98,12 +98,11 @@ body {
 
 /* Третий слайд */
 .slide:nth-child(3) .left-side {
-  background: radial-gradient(circle at 20% 30%, #ffdde1, transparent),
-              radial-gradient(circle at 80% 20%, #ee9ca7, transparent),
-              radial-gradient(circle at 50% 80%, #ffdde1, transparent),
-              radial-gradient(circle at 30% 60%, #ff9a9e, transparent),
-              radial-gradient(circle at 30% 60%, #fad0c4, transparent);
-  background-blend-mode: screen;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url("/vehi/images/img/kleenie_izdeliya-2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
