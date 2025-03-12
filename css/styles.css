@@ -249,14 +249,14 @@
   font-size: 20px;
   font-weight: 600;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  margin-right: 10px;
 }
 /* Добавляем новый класс для выравнивания элементов в строку */
 .step-header {
   display: flex;
   align-items: center;
   gap: 8px;
-  align-items: center;
 }
 .step h3 {
   color: #3DB845;
