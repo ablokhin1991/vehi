@@ -381,3 +381,37 @@
     margin-top: 20px;
     font-size: 14px;
   }
+
+
+  .stages_of_interaction {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stages_of_interaction_list {
+  color: #3DB845;
+  font-weight: 600;
+  line-height: 22.4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.stages_of_interaction_list span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 21px;
+  background: #3DB845;
+  color: #FFFFFF;
+  font-size: 20px;
+  position: relative;
+  margin-right: 32px;
+}
+.stages_of_interaction_desc {
+  font-family: Inter;
+  line-height: 23.2px;
+}
