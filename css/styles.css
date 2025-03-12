@@ -229,7 +229,7 @@
 }
 .step {
   /*background: #fff;*/
-  background: linear-gradient(to bottom, #def2dc, #fff);
+  background: linear-gradient(to top right, #def2dc, #fff);
   padding: 20px;
   border: 1px solid #eee;
   border-radius: 5px;
