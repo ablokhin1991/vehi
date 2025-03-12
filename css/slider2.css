@@ -15,7 +15,6 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #eee;
 }
 
 .slider {
@@ -90,12 +89,11 @@ body {
 
 /* Второй слайд */
 .slide:nth-child(2) .left-side {
-  background: radial-gradient(circle at 20% 30%, #ff9a9e, transparent),
-              radial-gradient(circle at 80% 20%, #fad0c4, transparent),
-              radial-gradient(circle at 50% 80%, #fbc2eb, transparent),
-              radial-gradient(circle at 30% 60%, #a18cd1, transparent),
-              radial-gradient(circle at 30% 60%, #fbc2eb, transparent);
-  background-blend-mode: screen;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url("/vehi/images/img/pogonag-2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Третий слайд */
