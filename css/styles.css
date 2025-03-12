@@ -125,6 +125,12 @@
     grid-template-rows: repeat(2, auto); /* 2 строки, высота авто */
     gap: 20px;
 }
+@media (max-width: 768px) { /* Для планшетов и мобильных */
+  .cards-grid {
+      grid-template-columns: 1fr; /* Одна колонка */
+      grid-template-rows: auto; /* Автоматические строки */
+  }
+}
 
   .card {
     background: #fff;
