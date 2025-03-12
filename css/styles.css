@@ -257,6 +257,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 10px;
 }
 .step h3 {
   color: #3DB845;
