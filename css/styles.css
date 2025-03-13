@@ -207,7 +207,7 @@
   /* 5. Этапы взаимодействия */
 .steps {
   padding: 60px 0;
-  background: #f9f9f9;
+  /*background: #f9f9f9;*/
   text-align: left;
 }
 .steps h2 {
