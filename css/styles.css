@@ -289,13 +289,17 @@
   .cooperation h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333333;
+    color: #fff;
     text-align: left;
+    margin-left: 20px;
   }
   .cooperation p {
+    color: #fff;
     font-size: 16px;
+    font-weight: 600;
     margin-bottom: 30px;
     text-align: left;
+    margin-left: 20px;
   }
   .cooperation .btn {
     background: #52bc4a;
