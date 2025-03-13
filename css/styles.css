@@ -304,6 +304,7 @@
     margin-left: 20px;
   }
   .cooperation .btn {
+    display: inline-block;
     background: #fff;
     color: #52bc4a;
     padding: 10px 25px;
