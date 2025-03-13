@@ -303,13 +303,14 @@
     margin-left: 20px;
   }
   .cooperation .btn {
-    background: #52bc4a;
-    color: #fff;
+    background: #fff;
+    color: #52bc4a;
     padding: 12px 30px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
     transition: background 0.3s;
+    margin-left: 20px;
   }
   .cooperation .btn:hover {
     background: #45a043;
