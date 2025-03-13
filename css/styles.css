@@ -277,7 +277,7 @@
   /* 6. Условия сотрудничества */
   .cooperation {
     padding: 0px 0;
-    text-align: center;
+    /*text-align: center;*/
   }
   .cooperation-container {
     padding: 60px 0;
