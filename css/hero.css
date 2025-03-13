@@ -53,13 +53,13 @@
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);*/
   }
   
   .hero-description p {
     font-size: 18px;
     margin: 10px 0;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    /*text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);*/
   }
   
   .hero-btn {
