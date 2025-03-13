@@ -27,20 +27,21 @@
         #96d692 33%, 
         #52bc4a 33% 66%, 
         #45a043 66%);
-    padding: 100px 0;
+    padding: 100px 0; /* Паддинг теперь применяется */
     position: relative;
     height: 500px;
   }
-  
   
   .hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 60px 0;
+    /* Убираем паддинг, чтобы не перекрывать родительский */
+    padding: 0; 
   }
   
+  /* Левая часть */
   .left-side {
     max-width: 50%;
     color: white;
@@ -97,7 +98,7 @@
     .hero-section {
       flex-direction: column;
       height: auto;
-      padding: 50px 0;
+      padding: 50px 0; /* Уменьшаем паддинг для мобильных */
     }
   
     .left-side {
