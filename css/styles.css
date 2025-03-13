@@ -305,6 +305,7 @@
   }
   .cooperation .btn {
     display: inline-block;
+    white-space: nowrap;
     background: #fff;
     color: #52bc4a;
     padding: 10px 25px;
