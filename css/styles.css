@@ -314,8 +314,8 @@
 }
 
 .cooperation .btn:hover {
-    background: #45a043;
-    color: #fff;
+    background: #fff;
+    color: #52bc4a;
     transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
 
