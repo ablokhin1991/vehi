@@ -22,11 +22,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/path/to/your/background-image.jpg") no-repeat center center/cover;
+    background: 
+      linear-gradient(45deg, 
+        #45a043 33%, 
+        #52bc4a 33% 66%, 
+        #96d692 66%);
     padding: 100px 0;
     position: relative;
     height: 500px;
   }
+  
   
   .hero-content {
     display: flex;
