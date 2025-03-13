@@ -304,13 +304,14 @@
     margin-left: 20px;
   }
   .cooperation .btn {
-    display: inline-block;
+    display: inline-flex;  /* Используем flexbox */
+    align-items: center;   /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
     white-space: nowrap;
     background: #fff;
     color: #52bc4a;
     padding: 10px 25px;
     text-decoration: none;
-    text-align: center;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s ease; /* Добавляем плавность */
     margin-left: 20px;
@@ -321,7 +322,6 @@
     color: #52bc4a;
     transform: scale(1.1); /* Увеличение кнопки на 10% */
 }
-
   
   /* 7. Доставка */
   .delivery {
