@@ -278,7 +278,6 @@
   .cooperation {
     padding: 60px 0;
     text-align: center;
-    background: url('/vehi/images/img/predlogenie.webp') center/cover no-repeat;
   }
   .cooperation h2 {
     font-size: 36px;
@@ -299,10 +298,6 @@
     font-size: 18px;
     border-radius: 5px;
     transition: background 0.3s;
-
-    display: inline-block;
-    text-align: center;
-    margin-left: 0;
   }
   .cooperation .btn:hover {
     background: #45a043;
