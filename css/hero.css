@@ -43,9 +43,16 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
   }
   
+  /* Контейнер для кнопок */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Запрещаем перенос текста и кнопок */
+  }
+  
+  /* Основная кнопка */
   .hero-btn {
-    background-color: #52bc4a;
-    color: white;
     font-size: 18px;
     padding: 15px 30px;
     border: none;
@@ -53,11 +60,29 @@
     cursor: pointer;
     text-align: center;
     transition: background 0.3s;
+    white-space: nowrap; /* Запрещаем перенос текста */
   }
   
-  .hero-btn:hover {
+  /* Кнопка "Оставить заявку" */
+  .primary-btn {
+    background-color: #52bc4a;
+    color: white;
+  }
+  
+  .primary-btn:hover {
     background-color: #ffffff;
     color: #52bc4a;
+  }
+  
+  /* Кнопка "В каталог" */
+  .secondary-btn {
+    background-color: #333;
+    color: white;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #ffffff;
+    color: #333;
   }
   
   /* Мобильная версия */
