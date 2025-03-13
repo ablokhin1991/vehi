@@ -320,7 +320,7 @@
 .cooperation .btn:hover {
     background: #fff;
     color: #52bc4a;
-    transform: scale(1.1); /* Увеличение кнопки на 10% */
+    transform: scale(1.05); /* Увеличение кнопки на 10% */
 }
   
   /* 7. Доставка */
