@@ -309,13 +309,16 @@
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s ease; /* Добавляем плавность */
     margin-left: 20px;
-  }
-  .cooperation .btn:hover {
+}
+
+.cooperation .btn:hover {
     background: #45a043;
     color: #fff;
-  }
+    transform: scale(1.1); /* Увеличение кнопки на 10% */
+}
+
   
   /* 7. Доставка */
   .delivery {
