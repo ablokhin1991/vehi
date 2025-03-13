@@ -280,6 +280,8 @@
     /*text-align: center;*/
   }
   .cooperation-container {
+    display: flex;
+    flex-direction: column;
     padding: 60px 0;
     background: linear-gradient(to right, #52bc4a 50%, rgba(82, 188, 74, 0) 100%), 
                 url('/vehi/images/img/predlogenie.webp') center/cover no-repeat;
@@ -292,6 +294,11 @@
     margin-bottom: 20px;
     color: #fff;
     text-align: left;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .cooperation-content {
+    width: 50%;
     margin-left: 20px;
   }
   .cooperation p {
