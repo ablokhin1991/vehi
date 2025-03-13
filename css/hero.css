@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Убедитесь, что паддинг и границы учитываются */
   }
   
   body {
@@ -29,7 +29,9 @@
         #45a043 66%);
     padding: 100px 0; /* Паддинг теперь применяется */
     position: relative;
-    height: 500px;
+    width: 100%;
+    /* Убираем фиксированную высоту для hero-section */
+    min-height: 500px; /* Используем минимальную высоту */
   }
   
   .hero-content {
@@ -37,8 +39,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* Убираем паддинг, чтобы не перекрывать родительский */
-    padding: 0; 
+    padding: 0; /* Убираем паддинг, чтобы не перекрывать родительский */
   }
   
   /* Левая часть */
