@@ -281,10 +281,11 @@
   }
   .cooperation-container {
     padding: 60px 0;
-    background: linear-gradient(to right, #52bc4a, transparent), 
+    background: linear-gradient(to right, #52bc4a 30%, rgba(82, 188, 74, 0) 100%), 
                 url('/vehi/images/img/predlogenie.webp') center/cover no-repeat;
     border-radius: 5px;
 }
+
 
   .cooperation h2 {
     font-size: 36px;
