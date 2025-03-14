@@ -92,50 +92,11 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-  /* Разделение контейнера на 2 колонки */
+  /* Разделяем на две колонки */
   .top-bar-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 50/50 */
-    gap: 20px; /* Отступ между колонками */
-  }
-
-  /* Первая колонка: адрес */
-  .top-bar-contacts {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /* Центрируем по высоте */
-  }
-
-  /* Размещение только address-link в первой колонке */
-  .top-bar-contacts .top-bar-item:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Выравнивание по левому краю */
-  }
-
-  /* Вторая колонка: Email и Телефон */
-  .top-bar-contacts {
-    display: flex;
-    flex-direction: column; /* Вертикальное расположение */
-    justify-content: center;
-    align-items: flex-start; /* Выравнивание по левому краю */
-  }
-
-  /* Размещение email и телефона */
-  .top-bar-contacts .top-bar-item:nth-child(2),
-  .top-bar-contacts .top-bar-item:nth-child(3) {
-    display: flex;
-    align-items: center; /* Центрируем по высоте */
-    margin-bottom: 10px; /* Отступ между элементами */
-  }
-
-  /* Иконки перед текстом */
-  .top-bar-item img {
-    margin-right: 8px; /* Отступ между иконкой и текстом */
+    grid-template-columns: 1fr 1fr; /* Два столбца */
+    gap: 20px; /* Пространство между колонками */
   }
 }
-
-
-
-
 
