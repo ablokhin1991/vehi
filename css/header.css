@@ -92,45 +92,43 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-  .top-bar-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Два столбца */
-    gap: 20px; /* Пространство между колонками */
-  }
 
-  .top-bar-contacts {
-    grid-column: span 2; /* Контакты занимают обе колонки */
+    .top-bar-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Два столбца */
+      gap: 20px; /* Пространство между колонками */
+    }
+  
+    .top-bar-contacts {
+      grid-column: span 2; /* Контакты занимают обе колонки */
+    }
+  
+    .top-bar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+  
+    .top-bar-item a {
+      text-align: left;
+    }
+  
+    .top-bar-item .address-link {
+      grid-column: 1; /* Помещаем в первую колонку */
+    }
+  
+    .top-bar-item .Email,
+    .top-bar-item .tel {
+      grid-column: 2; /* Помещаем в вторую колонку */
+      display: flex;
+      flex-direction: column; /* Размещение .Email и .tel в колонку */
+    }
+  
+    .top-bar-item .Email {
+      margin-bottom: 10px; /* Отступ между .Email и .tel */
+    }
   }
-
-  .top-bar-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .top-bar-item a {
-    text-align: left;
-  }
-
-  .top-bar-item .address-link {
-    grid-column: 1; /* Помещаем в первую колонку */
-  }
-
-  .top-bar-item .Email {
-    grid-column: 2; /* Помещаем в вторую колонку */
-  }
-
-  .top-bar-item .tel {
-    grid-column: 2; /* Помещаем в вторую колонку */
-  }
-  .top-bar-item .Email {
-    order: 1; /* Ставим .Email первым */
-  }
-
-  .top-bar-item .tel {
-    order: 2; /* Ставим .tel снизу */
-  }
-}
+  
 
 
