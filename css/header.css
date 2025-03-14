@@ -135,7 +135,7 @@
 @media (max-width: 768px) {
   /* 1. Grid 50/50 для header-container */
   .container.header-container {
-      display: grid;
+      /*display: grid;*/
       grid-template-columns: 1fr 1fr;
       align-items: center;
   }
