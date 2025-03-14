@@ -89,7 +89,8 @@
     transform: scale(1.1); /* Увеличение на 10% */
   }
 
-  /* Мобильная версия для top-bar */
+
+/* Мобильная версия для top-bar */
 @media (max-width: 768px) {
   .top-bar-container {
     display: grid;
@@ -100,8 +101,10 @@
   }
 
   .top-bar-contacts {
-    display: block; /* Блоковое отображение для мобильных */
-    gap: 10px;
+    display: grid; /* Используем grid для распределения элементов */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки */
+    gap: 10px; /* Расстояние между колонками */
+    width: 100%;
   }
 
   .top-bar-item {
@@ -116,7 +119,10 @@
     height: 16px;
   }
 
-  .top-bar-container .top-bar-item {
-    text-align: center;
+  /* Убираем старое поведение для топ-бар контейнера */
+  .top-bar-container .top-bar-contacts {
+    flex-direction: column;
+    align-items: center;
   }
 }
+
