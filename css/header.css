@@ -222,19 +222,16 @@
   /* Стили меню */
   .nav {
     position: fixed;
-        top: 80px; /* Подстройте под высоту хедера */
-        left: 0;
-        width: 100%;
-        background: #fff;
-        padding: 20px;
-        transform: translateY(-150%);
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 999;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: top 0.4s ease-in-out;
   }
 
   .nav.active {
-    transform: translateY(0);
+    top: 80px;
   }
 
   /* Оверлей */
