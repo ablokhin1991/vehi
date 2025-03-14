@@ -160,7 +160,6 @@
   
     .right-side {
         width: 100%;
-        order: 2; /* Второй элемент */
     }
   
     .hero-image {
@@ -168,6 +167,7 @@
         height: auto;
         object-fit: cover;
         border-radius: 0; /* Убираем скругления, чтобы картинка шла на всю ширину */
+        order: 2; /* Второй элемент */
     }
     .hero-buttons {
         display: flex;
