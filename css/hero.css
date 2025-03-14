@@ -143,7 +143,7 @@
   
     .hero-title {
         font-size: 28px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 20px;
         order: 1; /* Первый элемент */
     }
