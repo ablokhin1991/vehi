@@ -27,7 +27,7 @@
         #fff 33%, 
         #96d692 33% 66%, 
         #52bc4a 66%);
-    padding: 100px 0; /* Паддинг теперь применяется */
+    padding: 60px 0; /* Паддинг теперь применяется */
     position: relative;
     width: 100%;
     /* Убираем фиксированную высоту для hero-section */
@@ -79,7 +79,7 @@
     color: #52bc4a;
     background-color: #fff;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     text-align: center;
     transition: background 0.3s, transform 0.2s;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
