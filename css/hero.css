@@ -120,13 +120,12 @@
     border-radius: 5px;
   }
   
- /* Мобильная версия */
+
 @media (max-width: 768px) {
     .hero-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*padding: 40px 20px;*/
     }
 
     .hero-content {
@@ -138,7 +137,7 @@
 
     .left-side {
         width: 100%;
-        max-width: none;  /* Убираем ограничение по max-width */
+        max-width: none; 
         text-align: center;
     }
 
@@ -161,14 +160,14 @@
         width: 100%;
         text-align: center;
         padding: 15px;
-        max-width: 100%; /* Чтобы кнопки не сжимались */
+        max-width: 100%;
     }
 
     .hero-btn {
         width: 100%;
         padding: 15px;
         order: 3;
-        max-width: 100%; /* Чтобы кнопка не сжималась */
+        max-width: 100%;
     }
 
     .right-side {
