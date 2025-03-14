@@ -97,6 +97,7 @@
       grid-template-columns: 1fr 1fr; /* 50/50 разделение */
       grid-template-rows: auto auto;  /* Две строки для второй колонки */
       gap: 10px;
+      column-gap: 50px;
   }
 
   .top-bar-contacts {
