@@ -54,6 +54,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     /*text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);*/
+    color: #333333;
   }
   
   .hero-description p {
@@ -64,7 +65,7 @@
   
   .hero-btn {
     display: inline-block; /* Позволяет кнопке расширяться под размер текста */
-    background-color: #52bc4a;
+    background-color: #333333;
     color: white;
     font-size: 18px;
     padding: 15px 30px;
@@ -72,15 +73,14 @@
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    transition: background 0.3s;
     white-space: nowrap; /* Запрещает перенос текста */
     margin-top: 20px;
     min-width: max-content; /* Гарантирует, что кнопка будет не меньше текста */
+    transition: transform 0.3s;
 }
   
 .hero-btn:hover {
-    background-color: #ffffff;
-    color: #52bc4a;
+    transform: translateY(-5px);
 }
 
   /* Правая часть */
