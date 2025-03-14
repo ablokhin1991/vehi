@@ -1,98 +1,86 @@
 // vehi/js/header.js
 
-let menuObserver = null;
-let overlayCreated = false;
+let isMenuInitialized = false;
+let observer = null;
 
 const initBurgerMenu = () => {
+  if (isMenuInitialized) return;
+
   const burgerMenu = document.querySelector('.burger-menu');
   const nav = document.querySelector('.nav');
   
-  // Если элементы не найдены - выходим
   if (!burgerMenu || !nav) {
-    console.log('Элементы меню ещё не загружены');
+    console.log('Burger menu elements not found. Retrying...');
     return;
   }
 
-  // Если наблюдатель уже запущен - отключаем
-  if (menuObserver) {
-    menuObserver.disconnect();
-  }
+  // Создаем оверлей
+  const overlay = document.createElement('div');
+  overlay.className = 'menu-overlay';
+  document.body.appendChild(overlay);
 
-  // Создаем оверлей только один раз
-  if (!overlayCreated) {
-    const overlay = document.createElement('div');
-    overlay.className = 'menu-overlay';
-    document.body.appendChild(overlay);
-    overlayCreated = true;
-  }
-
-  const overlay = document.querySelector('.menu-overlay');
-  const body = document.body;
-
-  // Обработчики событий
-  const toggleMenu = (e) => {
-    e?.stopPropagation();
+  // Функции управления меню
+  const toggleMenu = () => {
     burgerMenu.classList.toggle('active');
     nav.classList.toggle('active');
     overlay.classList.toggle('active');
-    body.classList.toggle('menu-open');
+    document.body.classList.toggle('menu-open');
   };
 
   const closeMenu = () => {
     burgerMenu.classList.remove('active');
     nav.classList.remove('active');
     overlay.classList.remove('active');
-    body.classList.remove('menu-open');
+    document.body.classList.remove('menu-open');
   };
 
-  // Удаляем старые обработчики
-  burgerMenu.replaceWith(burgerMenu.cloneNode(true));
-  overlay.replaceWith(overlay.cloneNode(true));
+  // Обработчики событий
+  burgerMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
 
-  // Назначаем новые обработчики
-  burgerMenu.addEventListener('click', toggleMenu);
   overlay.addEventListener('click', closeMenu);
   
   document.querySelectorAll('.nav a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
 
-  console.log('Меню успешно инициализировано');
+  console.log('Burger menu initialized successfully');
+  isMenuInitialized = true;
 };
 
-// Наблюдатель за изменениями в контейнере хедера
-const startObserving = () => {
+// Наблюдатель для динамически загруженного контента
+const setupObserver = () => {
   const headerContainer = document.getElementById('header');
   
   if (!headerContainer) {
-    console.error('Контейнер хедера не найден');
+    console.error('Header container not found');
     return;
   }
 
-  menuObserver = new MutationObserver((mutations) => {
+  observer = new MutationObserver((mutations) => {
     mutations.forEach(() => {
-      initBurgerMenu();
+      if (!isMenuInitialized) initBurgerMenu();
     });
   });
 
-  menuObserver.observe(headerContainer, {
+  observer.observe(headerContainer, {
     childList: true,
-    subtree: true,
-    attributes: false,
-    characterData: false
+    subtree: true
   });
 };
 
-// Инициализация при первой загрузке
-document.addEventListener('DOMContentLoaded', () => {
-  startObserving();
+// Запуск при полной загрузке страницы
+window.addEventListener('load', () => {
+  setupObserver();
   initBurgerMenu();
+  
+  // Резервная инициализация
+  setTimeout(() => {
+    if (!isMenuInitialized) {
+      console.warn('Fallback menu initialization');
+      initBurgerMenu();
+    }
+  }, 5000);
 });
-
-// Резервная инициализация через 3 секунды
-setTimeout(() => {
-  if (!document.querySelector('.burger-menu')) {
-    console.warn('Резервная инициализация меню');
-    initBurgerMenu();
-  }
-}, 3000);
