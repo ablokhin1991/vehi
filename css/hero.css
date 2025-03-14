@@ -138,6 +138,7 @@
 
     .left-side {
         width: 100%;
+        max-width: none;  /* Убираем ограничение по max-width */
         text-align: center;
     }
 
