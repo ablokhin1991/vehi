@@ -83,7 +83,7 @@
     transition: transform 0.3s;
 }
 
-.hero-tile:hover {
+.hero-tile-button:hover {
     transform: translateY(-5px);
 }
   
