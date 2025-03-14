@@ -63,6 +63,7 @@
   }
   
   .hero-btn {
+    display: inline-block; /* Позволяет кнопке расширяться под размер текста */
     background-color: #52bc4a;
     color: white;
     font-size: 18px;
@@ -72,15 +73,16 @@
     cursor: pointer;
     text-align: center;
     transition: background 0.3s;
-    white-space: nowrap;
+    white-space: nowrap; /* Запрещает перенос текста */
     margin-top: 20px;
-  }
+    min-width: max-content; /* Гарантирует, что кнопка будет не меньше текста */
+}
   
-  .hero-btn:hover {
+.hero-btn:hover {
     background-color: #ffffff;
     color: #52bc4a;
-  }
-  
+}
+
   /* Правая часть */
   .right-side {
     max-width: 50%;
