@@ -37,7 +37,7 @@
   .hero-content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Растягивает оба дочерних элемента на одинаковую высоту */
+    align-items: center;
     width: 100%;
     padding: 0; /* Убираем паддинг, чтобы не перекрывать родительский */
   }
@@ -47,9 +47,6 @@
     max-width: 50%;
     color: white;
     padding: 0 30px 0 0; /* Паддинг только справа */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Выравниваем контент по центру */
   }
   
   .hero-title {
@@ -84,7 +81,6 @@
     border-radius: 5px;
     text-align: left;
     transition: transform 0.3s;
-    z-index: 1000;
 }
 
 .hero-tile:hover {
@@ -114,8 +110,7 @@
   /* Правая часть */
   .right-side {
     max-width: 50%;
-    display: flex;
-    align-items: stretch; /* Растягивает внутренний контент */
+    padding: 20px 0 20px 20px;
   }
   
   .hero-image {
