@@ -96,46 +96,32 @@
   .top-bar-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 50/50 */
-    gap: 20px; /* Можно регулировать отступ между колонками */
+    gap: 20px; /* Отступ между колонками */
   }
 
   /* Первая колонка: только address-link */
-  .top-bar-contacts {
+  .top-bar-contacts .top-bar-item:first-child {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .top-bar-item {
-    display: flex;
-    align-items: center;
-  }
-
-  .address-link {
-    text-align: left; /* Выравнивание по левому краю */
-    display: block; /* Чтобы ссылка занимала всю доступную ширину */
+    align-items: center; /* Центрируем по высоте */
+    justify-content: flex-start; /* Выравнивание по левому краю */
   }
 
   /* Вторая колонка: Email и Телефон в столбик */
-  .top-bar-contacts {
+  .top-bar-contacts .top-bar-item:nth-child(2),
+  .top-bar-contacts .top-bar-item:nth-child(3) {
     display: flex;
     flex-direction: column; /* Вертикальное расположение */
-    justify-content: center;
     align-items: flex-start; /* Выравнивание по левому краю */
+    justify-content: center; /* Центрируем по высоте */
   }
 
-  /* Стили для email и телефона */
-  .top-bar-item {
-    display: flex;
-    align-items: center; /* Центрирование по высоте */
-    margin-bottom: 10px; /* Отступ между элементами */
-  }
-
-  /* Иконки перед текстом */
+  /* Дополнительные стили для иконок */
   .top-bar-item img {
-    margin-right: 8px;
+    margin-right: 8px; /* Отступ между иконкой и текстом */
   }
 }
+
+
 
 
 
