@@ -200,7 +200,7 @@
 @media (max-width: 768px) {
   /* Стили для бургер-иконки */
   .burger-menu {
-    z-index: 1001; /* Выше чем у меню */
+    z-index: 1002; /* Выше меню и оверлея */
   }
 
   /* Анимация бургера в крестик */
@@ -221,17 +221,17 @@
   /* Стили меню */
   .nav {
     position: fixed;
-    top: 70px; /* Высота хедера + отступ */
+    top: 80px; /* Высота хедера + отступ */
     left: 0;
     width: 100%;
-    background: #fff;
-    transform: translateY(-150%);
+    background: red !important;
+    transform: translateY(-100%);
     opacity: 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 999;
+    z-index: 1001; /* Выше оверлея */
     padding: 20px 0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 80px);
     overflow-y: auto;
   }
 
@@ -249,7 +249,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0,0,0,0.4);
-        z-index: 998;
+        z-index: 1000; /* Между бургером и меню */
   }
 
   .menu-overlay.active {
