@@ -1,64 +1,31 @@
-// vehi/js/header.js
-
-// ================== Burger Menu Logic ==================
-let isMenuInitialized = false;
-
-function initBurgerMenu() {
-  // Проверяем существование элементов
+// Обновленный JS
+document.addEventListener('DOMContentLoaded', function() {
   const burgerMenu = document.querySelector('.burger-menu');
   const nav = document.querySelector('.nav');
   const body = document.body;
+  const overlay = document.createElement('div');
+  
+  overlay.className = 'menu-overlay';
+  document.body.appendChild(overlay);
 
-  if (!burgerMenu || !nav || isMenuInitialized) return;
-
-  // Помечаем меню как инициализированное
-  isMenuInitialized = true;
-
-  // ========== Обработчики событий ==========
-  // Клик по бургеру
   burgerMenu.addEventListener('click', function(e) {
     e.stopPropagation();
     this.classList.toggle('active');
     nav.classList.toggle('active');
-    body.classList.toggle('menu-open');
+    overlay.classList.toggle('active');
   });
 
-  // Клик вне меню
-  document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !burgerMenu.contains(e.target)) {
-      burgerMenu.classList.remove('active');
-      nav.classList.remove('active');
-      body.classList.remove('menu-open');
-    }
+  overlay.addEventListener('click', () => {
+    burgerMenu.classList.remove('active');
+    nav.classList.remove('active');
+    overlay.classList.remove('active');
   });
 
-  // Клик по ссылкам меню
   document.querySelectorAll('.nav a').forEach(link => {
     link.addEventListener('click', () => {
       burgerMenu.classList.remove('active');
       nav.classList.remove('active');
-      body.classList.remove('menu-open');
+      overlay.classList.remove('active');
     });
   });
-}
-
-// ================== Mutation Observer ==================
-const observer = new MutationObserver((mutations) => {
-  mutations.forEach(mutation => {
-    if (mutation.addedNodes.length) {
-      initBurgerMenu();
-    }
-  });
 });
-
-// Старт наблюдения за header-контейнером
-const headerContainer = document.getElementById('header');
-if (headerContainer) {
-  observer.observe(headerContainer, {
-    childList: true,
-    subtree: true
-  });
-}
-
-// Первичная инициализация при загрузке
-document.addEventListener('DOMContentLoaded', initBurgerMenu);
