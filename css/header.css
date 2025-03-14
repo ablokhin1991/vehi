@@ -92,50 +92,48 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-  /* Контейнер верхней панели */
+  /* Контейнер для всей верхней панели */
   .top-bar-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Два столбца */
+    grid-template-columns: 1fr 1fr; /* Разделение на 2 равные ячейки */
   }
 
-  /* Первая ячейка - полностью */
+  /* Первая ячейка контейнера */
   .top-bar-contacts {
     display: flex;
-    flex-direction: column; /* Столбец */
-    justify-content: space-between;
+    flex-direction: row; /* Элементы в первой ячейке в строку */
+    align-items: center; /* Центрирование по высоте */
   }
 
-  /* Вторая ячейка делим пополам */
   .top-bar-item {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 10px; /* Промежуток между элементами */
+    align-items: center; /* Выравнивание элементов по высоте */
+    margin-right: 10px; /* Отступ между элементами */
   }
 
-  /* Слот 1 и 2 во второй ячейке */
-  .top-bar-contacts .top-bar-item:nth-child(2),
-  .top-bar-contacts .top-bar-item:nth-child(3) {
+  /* Для ссылок и иконок в первой ячейке */
+  .ico-address-link, .address-link {
+    margin-right: 5px; /* Отступ между иконкой и ссылкой */
+  }
+  .address-link {
+    word-wrap: break-word; /* Разрешаем перенос текста в ссылке */
+  }
+
+  /* Вторая ячейка с двумя слотами */
+  .top-bar-contacts > .top-bar-item:nth-child(2) {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Разделение второй ячейки на 2 слота */
+  }
+
+  /* Элементы в слотах */
+  .top-bar-contacts > .top-bar-item:nth-child(2) > .top-bar-item {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 10px;
+    align-items: center; /* Выравнивание элементов по высоте */
+    margin-bottom: 5px; /* Отступ между слотами */
   }
 
-  /* Выравнивание текста */
-  .address-link,
-  .Email,
-  .Tel {
-    text-align: left;
-    word-wrap: break-word; /* Перенос текста */
-    margin-left: 10px; /* Отступ между иконкой и текстом */
-  }
-
-  /* Иконки */
-  .ico-address-link,
-  .ico-Email,
-  .ico-Tel {
-    width: 20px;
-    height: 20px;
+  /* Элементы в каждом слоте */
+  .ico-Email, .Email, .ico-Tel, .Tel {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
   }
 }
