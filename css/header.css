@@ -89,6 +89,10 @@
     transform: scale(1.1); /* Увеличение на 10% */
   }
 
+  .burger-menu {
+    display: none;
+  }
+
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
