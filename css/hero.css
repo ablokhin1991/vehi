@@ -98,7 +98,7 @@
     cursor: pointer;
     text-align: center;
     white-space: nowrap; /* Запрещает перенос текста */
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     min-width: max-content; /* Гарантирует, что кнопка будет не меньше текста */
     transition: transform 0.3s;
 }
