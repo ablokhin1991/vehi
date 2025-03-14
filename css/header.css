@@ -92,11 +92,19 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-  /* Разделяем на две колонки */
   .top-bar-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Два столбца */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px; /* Пространство между колонками */
+  }
+  .top-bar-item .address-link {
+    grid-column: 1;
+  }
+  .top-bar-item .Email {
+    grid-column: 2;
+  }
+   .top-bar-item .tel {
+    grid-column: 2;
   }
 }
 
