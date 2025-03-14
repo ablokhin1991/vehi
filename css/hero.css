@@ -121,17 +121,12 @@
   }
   
   /* Мобильная версия */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero-section {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px; /* Подогнал отступы */
-    }
-  
-    .left-side {
-      max-width: 100%;
-      text-align: center;
-      margin-bottom: 30px;
+        padding: 40px 20px;
     }
 
     .hero-content {
@@ -140,46 +135,44 @@
         align-items: center;
         width: 100%;
     }
-  
+
+    .left-side {
+        width: 100%;
+        text-align: center;
+    }
+
     .hero-title {
         font-size: 28px;
         text-align: left;
         margin-bottom: 20px;
-        order: 2; /* Первый элемент */
+        order: 1; /* Первый элемент */
     }
-  
-    .hero-description p {
-      font-size: 16px;
-    }
-  
-    .hero-btn {
-        width: 100%;
-        padding: 15px;
-        order: 4; /* Четвертый элемент */
-    }
-  
-    .right-side {
-        width: 100%;
-    }
-  
-    .hero-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0; /* Убираем скругления, чтобы картинка шла на всю ширину */
-        order: 1; /* Второй элемент */
-    }
+
     .hero-buttons {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 10px;
-        order: 3; /* Третий элемент */
+        order: 2; /* Второй элемент */
     }
+
     .hero-tile-button {
         width: 100%;
         text-align: center;
         padding: 15px;
     }
-  }
-  
+
+    .hero-btn {
+        width: 100%;
+        padding: 15px;
+        order: 3; /* Третий элемент */
+    }
+
+    .right-side {
+        display: none; /* Скрываем картинку */
+    }
+
+    .hero-image {
+        display: none; /* Скрываем картинку */
+    }
+}
