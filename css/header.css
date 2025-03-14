@@ -92,48 +92,39 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-  /* Контейнер для всей верхней панели */
   .top-bar-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Разделение на 2 равные ячейки */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
   }
 
-  /* Первая ячейка контейнера */
   .top-bar-contacts {
-    display: flex;
-    flex-direction: row; /* Элементы в первой ячейке в строку */
-    align-items: center; /* Центрирование по высоте */
+      display: contents;
   }
 
   .top-bar-item {
-    display: flex;
-    align-items: center; /* Выравнивание элементов по высоте */
-    margin-right: 10px; /* Отступ между элементами */
+      display: flex;
+      align-items: center;
+      gap: 8px;
   }
 
-  /* Для ссылок и иконок в первой ячейке */
-  .ico-address-link, .address-link {
-    margin-right: 5px; /* Отступ между иконкой и ссылкой */
+  .top-bar-item:first-child {
+      grid-column: 1;
+      grid-row: 1;
+      white-space: normal;
   }
+
+  .top-bar-item:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+  }
+
+  .top-bar-item:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+  }
+
   .address-link {
-    word-wrap: break-word; /* Разрешаем перенос текста в ссылке */
-  }
-
-  /* Вторая ячейка с двумя слотами */
-  .top-bar-contacts > .top-bar-item:nth-child(2) {
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* Разделение второй ячейки на 2 слота */
-  }
-
-  /* Элементы в слотах */
-  .top-bar-contacts > .top-bar-item:nth-child(2) > .top-bar-item {
-    display: flex;
-    align-items: center; /* Выравнивание элементов по высоте */
-    margin-bottom: 5px; /* Отступ между слотами */
-  }
-
-  /* Элементы в каждом слоте */
-  .ico-Email, .Email, .ico-Tel, .Tel {
-    margin-right: 5px; /* Отступ между иконкой и текстом */
+      white-space: normal;
   }
 }
