@@ -146,6 +146,10 @@
       align-items: center;
       gap: 12px;
   }
+  .logo img {
+    display: block;
+    height: 30px;
+  }
 
   /* 4. Стили для бургер-меню */
   .burger-menu {
