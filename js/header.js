@@ -1,5 +1,4 @@
-document.getElementById('burgerMenu').addEventListener('click', function() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-  });
-  
+document.querySelector('.burger-menu').addEventListener('click', function() {
+  // Ваша логика открытия/закрытия меню
+  console.log('Бургер меню активировано');
+});

@@ -132,3 +132,57 @@
       white-space: normal;
   }
 }
+@media (max-width: 768px) {
+  /* 1. Grid 50/50 для header-container */
+  .container.header-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+  }
+
+  /* 2. Стили для первой ячейки с логотипом */
+  .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  }
+
+  /* 4. Стили для бургер-меню */
+  .burger-menu {
+      display: flex;
+      justify-content: flex-end;
+      height: 24px;
+      cursor: pointer;
+  }
+
+  .burger-menu span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background: #52bc4a;
+      position: relative;
+  }
+
+  .burger-menu span::before,
+  .burger-menu span::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: #52bc4a;
+      left: 0;
+  }
+
+  .burger-menu span::before {
+      top: -8px;
+  }
+
+  .burger-menu span::after {
+      bottom: -8px;
+  }
+
+  /* Скрываем обычное меню */
+  .nav {
+      display: none;
+  }
+}
