@@ -94,7 +94,7 @@
 @media (max-width: 768px) {
   .top-bar-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Разделяем на 3 колонки */
+    grid-template-columns: 1fr 1fr; /* Разделяем на 2 колонки */
     width: 90%;
     margin: 0 auto;
     padding: 5px 0;
@@ -102,7 +102,7 @@
 
   .top-bar-contacts {
     display: grid; /* Используем grid для распределения элементов */
-    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки */
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
     gap: 10px; /* Расстояние между колонками */
     width: 100%;
   }
