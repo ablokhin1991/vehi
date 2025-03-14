@@ -120,13 +120,13 @@
     border-radius: 5px;
   }
   
-  /* Мобильная версия */
+ /* Мобильная версия */
 @media (max-width: 768px) {
     .hero-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*padding: 40px 20px;*/
+        padding: 40px 20px;
     }
 
     .hero-content {
@@ -145,7 +145,7 @@
         font-size: 28px;
         text-align: left;
         margin-bottom: 20px;
-        order: 1; /* Первый элемент */
+        order: 1;
     }
 
     .hero-buttons {
@@ -153,26 +153,28 @@
         flex-direction: column;
         width: 100%;
         gap: 10px;
-        order: 2; /* Второй элемент */
+        order: 2;
     }
 
     .hero-tile-button {
         width: 100%;
         text-align: center;
         padding: 15px;
+        max-width: 100%; /* Чтобы кнопки не сжимались */
     }
 
     .hero-btn {
         width: 100%;
         padding: 15px;
-        order: 3; /* Третий элемент */
+        order: 3;
+        max-width: 100%; /* Чтобы кнопка не сжималась */
     }
 
     .right-side {
-        display: none; /* Скрываем картинку */
+        display: none;
     }
 
     .hero-image {
-        display: none; /* Скрываем картинку */
+        display: none;
     }
 }
