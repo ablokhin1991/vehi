@@ -92,43 +92,50 @@
 
 /* Мобильная версия для top-bar */
 @media (max-width: 768px) {
-
-    .top-bar-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Два столбца */
-      gap: 20px; /* Пространство между колонками */
-    }
-  
-    .top-bar-contacts {
-      grid-column: span 2; /* Контакты занимают обе колонки */
-    }
-  
-    .top-bar-item {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-  
-    .top-bar-item a {
-      text-align: left;
-    }
-  
-    .top-bar-item .address-link {
-      grid-column: 1; /* Помещаем в первую колонку */
-    }
-  
-    .top-bar-item .Email,
-    .top-bar-item .tel {
-      grid-column: 2; /* Помещаем в вторую колонку */
-      display: flex;
-      flex-direction: column; /* Размещение .Email и .tel в колонку */
-    }
-  
-    .top-bar-item .Email {
-      margin-bottom: 10px; /* Отступ между .Email и .tel */
-    }
+  /* Контейнер верхней панели */
+  .top-bar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два столбца */
   }
-  
 
+  /* Первая ячейка - полностью */
+  .top-bar-contacts {
+    display: flex;
+    flex-direction: column; /* Столбец */
+    justify-content: space-between;
+  }
 
+  /* Вторая ячейка делим пополам */
+  .top-bar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px; /* Промежуток между элементами */
+  }
+
+  /* Слот 1 и 2 во второй ячейке */
+  .top-bar-contacts .top-bar-item:nth-child(2),
+  .top-bar-contacts .top-bar-item:nth-child(3) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* Выравнивание текста */
+  .address-link,
+  .Email,
+  .Tel {
+    text-align: left;
+    word-wrap: break-word; /* Перенос текста */
+    margin-left: 10px; /* Отступ между иконкой и текстом */
+  }
+
+  /* Иконки */
+  .ico-address-link,
+  .ico-Email,
+  .ico-Tel {
+    width: 20px;
+    height: 20px;
+  }
+}
