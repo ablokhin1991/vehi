@@ -124,6 +124,13 @@
   .top-bar-item .tel {
     grid-column: 2; /* Помещаем в вторую колонку */
   }
+  .top-bar-item .Email {
+    order: 1; /* Ставим .Email первым */
+  }
+
+  .top-bar-item .tel {
+    order: 2; /* Ставим .tel снизу */
+  }
 }
 
 
