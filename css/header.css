@@ -88,3 +88,35 @@
     color: #52bc4a;
     transform: scale(1.1); /* Увеличение на 10% */
   }
+
+  /* Мобильная версия для top-bar */
+@media (max-width: 768px) {
+  .top-bar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Разделяем на 3 колонки */
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+  .top-bar-contacts {
+    display: block; /* Блоковое отображение для мобильных */
+    gap: 10px;
+  }
+
+  .top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center; /* Центрируем содержимое */
+  }
+
+  .top-bar-item img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .top-bar-container .top-bar-item {
+    text-align: center;
+  }
+}
