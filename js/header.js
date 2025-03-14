@@ -6,20 +6,21 @@ let retryCount = 0;
 const MAX_RETRIES = 5;
 
 const initBurgerMenu = () => {
-    if (isMenuInitialized) return;
+  const burgerMenu = document.querySelector('.burger-menu');
+  const nav = document.querySelector('.nav');
+  
+  // Проверка элементов
+  if (!burgerMenu || !nav) {
+    console.error('Элементы меню не найдены');
+    return;
+  }
 
-    const burgerMenu = document.querySelector('.burger-menu');
-    const nav = document.querySelector('.nav');
-    
-    if (!burgerMenu || !nav) {
-        if (retryCount < MAX_RETRIES) {
-            retryCount++;
-            setTimeout(initBurgerMenu, 300);
-            return;
-        }
-        console.error('Элементы меню не найдены');
-        return;
-    }
+  // Дебаг-проверка
+  console.log('Найдены элементы:', {
+    burgerMenu,
+    nav,
+    navParent: nav.parentElement
+  });
 
     // Создание оверлея
     let overlay = document.querySelector('.menu-overlay');
