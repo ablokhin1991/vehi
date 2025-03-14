@@ -99,7 +99,7 @@
     gap: 20px; /* Можно регулировать отступ между колонками */
   }
 
-  /* Первая колонка: адрес */
+  /* Первая колонка: только address-link */
   .top-bar-contacts {
     display: flex;
     justify-content: flex-start;
@@ -116,7 +116,7 @@
     display: block; /* Чтобы ссылка занимала всю доступную ширину */
   }
 
-  /* Вторая колонка: Email и Телефон */
+  /* Вторая колонка: Email и Телефон в столбик */
   .top-bar-contacts {
     display: flex;
     flex-direction: column; /* Вертикальное расположение */
@@ -124,14 +124,18 @@
     align-items: flex-start; /* Выравнивание по левому краю */
   }
 
+  /* Стили для email и телефона */
   .top-bar-item {
+    display: flex;
+    align-items: center; /* Центрирование по высоте */
     margin-bottom: 10px; /* Отступ между элементами */
   }
 
-  /* Чтобы иконки и текст выравнивались по центру по высоте */
+  /* Иконки перед текстом */
   .top-bar-item img {
     margin-right: 8px;
   }
 }
+
 
 
