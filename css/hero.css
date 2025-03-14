@@ -72,15 +72,16 @@
 .hero-tile-button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left; 
     text-decoration: none;
     font-size: 16px;
     color: #333333;
     background-color: #fff;
     padding: 15px 20px;
     border-radius: 5px;
-    text-align: left;
+    text-align: center; /* Выравнивание текста */
     transition: transform 0.3s;
+    width: 300px; /* Фиксированная ширина */
 }
 
 .hero-tile:hover {
