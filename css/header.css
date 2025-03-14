@@ -124,21 +124,6 @@
   .top-bar-item .tel {
     grid-column: 2; /* Помещаем в вторую колонку */
   }
-
-  /* Размещаем элементы .Email и .tel в столбик */
-  .top-bar-contacts {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .top-bar-item .Email {
-    order: 1; /* Ставим .Email первым */
-  }
-
-  .top-bar-item .tel {
-    order: 2; /* Ставим .tel снизу */
-  }
 }
-
 
 
