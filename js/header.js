@@ -4,6 +4,7 @@ let isMenuInitialized = false;
 let observer = null;
 let retryCount = 0;
 const MAX_RETRIES = 5;
+
 const toggleMenu = () => {
   console.log('Состояние меню ДО:', nav.classList.contains('active'));
   burgerMenu.classList.toggle('active');
@@ -11,6 +12,7 @@ const toggleMenu = () => {
   overlay.classList.toggle('active');
   console.log('Состояние меню ПОСЛЕ:', nav.classList.contains('active'));
 };
+
 const initBurgerMenu = () => {
   const burgerMenu = document.querySelector('.burger-menu');
   const nav = document.querySelector('.nav');
