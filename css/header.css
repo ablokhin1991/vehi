@@ -155,6 +155,7 @@
   .burger-menu {
       display: flex;
       justify-content: flex-end;
+      align-items: center; /* Центрирует по высоте */
       height: 24px;
       cursor: pointer;
   }
