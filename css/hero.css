@@ -68,6 +68,27 @@
     gap: 15px;
     margin: 20px 0;
 }
+
+.hero-tile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #52bc4a;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-tile:hover {
+    background-color: #0e7a26;
+    transform: translateY(-2px);
+}
   
   .hero-btn {
     display: inline-block; /* Позволяет кнопке расширяться под размер текста */
