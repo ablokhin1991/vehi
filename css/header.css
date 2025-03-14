@@ -1,90 +1,136 @@
- /* 1. Шапка */
- .header {
-    background: #fff;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid #eee;
-  }
-  /* Верхний информационный блок */
+/* Основные стили для шапки */
+.header {
+  background: #fff;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Верхний информационный блок */
 .top-bar {
-    background: #f5f5f5;
-    padding: 5px 0;
-    font-size: 12px;
-    color: #888;
+  background: #f5f5f5;
+  padding: 5px 0;
+  font-size: 12px;
+  color: #888;
 }
 
 .top-bar-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .top-bar-contacts {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .top-bar-item a {
-    text-decoration: none;
-    color: #959595;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #959595;
+  transition: color 0.3s;
 }
 
 .top-bar-item a:hover {
-    color: #52bc4a;
+  color: #52bc4a;
 }
 
 .top-bar-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .top-bar-item img {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
+/* Основная шапка с логотипом и меню */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 35px 0 15px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.header-text {
+  font-size: 12px;
+  color: #888;
+  margin-left: 15px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 600;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #52bc4a;
+  transform: scale(1.1);
+}
+
+/* Бургер меню */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+  /* Настроим бургер меню */
+  .nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
   .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px 0 15px 0;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
+  .top-bar-container {
+    grid-template-columns: 1fr;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
+  .top-bar-contacts {
+    flex-direction: column;
+    align-items: flex-start;
   }
+}
 
-  .logo img {
-    display: block;
-    height: 40px;
-  }
-
-  .header-text {
-    font-size: 12px;
-    color: #888;
-    margin-left: 15px;
-   }
-
-  .nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  .nav ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #4d4d4d;
-    font-weight: 600;
-    transition: transform 0.2s ease, color 0.3s ease; /* Плавный переход */
-  }
-  .nav ul li a:hover {
-    color: #52bc4a;
-    transform: scale(1.1); /* Увеличение на 10% */
-  }
+/* Когда бургер меню открыто */
+.nav.active {
+  display: block;
+}
