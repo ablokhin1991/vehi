@@ -131,7 +131,11 @@
     padding: 20px;
     border: 2px solid #458740;
     background-color: #eaeaea;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%);
+    padding: 20px;
+    text-align: center;
   }
+  
   
   /* Блок "О нас" */
   .about {
