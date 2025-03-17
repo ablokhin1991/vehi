@@ -138,10 +138,6 @@
       5mm 0%, calc(100% - 5mm) 0%, 100% 5mm, 100% calc(100% - 5mm),
       calc(100% - 5mm) 100%, 5mm 100%, 0% calc(100% - 5mm), 0% 5mm
     );
-  
-    /* Вместо border используем outline */
-    outline: 2px solid #458740;
-    outline-offset: -2px;
   }
   
   
