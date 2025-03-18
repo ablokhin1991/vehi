@@ -7,62 +7,87 @@
     <link rel="stylesheet" href="style-ussr.css">
 </head>
 <body>
-    <!-- Сайдбар -->
-    <aside class="sidebar">
-        <nav class="products-menu">
-            <h3>Продукция</h3>
-            <ul>
-                <li><a href="#">Продукт 1</a></li>
-                <li><a href="#">Продукт 2</a></li>
-                <li><a href="#">Продукт 3</a></li>
-                <li><a href="#">Продукт 4</a></li>
-            </ul>
-        </nav>
-    </aside>
-
     <!-- Шапка -->
     <header class="main-header">
         <div class="header-container">
             <img src="/vehi/images/logo/Vehi_green.svg" alt="Vehi" class="logo">
             <nav class="main-nav">
-                <a href="#">О нас</a>
-                <a href="#">Доставка и самовывоз</a>
-                <a href="#">Оплата</a>
+                <a href="#">Политика</a>
                 <a href="#">Контакты</a>
+                <a href="#">О нас</a>
             </nav>
         </div>
     </header>
 
     <!-- Основной контент -->
-    <main class="container">
-        <!-- Герой-блок -->
-        <section class="hero-section">
-            <div class="hero-content">
-                <h1>Изготовление продукции из хвои мелким и крупным оптом</h1>
-                <p>Мы производим дверную, клееную, строганую и столярную продукцию, соответствующую вашим требованиям и спецификациям.</p>
-            </div>
-            <img src="/vehi/images/img/oblogka.webp" alt="Продукция" class="hero-image">
-        </section>
+    <main class="main-container">
+        <!-- Основная секция -->
+        <div class="content-section">
+            <!-- Обложка -->
+            <section class="cover-section grid-50-50">
+                <div class="cover-content">
+                    <h1>Изготовление продукции из хвои мелким и крупным оптом</h1>
+                    <p>Мы производим дверную, клееную, строганую и столярную продукцию, соответствующую вашим требованиям и спецификациям.</p>
+                </div>
+                <img src="/vehi/images/img/oblogka.webp" alt="Продукция" class="cover-image">
+            </section>
 
-        <!-- Блок "О нас" -->
-        <section class="about-section">
-            <h2>О нашем производстве</h2>
-            <p>Текст описания компании и производственных мощностей...</p>
-        </section>
+            <!-- Преимущества -->
+            <section class="advantages-section">
+                <h2>Наши преимущества</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <h3>Качество материалов</h3>
+                        <p>Используем только отборную северную хвою</p>
+                    </div>
+                    <!-- Добавьте остальные 3 карточки аналогично -->
+                </div>
+            </section>
 
-        <!-- Блок "Преимущества" -->
-        <section class="advantages-section">
-            <h2>Наши преимущества</h2>
-            <div class="advantages-grid">
-                <!-- Здесь будут элементы преимуществ -->
-            </div>
-        </section>
+            <!-- О нас -->
+            <section class="about-section grid-50-50">
+                <img src="/vehi/images/img/production.webp" alt="Производство" class="about-image">
+                <div class="about-content">
+                    <h2>О нашем производстве</h2>
+                    <p>Полный цикл обработки древесины с 1998 года...</p>
+                </div>
+            </section>
+
+            <!-- Этапы -->
+            <section class="steps-section">
+                <h2>Этапы взаимодействия</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <h3>01. Заявка</h3>
+                        <p>Оставьте запрос любым удобным способом</p>
+                    </div>
+                    <!-- Добавьте остальные 3 этапа аналогично -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Сайдбар -->
+        <aside class="main-sidebar">
+            <nav class="products-menu">
+                <h3>Продукция</h3>
+                <ul>
+                    <li><a href="#">Дверные блоки</a></li>
+                    <li><a href="#">Клееные изделия</a></li>
+                    <li><a href="#">Столярные изделия</a></li>
+                    <li><a href="#">Спецификации</a></li>
+                </ul>
+            </nav>
+        </aside>
     </main>
 
     <!-- Подвал -->
     <footer class="main-footer">
         <div class="footer-container">
             <p>© 2023 VEHI. Все права защищены</p>
+            <div class="footer-contacts">
+                <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                <a href="mailto:info@vehi.ru">info@vehi.ru</a>
+            </div>
         </div>
     </footer>
 </body>
