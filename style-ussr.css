@@ -198,7 +198,7 @@ h2 {
   }
 
   .main-sidebar {
-      order: 0;
+      order: -1;
       margin-bottom: 30px;
   }
 
