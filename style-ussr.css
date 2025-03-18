@@ -143,6 +143,49 @@ h2 {
   color: #3498db;
   padding-left: 10px;
 }
+/* Сайдбар-инфо */
+.sidebar-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.sidebar-info img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.sidebar-info h4 {
+  color: #2c3e50;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sidebar-info .more-btn {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.sidebar-info .more-btn:hover {
+  background: #2980b9;
+}
+
+/* Скрытие на мобильных */
+@media (max-width: 768px) {
+  .sidebar-info {
+      display: none;
+  }
+}
 /* О нас */
 .about-section.grid-50-50 {
   align-items: start; /* Выравнивание по верхнему краю */
