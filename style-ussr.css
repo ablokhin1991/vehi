@@ -7,24 +7,35 @@ body {
 
 header {
   background-color: #333;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .top-menu li {
-  display: inline;
   margin: 0 15px;
 }
 
 .top-menu a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-menu a:hover {
+  color: green;
+}
+
+.logo img {
+  height: 50px;
 }
 
 .sidebar {
@@ -50,26 +61,43 @@ header {
 .sidebar a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: green;
 }
 
 main {
   margin-left: 220px;
   padding: 20px;
+  width: 90%;
 }
 
 .content-container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-text {
+  width: 50%;
 }
 
 .content-image {
+  width: 50%;
+  text-align: right;
+}
+
+.hero-image {
   max-width: 100%;
-  display: block;
-  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 footer {
