@@ -58,6 +58,7 @@
   /* Обложка с фото и кнопкой */
   .cover {
     width: 80%;
+    margin: 0 auto;
     position: relative;
     background: url('images/cover.jpg') no-repeat center center;
     background-size: cover;
