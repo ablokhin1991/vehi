@@ -48,6 +48,7 @@ body {
   margin-left: 30px;
   font-weight: 500;
   transition: color 0.3s;
+  font-size: 13px;
 }
 
 .main-nav a:hover {
