@@ -163,7 +163,6 @@ h2 {
 /* Сайдбар-инфо */
 .sidebar-info {
   background: #f8f9fa;
-  /*padding: 20px;*/
   border-radius: 6px;
   margin-top: 30px;
 }
@@ -177,9 +176,13 @@ h2 {
 }
 
 .sidebar-info h4 {
-  color: #2c3e50;
+  color: #666;
   font-size: 1.2em;
   margin-bottom: 10px;
+}
+.sidebar-info p {
+  color: #666;
+  font-size: 13px;
 }
 
 .sidebar-info .more-btn {
