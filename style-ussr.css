@@ -78,7 +78,6 @@ body {
 
 /* Герой-блок */
 .hero-section {
-  width: 70%;
   background: #eee;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,7 +99,6 @@ body {
 
 /* Блок О нас */
 .about-section {
-  width: 70%;
   background: #eee;
   padding: 30px;
   margin-top: 20px;
