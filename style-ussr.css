@@ -143,6 +143,21 @@ h2 {
   color: #3498db;
   padding-left: 10px;
 }
+/* Добавляем разделитель к products-menu */
+.products-menu {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #3498db;
+}
+
+/* Для мобильной версии (если нужно убрать разделитель) */
+@media (max-width: 768px) {
+  .products-menu {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 20px;
+  }
+}
 /* Сайдбар-инфо */
 .sidebar-info {
   background: #f8f9fa;
