@@ -47,7 +47,7 @@ body {
   width: 70%;
   margin: 30px auto;
   display: grid;
-  grid-template-columns: 70% 28%;
+  grid-template-columns: 28% 70%;
   gap: 2%;
   background: white;
   padding: 30px;
@@ -107,9 +107,11 @@ h2 {
 
 /* Сайдбар */
 .main-sidebar {
+  order: -1; /* Перемещаем сайдбар в начало сетки */
   background: #f8f9fa;
   padding: 20px;
   border-radius: 6px;
+  align-self: start; /* Фиксируем высоту по содержимому */
 }
 
 .products-menu ul {
@@ -128,6 +130,18 @@ h2 {
 .products-menu li a:hover {
   color: #3498db;
   padding-left: 10px;
+}
+/* О нас */
+.about-section.grid-50-50 {
+  align-items: start; /* Выравнивание по верхнему краю */
+  gap: 40px;
+}
+.about-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* Этапы */
@@ -184,7 +198,7 @@ h2 {
   }
 
   .main-sidebar {
-      order: -1;
+      order: 0;
       margin-bottom: 30px;
   }
 
@@ -192,6 +206,12 @@ h2 {
   .advantages-grid,
   .steps-grid {
       grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .about-image {
+    height: 300px;
+    order: -1; /* Изображение сверху на мобилах */
   }
 
   .cover-image {
@@ -219,5 +239,8 @@ h2 {
   
   h2 {
       font-size: 1.8em;
+  }
+  .about-image {
+    height: 250px;
   }
 }
