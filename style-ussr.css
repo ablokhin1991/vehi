@@ -146,7 +146,7 @@ h2 {
 /* Сайдбар-инфо */
 .sidebar-info {
   background: #f8f9fa;
-  padding: 20px;
+  /*padding: 20px;*/
   border-radius: 6px;
   margin-top: 30px;
 }
