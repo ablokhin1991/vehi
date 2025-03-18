@@ -138,6 +138,7 @@ h2 {
   text-decoration: none;
   transition: 0.3s;
   border-bottom: 1px solid #eee;
+  font-size: 13px;
 }
 
 .products-menu li a:hover {
