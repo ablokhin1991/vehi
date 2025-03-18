@@ -211,7 +211,7 @@ h2 {
 
   .main-sidebar {
       order: -1;
-      margin-bottom: 30px;
+      /*margin-bottom: 30px;*/
   }
 
   .grid-50-50,
