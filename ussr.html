@@ -3,41 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>VEHI - Продукция из хвои</title>
     <link rel="stylesheet" href="style-ussr.css">
 </head>
 <body>
-
-    <header>
-        <nav class="top-menu">
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <nav class="products-menu">
+            <h3>Продукция</h3>
             <ul>
-                <li><a href="#">Политика</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">О нас</a></li>
+                <li><a href="#">Продукт 1</a></li>
+                <li><a href="#">Продукт 2</a></li>
+                <li><a href="#">Продукт 3</a></li>
+                <li><a href="#">Продукт 4</a></li>
             </ul>
         </nav>
-    </header>
-
-    <aside class="sidebar">
-        <h3>Меню продуктов</h3>
-        <ul>
-            <li><a href="#">Продукт 1</a></li>
-            <li><a href="#">Продукт 2</a></li>
-            <li><a href="#">Продукт 3</a></li>
-            <li><a href="#">Продукт 4</a></li>
-        </ul>
     </aside>
 
-    <main>
-        <section class="content-container">
-            <img src="placeholder.jpg" alt="Изображение" class="content-image">
-            <p>Пример текста внутри контейнера.</p>
+    <!-- Шапка -->
+    <header class="main-header">
+        <div class="header-container">
+            <img src="/vehi/images/logo/Vehi_green.svg" alt="Vehi" class="logo">
+            <nav class="main-nav">
+                <a href="#">Политика</a>
+                <a href="#">Контакты</a>
+                <a href="#">О нас</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Герой-блок -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Изготовление продукции из хвои мелким и крупным оптом</h1>
+                <p>Мы производим дверную, клееную, строганую и столярную продукцию, соответствующую вашим требованиям и спецификациям.</p>
+            </div>
+            <img src="/vehi/images/img/oblogka.webp" alt="Продукция" class="hero-image">
+        </section>
+
+        <!-- Блок "О нас" -->
+        <section class="about-section">
+            <h2>О нашем производстве</h2>
+            <p>Текст описания компании и производственных мощностей...</p>
+        </section>
+
+        <!-- Блок "Преимущества" -->
+        <section class="advantages-section">
+            <h2>Наши преимущества</h2>
+            <div class="advantages-grid">
+                <!-- Здесь будут элементы преимуществ -->
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Все права защищены</p>
+    <!-- Подвал -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>© 2023 VEHI. Все права защищены</p>
+        </div>
     </footer>
-
 </body>
 </html>

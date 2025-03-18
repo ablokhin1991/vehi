@@ -1,83 +1,155 @@
+/* Базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #808080; /* Серый фон */
-  font-family: Arial, sans-serif;
-}
-
-header {
   background-color: #333;
-  padding: 10px 0;
-  text-align: center;
+  color: #333;
+  line-height: 1.6;
 }
 
-.top-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.top-menu li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.top-menu a {
-  color: white;
-  text-decoration: none;
-}
-
-.sidebar {
-  width: 200px;
-  background-color: #444;
-  color: white;
-  padding: 15px;
-  position: fixed;
-  left: 0;
-  top: 50px;
-  height: 100%;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 10px;
-}
-
-.sidebar a {
-  color: white;
-  text-decoration: none;
-}
-
-main {
-  margin-left: 220px;
-  padding: 20px;
-}
-
-.content-container {
+.container {
   width: 70%;
   margin: 0 auto;
-  background-color: white;
+  background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
 }
 
-.content-image {
-  max-width: 100%;
-  display: block;
-  margin-bottom: 15px;
-}
-
-footer {
-  background-color: #333;
+/* Сайдбар */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 200px;
+  background: #2c3e50;
+  padding: 20px;
   color: white;
-  text-align: center;
-  padding: 10px;
+}
+
+.products-menu ul {
+  list-style: none;
+}
+
+.products-menu li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+  transition: 0.3s;
+}
+
+.products-menu li a:hover {
+  color: #3498db;
+}
+
+/* Шапка */
+.main-header {
+  background: #2c3e50;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
-  bottom: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+/* Герой-блок */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
+  padding: 30px 0;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      margin-left: 0;
+      padding: 10px;
+  }
+
+  .sidebar {
+      position: static;
+      width: 100%;
+      top: 0;
+      margin-top: 80px;
+  }
+
+  .hero-section {
+      grid-template-columns: 1fr;
+      margin-top: 140px;
+  }
+
+  .header-container {
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  .main-nav {
+      display: none; /* Можно заменить на гамбургер-меню */
+  }
+}
+
+/* Подвал */
+.main-footer {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Дополнительные стили для секций */
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 2em;
 }
