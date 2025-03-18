@@ -30,6 +30,18 @@ body {
   height: 40px;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 20px;
+  }
+}
+
 .main-nav a {
   color: #ecf0f1;
   text-decoration: none;
