@@ -183,11 +183,11 @@ background: #d0edce;
   padding-left: 10px;
 }
 /* Добавляем разделитель к products-menu */
-.products-menu {
+/*.products-menu {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 2px solid #3498db;
-}
+}*/
 
 /* Для мобильной версии (если нужно убрать разделитель) */
 @media (max-width: 768px) {
