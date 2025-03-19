@@ -99,6 +99,9 @@ h2 {
   margin-bottom: 20px;
   color: #2c3e50;
 }
+.cover-content p {
+  font-size: 14px;
+}
 
 .cover-image {
   width: 100%;
