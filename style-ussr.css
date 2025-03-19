@@ -119,17 +119,19 @@ h2 {
 
 .cover-content .more-btn {
   display: inline-block;
-  background: #52bc4a;
+  background: #2c3e50;
   color: white;
   padding: 10px 20px;
   /*border-radius: 4px;*/
   text-decoration: none;
   margin-top: 15px;
   transition: background 0.3s;
+  transition: color 0.3s;
 }
 
 .cover-content .more-btn:hover {
-  background: #89d183;
+  background: #fff;
+  color: #2c3e50;
 }
 
 .cover-image {
