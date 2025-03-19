@@ -83,9 +83,6 @@ h2 {
 
 /* Сетки */
 .grid-50-50 {
-  background: #d0edce;
-    padding: 20px;
-    border-radius: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -93,6 +90,12 @@ h2 {
 }
 
 /* Обложка */
+
+.cover-section grid-50-50 {
+  background: #d0edce;
+  padding: 20px;
+  border-radius: 6px;
+}
 .cover-content h1 {
   font-size: 32px;
   line-height: 1.2;
