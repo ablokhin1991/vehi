@@ -127,6 +127,12 @@ h2 {
 }
 
 /* Преимущества */
+.advantages-section {
+background: #d0edce;
+    padding: 20px;
+    border-radius: 6px;
+}
+
 .advantages-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
