@@ -98,7 +98,7 @@ h2 {
 
 /* Обложка */
 
-.cover-section grid-50-50 {
+.cover-section {
   background: #d0edce;
   padding: 20px;
   border-radius: 6px;
