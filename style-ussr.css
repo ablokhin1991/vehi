@@ -72,7 +72,7 @@ h2 {
   gap: 2%;
   background: white;
   padding: 30px;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
@@ -101,7 +101,7 @@ h2 {
 .cover-section {
   background: #d0edce;
   padding: 20px;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
 }
 .cover-content h1 {
   line-height: 1.2;
@@ -118,7 +118,7 @@ h2 {
   background: #52bc4a;
   color: white;
   padding: 10px 20px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   text-decoration: none;
   margin-top: 15px;
   transition: background 0.3s;
@@ -132,14 +132,14 @@ h2 {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
 }
 
 /* Преимущества */
 .advantages-section {
 background: #d0edce;
     padding: 20px;
-    border-radius: 6px;
+    /*border-radius: 6px;*/
 }
 
 .advantages-grid {
@@ -151,7 +151,7 @@ background: #d0edce;
 .advantage-card {
   padding: 25px;
   background: #f8f9fa;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   border-left: 4px solid #3498db;
 }
 
@@ -160,7 +160,7 @@ background: #d0edce;
   order: -1; /* Перемещаем сайдбар в начало сетки */
   background: #f8f9fa;
   padding: 20px;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   align-self: start; /* Фиксируем высоту по содержимому */
 }
 
@@ -200,7 +200,7 @@ background: #d0edce;
 /* Сайдбар-инфо */
 .sidebar-info {
   background: #f8f9fa;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   margin-top: 30px;
 }
 
@@ -208,7 +208,7 @@ background: #d0edce;
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   margin-bottom: 15px;
 }
 
@@ -227,7 +227,7 @@ background: #d0edce;
   background: #3498db;
   color: white;
   padding: 10px 20px;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   text-decoration: none;
   margin-top: 15px;
   transition: background 0.3s;
@@ -252,7 +252,7 @@ background: #d0edce;
   width: 100%;
   height: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -267,7 +267,7 @@ background: #d0edce;
   text-align: center;
   padding: 20px;
   background: #f8f9fa;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
 }
 
 /* Подвал */
