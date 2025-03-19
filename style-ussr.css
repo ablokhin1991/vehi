@@ -93,7 +93,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* Обложка */
@@ -107,17 +107,24 @@ h2 {
   padding: 20px;
   /*border-radius: 6px;*/
 }
+.cover-content {
+  display: flex; /* Включаем flex-контейнер */
+  flex-direction: column; /* Вертикальное расположение элементов */
+  height: 100%; /* Занимаем всю высоту ячейки grid */
+}
 .cover-content h1 {
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0; /* Сброс верхнего отступа */
   color: #2c3e50;
 }
 .cover-content p {
   font-size: 14px;
   font-weight: light;
+  margin: auto 0; /* Автоматические отступы для вертикального центрирования */
 }
 
 .cover-content .more-btn {
+  margin-top: auto; /* Прижимаем кнопку к низу контейнера */
   display: inline-block;
   background: #e7e7e7;
   color: #2c3e50;
@@ -139,7 +146,7 @@ h2 {
 
 .cover-image {
   width: 100%;
-  height: 400px;
+  height: 100%; /* Занимаем всю высоту ячейки grid */
   object-fit: cover;
   /*border-radius: 6px;*/
 }
