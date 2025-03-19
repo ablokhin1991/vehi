@@ -83,6 +83,9 @@ h2 {
 
 /* Сетки */
 .grid-50-50 {
+  background: #bc7b4a;
+    padding: 20px;
+    border-radius: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
