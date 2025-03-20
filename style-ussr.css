@@ -37,7 +37,7 @@ p {
 }
 
 .header-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -75,7 +75,7 @@ p {
 
 /* Основной контейнер */
 .main-container {
-  width: 70%;
+  width: 80%;
   margin: 30px auto;
   display: grid;
   grid-template-columns: 28% 70%;
@@ -298,7 +298,7 @@ background: #F7F7F7;
 }
 
 .footer-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -313,13 +313,13 @@ background: #F7F7F7;
 }
 
 /* Адаптивность */
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
   .header-container,
   .main-container,
   .footer-container {
       width: 90%;
   }
-}
+}*/
 
 @media (max-width: 768px) {
   .main-container {
