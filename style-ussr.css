@@ -219,6 +219,63 @@ background: #F7F7F7;
       padding-bottom: 20px;
   }
 }
+/* Контейнер для иконки */
+.icon-wrapper {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Размер иконки */
+.menu-icon {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ховер эффект только для иконки */
+.icon-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Выравнивание иконки и текста */
+.products-menu ul li {
+  display: flex;
+  align-items: center;
+}
+
+.products-menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Отступ между иконкой и текстом */
+  text-decoration: none;
+  color: #333;
+}
+
+/* Мобильная версия - сохранение стилей */
+@media (max-width: 768px) {
+  .products-menu ul {
+      padding-left: 0;
+  }
+
+  .products-menu ul li {
+      display: flex;
+      align-items: center;
+  }
+
+  .products-menu ul li a {
+      padding: 10px 0;
+      font-size: 14px;
+  }
+
+  .icon-wrapper {
+      width: 18px;
+      height: 18px;
+  }
+}
+
 /* Сайдбар-инфо */
 .sidebar-info {
   background: #F7F7F7;
