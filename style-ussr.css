@@ -189,9 +189,10 @@ background: #F7F7F7;
 }
 
 .products-menu li a {
+  font-weight: 500;
   display: block;
   padding: 12px 0;
-  color: #2c3e50;
+  color: #333;
   text-decoration: none;
   transition: 0.3s;
   border-bottom: 1px solid #ccc;
