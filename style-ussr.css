@@ -236,15 +236,16 @@ background: #F7F7F7;
 }
 
 /* Ховер только для иконки */
-.products-menu ul li a:hover .icon-wrapper {
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out; /* Плавное увеличение */
+.products-menu li a:hover .icon-wrapper {
+  transform: scale(1.2);  /* Увеличение иконки при ховере */
+  transition: transform 0.3s ease-in-out;  /* Плавное увеличение */
 }
+
 /* Ховер только для текста */
-.products-menu ul li a:hover .menu-text {
-  color: #52bc4a;
-  padding-left: 10px;
-  transition: color 0.3s, padding-left 0.3s;
+.products-menu li a:hover .menu-text {
+  color: #52bc4a;  /* Меняем цвет текста */
+  padding-left: 10px;  /* Добавляем отступ только для текста */
+  transition: color 0.3s, padding-left 0.3s; /* Плавное изменение */
 }
 
 /* Размещаем иконку и текст в ряд */
