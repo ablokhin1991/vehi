@@ -238,6 +238,7 @@ background: #F7F7F7;
 /* Ховер только для иконки */
 .products-menu ul li a:hover .icon-wrapper {
   transform: scale(1.2);
+  transition: transform 0.3s ease-in-out; /* Плавное увеличение */
 }
 /* Ховер только для текста */
 .products-menu ul li a:hover .menu-text {
