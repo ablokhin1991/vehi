@@ -264,10 +264,10 @@ background: #F7F7F7;
 }
 
 /* Ховер для текста */
-.products-menu li a:hover {
+/*.products-menu li a:hover {
   color: #52bc4a;
   padding-left: 10px;
-}
+}*/
 
 /* 🔹 АДАПТАЦИЯ ДЛЯ МОБИЛЬНЫХ */
 @media (max-width: 768px) {
