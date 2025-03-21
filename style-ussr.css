@@ -201,7 +201,9 @@ background: #F7F7F7;
   color: #333;
   text-decoration: none;
   transition: 0.3s;
-  border-bottom: 1px solid #ccc;
+  /*border-bottom: 1px solid #ccc;*/
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
   font-size: 14px;
   transition: transform 0.3s ease-in-out;  /* Плавное увеличение */
   transition: color 0.3s, padding-left 0.3s; /* Плавное изменение */
