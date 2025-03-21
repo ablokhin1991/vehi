@@ -592,6 +592,5 @@ section {
 @media (max-width: 768px) {
   .combined-section {
       width: 100%;
-      padding: 20px;
   }
 }
