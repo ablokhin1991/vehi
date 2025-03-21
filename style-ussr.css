@@ -202,7 +202,7 @@ background: #F7F7F7;
   text-decoration: none;
   transition: 0.3s;
   /*border-bottom: 1px solid #ccc;*/
-  border: 2px solid #ccc;
+  border: px solid #ccc;
   margin-bottom: 10px;
   font-size: 14px;
   transition: transform 0.3s ease-in-out;  /* Плавное увеличение */
