@@ -364,6 +364,24 @@ background: #F7F7F7;
 .about-content p {
   margin: auto 0;
 }
+.about-content .more-btn {
+  margin-top: auto; /* Прижимаем кнопку к низу контейнера */
+  display: inline-block;
+  background: #e7e7e7;
+  color: #2c3e50;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 15px;
+  border-right: 2px solid #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  transition: background 0.3s, color 0.3s; /* Плавный переход */
+}
+
+.about-content .more-btn:hover {
+  color: #fff;
+  background: #2c3e50;
+}
 .about-image {
   width: 100%;
   height: 100%;
