@@ -252,7 +252,7 @@ background: #F7F7F7;
 
 /* Размещаем иконку и текст в ряд */
 .products-menu ul li {
-  display: flex;
+  display: block;
   align-items: center;
   gap: 8px; /* Отступ между иконкой и текстом */
 }
