@@ -618,12 +618,21 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
-@media (max-width: 768px) { /* Для планшетов и мобильных */
+
+/* Планшеты (ширина экрана меньше 1024px) */
+@media (max-width: 1024px) {
   .steps-grid {
-      grid-template-columns: 1fr; /* Одна колонка */
-      grid-template-rows: auto; /* Автоматические строки */
+      grid-template-columns: repeat(2, 1fr); /* Две карточки в ряд */
   }
 }
+
+/* Мобильные (ширина экрана меньше 768px) */
+@media (max-width: 768px) {
+  .steps-grid {
+      grid-template-columns: 1fr; /* Одна карточка в ряд */
+  }
+}
+
 .step {
   /*background: #fff;*/
   background: linear-gradient(to top right, #def2dc, #fff);
