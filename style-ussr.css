@@ -403,6 +403,10 @@ section {
 .steps-section {
   padding: 20px;
 }
+
+.steps-section h3 {
+margin-bottom: 20px;
+}
 .step-card {
   text-align: center;
   padding: 20px;
