@@ -617,12 +617,13 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  grid-auto-flow: row; /* Гарантирует заполнение строк слева направо */
 }
 
 /* Планшеты (ширина экрана меньше 1024px) */
 @media (max-width: 1024px) {
   .steps-grid {
-      grid-template-columns: repeat(2, 1fr); /* Две карточки в ряд */
+      grid-template-columns: repeat(2, minmax(220px, 1fr)); /* Две карточки в ряд */
   }
 }
 
@@ -632,6 +633,7 @@ section {
       grid-template-columns: 1fr; /* Одна карточка в ряд */
   }
 }
+
 
 .step {
   /*background: #fff;*/
