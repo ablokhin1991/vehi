@@ -355,6 +355,7 @@ section {
   gap: 40px;
   padding: 20px;
   background: #eee;
+  border-bottom: 2px solid #ccc;
 }
 .about-content {
   display: flex;
