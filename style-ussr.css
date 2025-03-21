@@ -596,3 +596,76 @@ section {
       width: 100%;
   }
 }
+
+
+
+
+
+
+/* 5. Этапы взаимодействия */
+.steps {
+  padding: 0px 0 60px 0;
+  text-align: left;
+}
+.steps h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333333;
+  text-align: left;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 768px) { /* Для планшетов и мобильных */
+  .steps-grid {
+      grid-template-columns: 1fr; /* Одна колонка */
+      grid-template-rows: auto; /* Автоматические строки */
+  }
+}
+.step {
+  /*background: #fff;*/
+  background: linear-gradient(to top right, #def2dc, #fff);
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.step:hover {
+  transform: translateY(-5px);
+}
+.step-number {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 21px;
+  background: #3DB845;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+/* Добавляем новый класс для выравнивания элементов в строку */
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.step h3 {
+  color: #3DB845;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.step p {
+  font-family: Inter, sans-serif;
+  line-height: 23.2px;
+}
