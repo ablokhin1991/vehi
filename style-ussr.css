@@ -355,6 +355,8 @@ background: #F7F7F7;
 .about-section.grid-50-50 {
   align-items: start; /* Выравнивание по верхнему краю */
   gap: 40px;
+  padding: 20px;
+  background: #eee;
 }
 .about-content {
   display: flex;
