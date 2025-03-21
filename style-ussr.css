@@ -583,3 +583,18 @@ background: #F7F7F7;
   }
 }
 
+.combined-section {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Для мобилок */
+@media (max-width: 768px) {
+  .combined-section {
+      width: 100%;
+      padding: 20px;
+  }
+}
