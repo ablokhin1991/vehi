@@ -198,6 +198,8 @@ background: #F7F7F7;
   transition: 0.3s;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
+  transition: transform 0.3s ease-in-out;  /* Плавное увеличение */
+  transition: color 0.3s, padding-left 0.3s; /* Плавное изменение */
 }
 
 .products-menu li a:hover {
