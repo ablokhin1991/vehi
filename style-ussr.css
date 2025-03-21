@@ -158,9 +158,7 @@ section {
 
 /* Преимущества */
 .advantages-section {
-background: #F7F7F7;
     padding: 20px;
-    /*border-radius: 6px;*/
 }
 
 .advantages-grid {
@@ -400,7 +398,9 @@ background: #F7F7F7;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
+.steps-section {
+  padding: 20px;
+}
 .step-card {
   text-align: center;
   padding: 20px;
