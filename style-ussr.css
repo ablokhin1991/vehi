@@ -356,9 +356,17 @@ background: #F7F7F7;
   align-items: start; /* Выравнивание по верхнему краю */
   gap: 40px;
 }
+.about-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.about-content p {
+  margin: auto 0;
+}
 .about-image {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   /*border-radius: 6px;*/
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
