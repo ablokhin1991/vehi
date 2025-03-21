@@ -110,7 +110,7 @@ section {
         #96d692 33% 66%, 
         #52bc4a 66%);
   padding: 20px;
-  /*border-radius: 6px;*/
+  margin-bottom: 20px;
 }
 .cover-content {
   display: flex; /* Включаем flex-контейнер */
