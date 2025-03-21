@@ -369,14 +369,14 @@ section {
 .about-content .more-btn {
   margin-top: auto; /* Прижимаем кнопку к низу контейнера */
   display: inline-block;
-  background: #e7e7e7;
-  color: #2c3e50;
+  background: #52bc4a;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 14px;
   margin-top: 15px;
-  border-right: 2px solid #2c3e50;
-  border-bottom: 2px solid #2c3e50;
+  border-right: 2px solid #45a043;
+  border-bottom: 2px solid #45a043;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   transition: background 0.3s, color 0.3s; /* Плавный переход */
@@ -384,7 +384,7 @@ section {
 
 .about-content .more-btn:hover {
   color: #fff;
-  background: #2c3e50;
+  background: #45a043;
 }
 .about-image {
   width: 100%;
