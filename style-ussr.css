@@ -582,3 +582,27 @@ background: #F7F7F7;
     margin-top: 10px;
   }
 }
+
+/* Новые стили для вложенного контента */
+.nested-content {
+  grid-column: 1 / -1; /* Занимает всю ширину родительского grid */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Сохраняем оригинальные стили блоков */
+.advantages-section, 
+.steps-section {
+  margin-bottom: 50px;
+}
+
+/* Фикс для мобильной адаптации */
+@media (max-width: 768px) {
+  .nested-content {
+      margin-top: 30px;
+  }
+  
+  .about-section.grid-50-50 .about-image {
+      order: -1; /* Картинка всегда сверху */
+  }
+}
