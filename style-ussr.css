@@ -159,6 +159,7 @@ section {
 /* Преимущества */
 .advantages-section {
     padding: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
 .advantages-grid {
@@ -168,7 +169,7 @@ section {
 }
 
 .advantage-card {
-  padding: 15px;
+  padding: 10px;
   background: #fff;
   /*border-radius: 6px;*/
   border-left: 4px solid #52bc4a;
