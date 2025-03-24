@@ -382,7 +382,7 @@ section {
   justify-content: space-between;
   height: 100%;
 }
-.about-content p {
+⭐.about-content p { 
   /*margin: auto 0;*/
   flex-grow: 1;
   /*margin-bottom: 15px;*/
