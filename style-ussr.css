@@ -86,7 +86,7 @@ p {
   margin: 20px auto;
   display: grid;
   grid-template-columns: 28% 70%;
-  gap: 2%;
+  gap: 20px;
   background: white;
   padding: 20px;
   /*border-radius: 8px;*/
