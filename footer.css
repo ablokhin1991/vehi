@@ -30,6 +30,7 @@
   }
   
   .footer-header-text {
+    color: #666;
     font-size: 12px;
     line-height: 1.4;
   }
@@ -60,7 +61,7 @@
   }
 
   .footer-contact-link {
-    color: #ccc;
+    color: #666;
     text-decoration: none;
     transition: color 0.3s;
     font-size: 14px;
@@ -70,7 +71,7 @@
   }
   
   .footer-link {
-    color: #ccc;
+    color: #666;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -91,7 +92,7 @@
   }
 
   .footer-copyright p {
-    color:#ccc;
+    color:#666;
   }
   
   /* Мобильная версия */
