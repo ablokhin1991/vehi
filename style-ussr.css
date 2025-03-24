@@ -172,7 +172,8 @@ section {
 }
 
 .advantage-card {
-  padding: 10px 15px;
+  display: flex;
+  align-items: center;
   padding: 0 15px;
   background: #fff;
   border-left: 4px solid #52bc4a;
