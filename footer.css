@@ -48,6 +48,7 @@
   
   /* Общие стили для всех колонок */
   .footer-title {
+    color: #999999;
     font-size: 18px;
     margin-bottom: 15px;
   }
@@ -59,7 +60,7 @@
   }
   
   .footer-link {
-    color: #333;
+    color: #ccc;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -77,6 +78,10 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .footer-copyright p {
+    color:#ccc;
   }
   
   /* Мобильная версия */
