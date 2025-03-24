@@ -654,6 +654,7 @@ section {
 .combined-section {
   margin: 0px auto;
   background: #eee;
+  margin-bottom: 20px;
 }
 
 /* Для мобилок */
