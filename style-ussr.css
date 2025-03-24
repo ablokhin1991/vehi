@@ -363,6 +363,8 @@ section {
 }
 .about-content p {
   margin: auto 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .about-content .more-btn {
   margin-top: auto; /* Прижимаем кнопку к низу контейнера */
