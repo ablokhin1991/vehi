@@ -20,7 +20,7 @@ h1 {
 h2 {
   font-size: 32px;
   color: #333;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   padding-bottom: 15px;
   border-bottom: 2px solid #ccc;
 }
