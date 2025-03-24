@@ -83,7 +83,7 @@ p {
   width: 90%;
   max-width: 1200px;
   /*width: 80%;*/
-  margin: 30px auto;
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 28% 70%;
   gap: 2%;
@@ -452,7 +452,7 @@ section {
   background: #2c3e50;
   color: white;
   padding: 40px 0;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .footer-container {
