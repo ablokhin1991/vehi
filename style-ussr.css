@@ -411,6 +411,11 @@ section {
   color: #fff;
   background: #45a043;
 }
+@media (max-width: 768px) {
+  .about-content .more-btn {
+    width: 100%;
+  }
+}
 .about-image {
   width: 100%;
   height: 100%;
