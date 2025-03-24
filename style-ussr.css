@@ -614,6 +614,11 @@ section {
   margin: 0px auto;
   background: #eee;
   margin-bottom: 20px;
+
+  border-right: 2px solid #bebebe;
+  border-bottom: 2px solid #bebebe;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 /* Для мобилок */
