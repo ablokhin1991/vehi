@@ -377,7 +377,7 @@ section {
 }
 .about-section.grid-50-50 {
   align-items: start; /* Выравнивание по верхнему краю */
-  gap: 40px;
+  gap: 20px;
   padding: 20px;
   background: #eee;
   /*border-bottom: 2px solid #ccc;*/
@@ -419,6 +419,9 @@ section {
   .about-content .more-btn {
     width: 100%;
   }
+}
+.about-content p {
+  text-align: justify;
 }
 .about-image {
   width: 100%;
