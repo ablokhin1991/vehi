@@ -179,7 +179,11 @@ section {
   border-left: 4px solid #52bc4a;
   margin-top: 15px;
 }
-
+@media (max-width: 768px) {
+  .advantage-card {
+    width: 100%;
+  }
+}
 /* Сайдбар */
 .main-sidebar {
   order: -1; /* Перемещаем сайдбар в начало сетки */
