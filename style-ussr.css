@@ -374,6 +374,7 @@ section {
 }
 .about-content h2 {
   margin-bottom: 15px;
+  text-align: left;
 }
 .about-section.grid-50-50 {
   align-items: start; /* Выравнивание по верхнему краю */
@@ -522,7 +523,7 @@ section {
     text-align: center;
 }
 .about-content {
-  align-items: center;
+  /*align-items: center;*/
 }
 .about-image-wrapper {
     order: -1;
