@@ -88,7 +88,7 @@ p {
   grid-template-columns: 28% 70%;
   gap: 2%;
   background: white;
-  padding: 30px;
+  padding: 20px;
   /*border-radius: 8px;*/
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
