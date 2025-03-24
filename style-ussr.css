@@ -168,7 +168,9 @@ section {
 
 .advantage-card {
   /*padding: 15px;*/
-  padding: 0 15px;
+  width: fit-content;
+  padding: 10px 15px;
+  /*padding: 0 15px;*/
   background: #fff;
   border-left: 4px solid #52bc4a;
 }
@@ -349,6 +351,21 @@ section {
   }
 }
 /* О нас */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 30px;
+  padding: 20px;
+  background: #eee;
+}
+.about-image-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.about-content h2 {
+  margin-bottom: 15px;
+}
 .about-section.grid-50-50 {
   align-items: start; /* Выравнивание по верхнему краю */
   gap: 40px;
@@ -359,13 +376,13 @@ section {
 .about-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 .about-content p {
   /*margin: auto 0;*/
-  margin-top: 15px;
+  flex-grow: 1;
   margin-bottom: 15px;
-  flex-grow: 0; /* Запрещаем растягиваться */
 }
 .about-content .more-btn {
   margin-top: auto; /* Прижимаем кнопку к низу контейнера */
@@ -480,6 +497,17 @@ section {
     height: 300px;
     order: -1; /* Изображение сверху на мобилах */
   }
+  .about-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.about-content {
+  align-items: center;
+}
+.about-image-wrapper {
+    order: -1;
+}
+
 
   .cover-image {
       height: 300px;
