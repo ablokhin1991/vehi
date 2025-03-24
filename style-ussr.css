@@ -386,6 +386,7 @@ section {
   /*margin: auto 0;*/
   flex-grow: 1;
   /*margin-bottom: 15px;*/
+  padding: 10px 0px;
 }
 .about-content .more-btn {
   margin-top: auto; /* Прижимаем кнопку к низу контейнера */
