@@ -11,6 +11,7 @@
     display: grid;
     grid-template-rows: 40px 60px;
     align-content: start; /* Выравнивание по верху */
+    border-left: 2px solid #ccc;
   }
   
   .card-header {
