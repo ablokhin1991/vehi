@@ -36,6 +36,7 @@
     overflow: hidden; /* Обрезаем текст, если не помещается */
   }
   .stats-card h3 {
+    padding-bottom: 15px;
     border-bottom: 2px solid #ccc;
   }
   
