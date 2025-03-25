@@ -9,18 +9,18 @@
 body {
   /*background: #e7e7e7;*/
   background: #ccc;
-  color: #333;
+  color: #10260e;
   line-height: 1.6;
 }
 
 h1 {
   font-size: 32px;
-  color: #333;
+  color: #183915;
 }
 
 h2 {
   font-size: 32px;
-  color: #333;
+  color: #183915;
   /*margin-bottom: 30px;*/
   padding-bottom: 15px;
   border-bottom: 2px solid #ccc;
@@ -28,7 +28,7 @@ h2 {
 
 p {
   font-size: 14px;
-  color: #333;
+  color: #10260e;
 }
 
 /* Шапка */
@@ -67,7 +67,7 @@ p {
 
 .main-nav a {
   font-weight: 500;
-  color: #333;
+  color: #10260e;
   text-decoration: none;
   margin-left: 30px;
   font-weight: 500;
@@ -130,7 +130,7 @@ section {
 .cover-content h1 {
   line-height: 1.2;
   margin: 0 0 20px 0; /* Сброс верхнего отступа */
-  color: #333;
+  color: #183915;
 }
 .cover-content p {
   font-size: 14px;
@@ -212,7 +212,7 @@ section {
   font-weight: 500;
   display: block;
   padding: 12px 0;
-  color: #333;
+  color: #10260e;
   text-decoration: none;
   transition: 0.3s;
   border-bottom: 2px solid #ccc;
@@ -285,7 +285,7 @@ section {
     align-items: center;
     gap: 8px; /* Отступ между иконкой и текстом */
     text-decoration: none;
-    color: #333;
+    color: #10260e;
     transition: color 0.3s, padding-left 0.3s;
     width: 100%;
 }
@@ -465,7 +465,7 @@ section {
   position: absolute;
   left: 0;
   font-weight: bold;
-  color: #333;
+  color: #10260e;
   font-size: 20px;
 }
 
