@@ -1,0 +1,44 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки на десктопе */
+    width: 100%;
+    border-left: 1px solid #000; /* Граница слева для контейнера */
+  }
+  
+  .stats-card {
+    border-right: 1px solid #000; /* Граница между карточками */
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    min-height: 150px; /* Фиксированная высота */
+    display: grid;
+    align-content: center; /* Вертикальное выравнивание */
+    text-align: center;
+  }
+  
+  /* Убираем правую границу у последней карточки в ряду */
+  .stats-card:nth-child(4n) {
+    border-right: none;
+  }
+  
+  /* Адаптив на 2 колонки (мобилки) */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      border-left: none;
+    }
+  
+    .stats-card {
+      border-right: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+  
+    /* Убираем правую границу у четных карточек */
+    .stats-card:nth-child(2n) {
+      border-right: none;
+    }
+  
+    /* Убираем нижнюю границу у последних двух карточек */
+    .stats-card:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+  }
