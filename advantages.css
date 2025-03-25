@@ -7,9 +7,9 @@
   
   /* Фиксированная структура карточки */
   .stats-card {
-    height: 120px; /* 40px + 80px = 120px */
+    /*height: 120px; 40px + 80px = 120px */
     display: grid;
-    grid-template-rows: 40px 80px; /* Жестко фиксируем ряды */
+    grid-template-rows: 60px 60px;
     align-content: start; /* Выравнивание по верху */
   }
   
