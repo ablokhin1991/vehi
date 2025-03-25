@@ -20,7 +20,7 @@
     padding: 15px 30px 15px 0;
     list-style: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     color: #10260e;
     transition: all 0.7s ease;
   }
@@ -47,7 +47,7 @@
   
   .faq-answer {
     padding: 0 20px 10px 0;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
     color: #555;
     max-height: 0;
@@ -66,7 +66,7 @@
     }
     
     .faq-question {
-      font-size: 15px;
+      font-size: 14px;
       padding-right: 25px;
     }
     
