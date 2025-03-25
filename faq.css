@@ -22,7 +22,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #10260e;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
   }
   
   .faq-question::-webkit-details-marker {
@@ -36,8 +36,9 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    font-weight: bold;
     color: #10260e;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
   }
   
   .faq-item[open] .faq-question::after {
@@ -51,7 +52,7 @@
     color: #555;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.7s ease, padding 0.7s ease;
   }
   
   .faq-item[open] .faq-answer {
