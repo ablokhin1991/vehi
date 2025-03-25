@@ -15,7 +15,6 @@
   
   .card-header {
     padding: 5px 15px;
-    border-bottom: 1px solid #000; /* Разделитель между рядами */
     /*display: flex;*/
     align-items: flex-start; /* Текст у верхнего края */
   }
