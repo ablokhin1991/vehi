@@ -451,6 +451,7 @@ section {
   list-style: none;
   counter-reset: step-counter;
   padding: 0;
+  font-size: 14px;
 }
 
 .steps-list li {
@@ -466,7 +467,7 @@ section {
   left: 0;
   font-weight: bold;
   color: #10260e;
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 @media (max-width: 768px) {
