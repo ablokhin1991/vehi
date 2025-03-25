@@ -3,13 +3,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    border-left: 1px solid #000;
   }
   
   /* Фиксированная структура карточки */
   .stats-card {
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
     height: 120px; /* 40px + 80px = 120px */
     display: grid;
     grid-template-rows: 40px 80px; /* Жестко фиксируем ряды */
@@ -50,7 +47,6 @@
     .stats-card {
       height: 140px; /* 50px + 90px для мобилок */
       grid-template-rows: 50px 90px;
-      border-left: 1px solid #000;
     }
   
     .stats-card:nth-child(2n) {
