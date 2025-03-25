@@ -25,8 +25,9 @@
   
   .card-description {
     padding: 5px 15px;
-    /*display: flex;*/
+    display: flex;
     align-items: flex-start; /* Текст у верхнего края */
+    align-items: center;
   }
   
   /* Гарантированная фиксация размеров */
