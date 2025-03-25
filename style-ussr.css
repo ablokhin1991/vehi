@@ -581,6 +581,9 @@ section {
 
 /* Мобильная адаптация */
 @media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
   .top-bar-contacts {
     flex-wrap: wrap;
     gap: 15px;
