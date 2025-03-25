@@ -64,7 +64,9 @@ p {
     height: 20px;
   }
 }
-
+.mob-nav {
+  display: none;
+}
 .main-nav a {
   font-weight: 500;
   color: #10260e;
