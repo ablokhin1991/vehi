@@ -17,6 +17,9 @@
   .stats-card:hover {
     transform: scale(1.05);
 }
+.stats-card:not(:first-child) {
+    border-left: 2px solid #ccc;
+}
   
   .card-header {
     padding: 0px 15px;
