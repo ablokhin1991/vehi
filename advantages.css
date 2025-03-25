@@ -6,36 +6,39 @@
     border-left: 1px solid #000;
   }
   
-  /* Стили карточки */
+  /* Фиксированная структура карточки */
   .stats-card {
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
-    height: 200px; /* Фиксированная высота */
+    height: 120px; /* 40px + 80px = 120px */
     display: grid;
-    grid-template-rows: 1fr auto; /* 2 ряда: заголовок растягивается, описание - по контенту */
-    align-items: center; /* Вертикальное выравнивание */
+    grid-template-rows: 40px 80px; /* Жестко фиксируем ряды */
+    align-content: start; /* Выравнивание по верху */
   }
   
   .card-header {
-    padding: 15px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #000; /* Разделитель между рядами */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: flex-start; /* Текст у верхнего края */
   }
   
   .card-description {
-    padding: 0 15px 15px;
-    text-align: center;
-    min-height: 40px; /* Фиксируем минимальную высоту для описания */
+    padding: 5px 15px;
+    display: flex;
+    align-items: flex-start; /* Текст у верхнего края */
   }
   
-  /* Убираем правую границу у последней карточки */
-  .stats-card:nth-child(4n) {
-    border-right: none;
+  /* Гарантированная фиксация размеров */
+  .stats-card h3,
+  .stats-card p {
+    margin: 0;
+    line-height: 1.2;
+    max-height: 100%;
+    overflow: hidden; /* Обрезаем текст, если не помещается */
   }
   
-  /* Адаптивность для мобилок */
+  /* Адаптивность */
   @media (max-width: 768px) {
     .stats-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -43,25 +46,16 @@
     }
   
     .stats-card {
+      height: 140px; /* 50px + 90px для мобилок */
+      grid-template-rows: 50px 90px;
       border-left: 1px solid #000;
-      height: 180px; /* Уменьшенная высота для мобилок */
     }
   
-    /* Убираем правую границу у четных карточек */
     .stats-card:nth-child(2n) {
       border-right: none;
     }
   
-    /* Убираем нижнюю границу у последних двух карточек */
     .stats-card:nth-last-child(-n+2) {
       border-bottom: none;
     }
-  }
-  
-  /* Сброс стандартных отступов */
-  .stats-card h3,
-  .stats-card p {
-    margin: 0;
-    line-height: 1.2;
-    word-break: break-word; /* Перенос длинных слов */
   }
