@@ -36,6 +36,9 @@
     text-align: center;
     overflow: hidden; /* Обрезаем текст, если не помещается */
   }
+  .stats-card h3 {
+    border-bottom: 2px solid #ccc;
+  }
   
   /* Адаптивность */
   @media (max-width: 768px) {
