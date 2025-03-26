@@ -122,10 +122,10 @@ section {
   padding: 20px;
   margin-bottom: 20px;
 
-  border-right: 2px solid #45a043;
+  /*border-right: 2px solid #45a043;
   border-bottom: 2px solid #45a043;
   border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #ccc;*/
 }
 .cover-content {
   display: flex; /* Включаем flex-контейнер */
