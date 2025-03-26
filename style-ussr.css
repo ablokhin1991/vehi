@@ -133,7 +133,7 @@ section {
   height: 100%; /* Занимаем всю высоту ячейки grid */
 }
 .cover-content h1 {
-  line-height: 1.2;
+  line-height: 32px;
   margin: 0 0 20px 0; /* Сброс верхнего отступа */
   color: #183915;
 }
