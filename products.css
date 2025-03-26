@@ -1,0 +1,67 @@
+/* Новая сетка */
+.products-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #eee;
+    border-right: 2px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.product-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Адаптация стилей из оригинального about-section */
+.product-content .more-btn {
+    margin-top: auto;
+    background: #52bc4a;
+    border-color: #45a043;
+    color: #fff;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .products-grid-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .product-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+        order: -1;
+        height: 200px;
+    }
+}
+
+/* Сохранение оригинальных стилей */
+.advantage-card {
+    /* стили из оригинального CSS */
+    border-left: 4px solid #52bc4a;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.more-btn {
+    /* все оригинальные стили кнопки */
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 20px;
+    text-decoration: none;
+}
