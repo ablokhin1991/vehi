@@ -198,7 +198,7 @@ section {
 /* Сайдбар */
 .main-sidebar {
   order: -1; /* Перемещаем сайдбар в начало сетки */
-  background: #F7F7F7;
+  background: #eee;
   padding: 20px;
   /*border-radius: 6px;*/
   align-self: start; /* Фиксируем высоту по содержимому */
@@ -326,7 +326,7 @@ section {
 
 /* Сайдбар-инфо */
 .sidebar-info {
-  background: #F7F7F7;
+  background: #eee;
   /*border-radius: 6px;*/
   margin-top: 30px;
 }
