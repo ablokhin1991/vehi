@@ -614,6 +614,8 @@ section {
 
 .combined-section {
   margin: 0px auto;
+  width: 100%;
+  box-sizing: border-box;
   background: #eee;
   margin-bottom: 20px;
 
