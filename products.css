@@ -49,11 +49,6 @@
     .products-grid-container {
         grid-template-columns: 1fr;
         width: 100%;
-        padding: 0 15px;
-    }
-    
-    .product-card {
-        grid-template-columns: 1fr;
     }
     
     .product-image {
