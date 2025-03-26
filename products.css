@@ -3,10 +3,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     margin: 20px auto;
-    padding: 0 15px; /* Добавлено */
+    padding: 0; /* Добавлено */
 }
 
 .product-card {
