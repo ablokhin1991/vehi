@@ -4,8 +4,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    margin: 20px auto;
-    padding: 0; /* Добавлено */
+    margin: 20px 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .product-card {
