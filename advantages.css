@@ -31,6 +31,7 @@
     display: flex;
     align-items: flex-start; /* Текст у верхнего края */
     align-items: center;
+    justify-content: center;
   }
   
   /* Гарантированная фиксация размеров */
