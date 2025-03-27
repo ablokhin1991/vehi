@@ -94,28 +94,37 @@
 
 /*******************Цены******************************/
 .product-prices {
-    margin: 15px 0;
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    margin-bottom: 5px;
+    display: table-row;
+}
+
+.price > span {
+    display: table-cell;
+    padding: 10px 15px;
+    vertical-align: middle;
 }
 
 .price-title {
-    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
 }
 
 .current-price {
+    font-weight: 600;
+    color: #52bc4a;
     font-size: 18px;
-    font-weight: bold;
-    color: #d32f2f; /* Красный цвет для акционной цены */
 }
 
 .old-price {
-    font-size: 16px;
-    color: #888;
+    color: #999;
     text-decoration: line-through;
+    font-size: 14px;
 }
