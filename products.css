@@ -46,11 +46,6 @@
     transition: all 500ms ease;
 }
 
-.product-content .more-btn:hover {
-    color: #fff;
-    background: #45a043;
-}
-
 .product-content .more-btn:before {
     content: '';
     position: absolute;
