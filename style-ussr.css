@@ -8,7 +8,7 @@
 
 body {
   /*background: #e7e7e7;*/
-  background: #ccc;
+  /*background: #ccc;*/
   color: #10260e;
   line-height: 1.6;
 }
@@ -93,10 +93,10 @@ p {
   display: grid;
   grid-template-columns: 28% 70%;
   gap: 20px;
-  background: white;
-  padding: 20px;
+  /*background: white;*/
+  /*padding: 20px;*/
   /*border-radius: 8px;*/
-  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  /*box-shadow: 0 2px 15px rgba(0,0,0,0.1);*/
 }
 
 /* Общие стили секций
