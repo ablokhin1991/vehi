@@ -41,11 +41,31 @@
     background: #52bc4a;
     border-color: #45a043;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms ease;
 }
+
 .product-content .more-btn:hover {
     color: #fff;
     background: #45a043;
-  }
+}
+
+.product-content .more-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(69, 160, 67, 0.3);
+    transition: all 2s ease;
+}
+
+.product-content .more-btn:hover:before {
+    width: 100%;
+}
+
 
 /* Мобильная версия */
 @media (max-width: 768px) {
