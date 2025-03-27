@@ -91,3 +91,31 @@
     padding: 10px 20px;
     text-decoration: none;
 }
+
+/*******************Цены******************************/
+.product-prices {
+    margin: 15px 0;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.price-title {
+    font-weight: bold;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d32f2f; /* Красный цвет для акционной цены */
+}
+
+.old-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+}
