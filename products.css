@@ -132,5 +132,5 @@
     color: #999;
     text-decoration: line-through;
     font-size: 14px;
-    justify-self: end; /* Прижимаем к правому краю */
+    /*justify-self: end; Прижимаем к правому краю */
 }
