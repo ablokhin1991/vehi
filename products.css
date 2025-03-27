@@ -47,7 +47,7 @@
     z-index: 1;
 }
 
-.product-content p {
+.product-content > p {
     padding-bottom: 15px;
     border-bottom: 2px solid #ccc;
   }
