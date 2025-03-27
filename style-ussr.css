@@ -556,7 +556,9 @@ section {
   width: 16px;
   height: 16px;
 }
-
+.top-bar-item Tel {
+  font-weight: 600;
+}
 .top-bar-item a {
   color: #666;
   text-decoration: none;
