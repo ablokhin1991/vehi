@@ -129,11 +129,7 @@ section {
   border-left: 1px solid #ccc;*/
 }
 .cover-section-doors {
-  background: 
-      linear-gradient(-45deg, 
-        #def2dc 33%, 
-        #96d692 33% 66%, 
-        #52bc4a 66%);
+  background: #52bc4a;
   padding: 20px;
   margin-bottom: 20px;
 
