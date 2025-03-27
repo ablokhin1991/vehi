@@ -42,6 +42,10 @@
     border-color: #45a043;
     color: #fff;
 }
+.product-content .more-btn:hover {
+    color: #fff;
+    background: #45a043;
+  }
 
 /* Мобильная версия */
 @media (max-width: 768px) {
