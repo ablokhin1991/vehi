@@ -86,8 +86,8 @@
   .footer-copyright {
     border-top: 1px solid #4a5561;
     padding-top: 20px;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    /*max-width: 1200px;*/
     margin: 0 auto;
   }
 
