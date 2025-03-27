@@ -557,7 +557,7 @@ section {
   height: 16px;
 }
 .top-bar-item a.Tel {
-  /*font-weight: 600;*/
+  font-weight: 600;
   color: #333;
   font-size: 14px;
 }
