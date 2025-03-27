@@ -128,6 +128,17 @@ section {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;*/
 }
+.cover-section-doors {
+  background: 
+      linear-gradient(-45deg, 
+        #def2dc 33%, 
+        #96d692 33% 66%, 
+        #52bc4a 66%);
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
 .cover-content {
   display: flex; /* Включаем flex-контейнер */
   flex-direction: column; /* Вертикальное расположение элементов */
