@@ -73,31 +73,77 @@
               <!-- Начало секции продуктов -->
 <div class="products-grid-container">
     <!-- Карточка 1 -->
-<div class="product-card">
-    <div class="product-inner">
-        <img src="/vehi/images/img/products/doors/AN01.webp" alt="Межкомнатная дверь" class="product-image">
-        <div class="product-content">
-            <h3>Дверное полотно АН 01</h3>
-            <p>Минимальный заказ от 30 штук.</p>
-            <div class="product-prices">
-                <div class="price">
-                    <span class="price-title">Без коробки</span>
-                    <span class="current-price">3 800 руб.</span>
-                    <span class="old-price">4 250 руб.</span>
+    <div class="product-page-grid">
+        <!-- Блок с изображениями -->
+        <div class="product-gallery">
+            <!-- Основное изображение -->
+            <div class="main-image">
+                <a href="#fullscreen">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь" class="product-image-zoom">
+                </a>
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь" class="active">
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь">
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь">
+            </div>
+            
+            <!-- Миниатюры -->
+            <div class="thumbnails">
+                <label class="thumb-item" for="img1">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
+                </label>
+                <label class="thumb-item" for="img2">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
+                </label>
+                <label class="thumb-item" for="img3">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
+                </label>
+            </div>
+        </div>
+    
+        <!-- Блок с контентом -->
+        <div class="product-main-content">
+            <!-- Существующий контент остаётся без изменений -->
+            <div class="product-content">
+                ...
+            </div>
+            
+            <!-- Табы -->
+            <div class="product-tabs">
+                <input type="radio" name="tabs" id="desc" checked>
+                <input type="radio" name="tabs" id="spec">
+                <input type="radio" name="tabs" id="tech">
+                
+                <div class="tab-labels">
+                    <label class="tab-label" for="desc">Описание</label>
+                    <label class="tab-label" for="spec">Характеристики</label>
+                    <label class="tab-label" for="tech">Техописание</label>
                 </div>
-                <div class="price">
-                    <span class="price-title">С коробкой</span>
-                    <span class="current-price">4 400 руб.</span>
-                    <span class="old-price">4 850 руб.</span>
+                
+                <!-- Контент табов -->
+                <div class="tab-content desc">
+                    <p>Межкомнатная дверь модель АН01 из массива хвои...</p>
+                </div>
+                
+                <div class="tab-content spec">
+                    <table class="spec-table">
+                        <tr><td>Материал</td><td>Сосна сорт AB</td></tr>
+                        <tr><td>Толщина</td><td>40 мм</td></tr>
+                        ...
+                    </table>
+                </div>
+                
+                <div class="tab-content tech">
+                    <p class="tech-text">Техническое описание изделия...</p>
                 </div>
             </div>
-            <div class="advantage-card">
-                <p>В соответствии с ГОСТ и ТУ</p>
-            </div>
-            <a href="/vehi/products/mezhkomnatnaya-dver-an01.html" class="more-btn">Подробнее →</a>
         </div>
     </div>
-</div>
+    
+    <!-- Модальное окно -->
+    <div id="fullscreen" class="image-modal">
+        <a href="#close" class="modal-close">×</a>
+        <img src="" alt="Увеличенное изображение">
+    </div>
 
     
 </div><!-- Конец проддукции -->

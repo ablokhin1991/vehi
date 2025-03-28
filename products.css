@@ -138,3 +138,133 @@
     font-size: 14px;
     /*justify-self: end; Прижимаем к правому краю */
 }
+
+/**************ДЛЯ СТРАНИЦ ТОВАРА*******************/
+/* products.css */
+/* Слайдер */
+.product-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: start;
+    gap: 15px;
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden;
+}
+.main-image img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.main-image img.active { display: block; }
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thumb-item img {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+.thumb-item:hover img { border-color: #52bc4a; }
+
+/* Табы */
+.product-tabs { margin-top: 30px; }
+.tab-labels { 
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+.tab-label {
+    padding: 12px 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+    position: relative;
+    top: 2px;
+}
+.tab-label:hover { color: #52bc4a; }
+
+.tab-content {
+    display: none;
+    padding: 20px 0;
+}
+#desc:checked ~ .desc,
+#spec:checked ~ .spec,
+#tech:checked ~ .tech { display: block; }
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.spec-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Модальное окно */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+.image-modal:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .product-page-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-gallery {
+        grid-template-columns: 1fr;
+    }
+    .thumbnails {
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    
+    /* Аккордеон */
+    .tab-labels { display: none; }
+    .tab-content {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+    }
+    #desc:checked ~ .desc,
+    #spec:checked ~ .spec,
+    #tech:checked ~ .tech {
+        max-height: 2000px;
+    }
+    .tab-label {
+        display: block;
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-bottom: 5px;
+    }
+}
