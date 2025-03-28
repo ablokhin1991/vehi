@@ -261,3 +261,27 @@
         max-height: 2000px;
     }
 }
+/*******************Цены******************************/
+
+
+.vehi-price-title {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+    justify-self: start; /* Прижимаем к левому краю */
+}
+
+.vehi-price-current {
+    font-weight: 600;
+    color: #52bc4a;
+    font-size: 18px;
+    justify-self: center; /* Центрируем цену */
+}
+
+.vehi-price-old {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+    /*justify-self: end; Прижимаем к правому краю */
+}
