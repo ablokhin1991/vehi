@@ -153,12 +153,10 @@
     margin: 0 auto;
 }
 .product-page .product-card {
-    grid-column: 1 / -1; /* Растягиваем на всю ширину */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    background: #eee;
-    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    display: flex; /* Убираем грид, если он не нужен */
+    flex-direction: column; /* Если требуется вертикальная компоновка */
 }
 
 .product-gallery {
