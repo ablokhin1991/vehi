@@ -194,6 +194,7 @@
 /* Табы */
 .vehi-tabs {
     width: 100%;
+    padding: 20px;
 }
 
 .vehi-tab-labels {
