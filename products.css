@@ -147,6 +147,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+.product-page {
+    grid-template-columns: 1fr !important; /* Переопределение грида */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-page .product-card {
+    grid-column: 1 / -1; /* Растягиваем на всю ширину */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: #eee;
+    padding: 20px;
+}
 
 .product-gallery {
     display: grid;
@@ -247,7 +260,12 @@
         flex-direction: row;
         margin-top: 15px;
     }
-    
+    .product-page .product-card {
+        grid-template-columns: 1fr;
+    }
+    .product-page {
+        padding: 0 15px;
+    }
     /* Аккордеон */
     .tab-labels { display: none; }
     .tab-content {
