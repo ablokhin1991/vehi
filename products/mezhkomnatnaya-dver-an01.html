@@ -71,79 +71,86 @@
             
 
               <!-- Начало секции продуктов -->
-<div class="products-grid-container product-page">
-    <div class="product-card">
-        <!-- Блок с изображениями -->
-        <div class="product-gallery">
-            <!-- Основное изображение -->
-            <div class="main-image">
-                <a href="#fullscreen">
-                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь" class="product-image-zoom">
+<!-- В секции продуктов -->
+<div class="vehi-product-container">
+    <!-- Обертка для основного контента -->
+    <div class="vehi-product-main">
+        <!-- Галерея -->
+        <div class="vehi-gallery">
+            <div class="vehi-thumbs-column">
+                <a href="#img1" class="vehi-thumb active">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="">
                 </a>
-                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь" class="active">
-                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь">
-                <img src="/vehi/images/img/products/doors/AN01.webp" alt="Дверь">
+                <a href="#img2" class="vehi-thumb">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="">
+                </a>
+                <a href="#img3" class="vehi-thumb">
+                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="">
+                </a>
             </div>
             
-            <!-- Миниатюры -->
-            <div class="thumbnails">
-                <label class="thumb-item" for="img1">
-                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
-                </label>
-                <label class="thumb-item" for="img2">
-                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
-                </label>
-                <label class="thumb-item" for="img3">
-                    <img src="/vehi/images/img/products/doors/AN01.webp" alt="Миниатюра">
-                </label>
+            <div class="vehi-main-image">
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="" id="img1" class="active">
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="" id="img2">
+                <img src="/vehi/images/img/products/doors/AN01.webp" alt="" id="img3">
             </div>
         </div>
-    
-        <!-- Блок с контентом -->
-        <div class="product-main-content">
-            <!-- Существующий контент остаётся без изменений -->
-            <div class="product-content">
-                ...
+
+        <!-- Контент с ценами -->
+        <div class="vehi-product-details">
+            <h3>Дверное полотно АН 01</h3>
+            <p>Минимальный заказ от 30 штук.</p>
+            
+            <div class="vehi-prices">
+                <div class="vehi-price-item">
+                    <span class="vehi-price-title">Без коробки</span>
+                    <span class="vehi-price-current">3 800 руб.</span>
+                    <span class="vehi-price-old">4 250 руб.</span>
+                </div>
+                <div class="vehi-price-item">
+                    <span class="vehi-price-title">С коробкой</span>
+                    <span class="vehi-price-current">4 400 руб.</span>
+                    <span class="vehi-price-old">4 850 руб.</span>
+                </div>
             </div>
             
-            <!-- Табы -->
-            <div class="product-tabs">
-                <input type="radio" name="tabs" id="desc" checked>
-                <input type="radio" name="tabs" id="spec">
-                <input type="radio" name="tabs" id="tech">
-                
-                <div class="tab-labels">
-                    <label class="tab-label" for="desc">Описание</label>
-                    <label class="tab-label" for="spec">Характеристики</label>
-                    <label class="tab-label" for="tech">Техописание</label>
-                </div>
-                
-                <!-- Контент табов -->
-                <div class="tab-content desc">
-                    <p>Межкомнатная дверь модель АН01 из массива хвои...</p>
-                </div>
-                
-                <div class="tab-content spec">
-                    <table class="spec-table">
-                        <tr><td>Материал</td><td>Сосна сорт AB</td></tr>
-                        <tr><td>Толщина</td><td>40 мм</td></tr>
-                        ...
-                    </table>
-                </div>
-                
-                <div class="tab-content tech">
-                    <p class="tech-text">Техническое описание изделия...</p>
-                </div>
+            <div class="vehi-advantage">
+                <p>В соответствии с ГОСТ и ТУ</p>
             </div>
+            
+            <a href="#" class="vehi-more-btn">Подробнее →</a>
         </div>
-    </div>
-    
-    <!-- Модальное окно -->
-    <div id="fullscreen" class="image-modal">
-        <a href="#close" class="modal-close">×</a>
-        <img src="" alt="Увеличенное изображение">
     </div>
 
+    <!-- Табы -->
+    <div class="vehi-tabs">
+        <input type="radio" name="vehi-tabs" id="vehi-desc" checked>
+        <input type="radio" name="vehi-tabs" id="vehi-spec">
+        <input type="radio" name="vehi-tabs" id="vehi-tech">
+        
+        <div class="vehi-tab-labels">
+            <label for="vehi-desc" class="vehi-tab-label active">Описание</label>
+            <label for="vehi-spec" class="vehi-tab-label">Характеристики</label>
+            <label for="vehi-tech" class="vehi-tab-label">Техописание</label>
+        </div>
+        
+        <!-- Контент табов -->
+        <div class="vehi-tab-content" id="vehi-desc-content">
+            <p>Межкомнатная дверь модель АН01 из массива хвои...</p>
+        </div>
+        
+        <div class="vehi-tab-content" id="vehi-spec-content">
+            <table class="vehi-spec-table">
+                <tr><td>Материал</td><td>Сосна сорт AB</td></tr>
+                <tr><td>Толщина</td><td>40 мм</td></tr>
+                <!-- Остальные характеристики -->
+            </table>
+        </div>
+        
+        <div class="vehi-tab-content" id="vehi-tech-content">
+            <p class="vehi-tech-text">Техническое описание изделия...</p>
+        </div>
+    </div>
 </div>  
 </div><!-- Конец проддукции -->
 
