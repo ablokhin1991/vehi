@@ -216,6 +216,11 @@
     display: none;
     padding: 20px 0;
 }
+.vehi-tech-content {
+  background: #eee;
+
+}
+
 
 #vehi-desc:checked ~ #vehi-desc-content,
 #vehi-spec:checked ~ #vehi-spec-content,
