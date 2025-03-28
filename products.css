@@ -143,9 +143,7 @@
 /* products.css */
 /* Новые стили (префикс vehi-) */
 .vehi-product-container {
-    max-width: 1200px;
     margin: 20px auto;
-    padding: 0 15px;
 }
 
 .vehi-product-main {
