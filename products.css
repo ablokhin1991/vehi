@@ -211,6 +211,9 @@
     border: 1px solid transparent;
     border-bottom: none;
 }
+.vehi-tab-label:hover {
+    color: #52bc4a;
+}
 
 .vehi-tab-content {
     display: none;
