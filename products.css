@@ -225,7 +225,7 @@
 }
 
 
-#vehi-desc:checked ~ #vehi-desc-content,
+/*#vehi-desc:checked ~ #vehi-desc-content,*/
 #vehi-spec:checked ~ #vehi-spec-content,
 #vehi-tech:checked ~ #vehi-tech-content {
     display: block;
@@ -306,7 +306,18 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
   }
-  
+
+  .vehi-desc-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+  .vehi-desc-content img {
+    max-width: 100%; /* Запрещает картинке выходить за границы контейнера */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+    object-fit: contain; /* Гарантирует, что картинка полностью отображается в границах */
+}
+
   .vehi-spec-table {
     width: 100%;
     /*border-collapse: collapse;*/
