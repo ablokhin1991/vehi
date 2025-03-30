@@ -376,3 +376,18 @@
       padding-left: 10px;
     }
   }
+  .vehi-tab-content ol {
+    padding-left: 20px; /* Добавляет отступ для списка */
+}
+
+.vehi-tab-content ol li {
+    padding-left: 5px; /* Добавляет внутренний отступ для элементов списка */
+}
+
+.vehi-tab-content ul {
+    padding-left: 20px; /* Аналогичный отступ для ненумерованных списков */
+}
+
+.vehi-tab-content li {
+    overflow-wrap: break-word; /* Позволяет переносить длинные строки */
+}
