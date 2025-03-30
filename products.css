@@ -309,7 +309,7 @@
   
   .vehi-spec-table {
     width: 100%;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
     position: relative;
   }
   
@@ -359,7 +359,6 @@
   /* Техно-акценты */
   .vehi-spec-table {
     border: 1px solid #e2e8f0;
-    border-radius: 8px;
     padding: 16px;
   }
   
