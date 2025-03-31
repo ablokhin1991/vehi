@@ -251,7 +251,7 @@
     background: #008000;
 }
 
-/* Опционально: добавление подчеркивания для активного таба */
+/* Опционально: добавление подчеркивания для активного таба
 .vehi-tabs input[type="radio"]:checked + .vehi-tab-labels label::after {
     content: "";
     position: absolute;
@@ -260,7 +260,7 @@
     width: 100%;
     height: 2px;
     background: #008000;
-}
+}*/
 /* Стили для табов */
 .vehi-tabs input[type="radio"] {
     display: none;
