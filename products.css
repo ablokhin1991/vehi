@@ -142,9 +142,9 @@
 /**************ДЛЯ СТРАНИЦ ТОВАРА*******************/
 /* products.css */
 /* Новые стили (префикс vehi-) */
-.vehi-product-container {
-    /*margin: 20px auto;*/
-}
+/*.vehi-product-container {
+    margin: 20px auto;
+}*/
 
 .vehi-product-main {
     display: grid;

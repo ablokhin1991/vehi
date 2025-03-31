@@ -1,3 +1,4 @@
+// JavaScript для работы слайдера
 document.addEventListener("DOMContentLoaded", function () {
     const thumbnails = document.querySelectorAll(".vehi-thumb");
     const mainImage = document.querySelector(".vehi-main-image img.active");
