@@ -104,10 +104,8 @@ section#steps-section {
     flex-direction: column;
     gap: 12px;
     width: 100%;
-    /*max-width: 500px;*/
     margin-top: 15px;
     background: #fff;
-    padding: 20px;
 }
 
 .price {
@@ -115,6 +113,7 @@ section#steps-section {
     grid-template-columns: 1fr auto auto;
     align-items: center;
     gap: 15px;
+    padding: 20px;
 }
 
 .price > span {
