@@ -219,18 +219,11 @@
     top: 2px;
     border: 1px solid transparent;
     border-bottom: none;
-    transition: color 0.3s ease;
 }
 .vehi-tab-label:hover {
     color: #52bc4a;
 }
-/* Ищем активный инпут и красим соответствующий заголовок в зелёный */
-input[id="vehi-desc"]:checked ~ .vehi-tab-labels label[for="vehi-desc"],
-input[id="vehi-spec"]:checked ~ .vehi-tab-labels label[for="vehi-spec"],
-input[id="vehi-tech"]:checked ~ .vehi-tab-labels label[for="vehi-tech"] {
-    color: green;
-    font-weight: bold;
-}
+
 .vehi-tab-content {
     display: none;
     padding: 20px;
