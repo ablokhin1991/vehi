@@ -151,7 +151,6 @@ section#steps-section {
 .vehi-advantage {
     border-left: 4px solid #ffcc00;
     padding: 10px 15px;
-    margin-top: 15px;
     background: #fff;
 }
 
@@ -504,7 +503,6 @@ section#steps-section {
 /* Стили для оптовых цен */
 .wholesale-prices {
     margin-top: 20px;
-    padding: 15px 0;
     border-top: 1px solid #e0e0e0;
 }
 
