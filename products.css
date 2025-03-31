@@ -431,6 +431,7 @@
   }
   .vehi-tab-content ol {
     padding-left: 20px; /* Добавляет отступ для списка */
+    font-size: 14px;
 }
 
 .vehi-tab-content ol li {
@@ -439,6 +440,7 @@
 
 .vehi-tab-content ul {
     padding-left: 20px; /* Аналогичный отступ для ненумерованных списков */
+    font-size: 14px;
 }
 
 .vehi-tab-content li {
