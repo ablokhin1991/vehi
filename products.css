@@ -1,4 +1,6 @@
-
+.combined-section steps-section {
+    margin: 20px auto;
+}
 .products-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
