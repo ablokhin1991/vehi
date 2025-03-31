@@ -227,16 +227,16 @@
     cursor: pointer;
     padding: 10px 20px;
     margin-right: 5px;
-    transition: all 0.3s;
     color: #666;
     font-weight: normal;
+    transition: color 0.3s;
 }
 /* Исправленные стили для активного таба */
 #vehi-desc:checked ~ .vehi-tab-labels label[for="vehi-desc"],
 #vehi-spec:checked ~ .vehi-tab-labels label[for="vehi-spec"],
 #vehi-tech:checked ~ .vehi-tab-labels label[for="vehi-tech"] {
     color: #52bc4a;
-    font-weight: 700;
+    font-weight: 500;
 }
 /* Подчеркивание для активного таба */
 #vehi-desc:checked ~ .vehi-tab-labels label[for="vehi-desc"]::after,
