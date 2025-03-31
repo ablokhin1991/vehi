@@ -237,6 +237,7 @@
 #vehi-tech:checked ~ .vehi-tab-labels label[for="vehi-tech"] {
     color: #52bc4a;
     font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 /* Подчеркивание для активного таба */
 #vehi-desc:checked ~ .vehi-tab-labels label[for="vehi-desc"]::after,
@@ -248,7 +249,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #008000;
+    background: #52bc4a;
 }
 
 /* Опционально: добавление подчеркивания для активного таба
