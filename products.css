@@ -118,10 +118,7 @@
 }
 
 .price-title {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
     color: #333;
-    font-size: 16px;
     justify-self: start; /* Прижимаем к левому краю */
 }
 
