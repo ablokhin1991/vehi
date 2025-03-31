@@ -525,7 +525,6 @@ section#steps-section {
 .wholesale-title {
     position: relative;
     z-index: 2;
-    background: #fff;
     padding-right: 8px;
     font-size: 15px;
 }
@@ -533,7 +532,6 @@ section#steps-section {
 .wholesale-value {
     position: relative;
     z-index: 2;
-    background: #fff;
     padding-left: 8px;
     text-align: right;
 }
