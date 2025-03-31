@@ -194,6 +194,8 @@
     display: none;
     width: 100%;
     height: auto;
+    cursor: pointer;
+    
 }
 
 .vehi-main-image img.active {
