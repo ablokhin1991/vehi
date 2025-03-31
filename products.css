@@ -223,15 +223,7 @@
 .vehi-tab-label:hover {
     color: #52bc4a;
 }
-.vehi-tab-content.active {
-    display: block;
-}
 
-/* Делаем активный заголовок зелёным */
-.vehi-tab-label.active {
-    color: green;
-    font-weight: bold;
-}
 .vehi-tab-content {
     display: none;
     padding: 20px;
