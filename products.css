@@ -173,7 +173,7 @@ section#steps-section {
 .vehi-thumb {
     width: 100px;
     height: 100px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     overflow: hidden;
     cursor: pointer;
 }
