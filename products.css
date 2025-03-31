@@ -357,6 +357,11 @@ section#steps-section {
     font-size: 14px;
     /*justify-self: end; Прижимаем к правому краю */
 }
+
+product-prices#price_2 {
+    border-top: 1px solid #e0e0e0;
+}
+
 /*************ТАБЫ**********************************************************/
 .vehi-tab-content {
     margin: 0 auto;
