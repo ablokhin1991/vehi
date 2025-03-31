@@ -104,3 +104,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Обновленный JavaScript (логика без radio) для табов
+document.addEventListener("DOMContentLoaded", function () {
+    const labels = document.querySelectorAll(".vehi-tab-label");
+    const contents = document.querySelectorAll(".vehi-tab-content");
+
+    labels.forEach(label => {
+        label.addEventListener("click", function () {
+            // Убираем активный класс у всех табов
+            labels.forEach(l => l.classList.remove("active"));
+            contents.forEach(c => c.classList.remove("active"));
+
+            // Делаем кликнутый таб активным
+            this.classList.add("active");
+            document.getElementById(this.dataset.tab + "-content").classList.add("active");
+        });
+    });
+});
