@@ -275,9 +275,12 @@
 }
 .vehi-tech-content {
   background: #eee;
-
 }
-
+.vehi-tech-content p,
+.vehi-tech-content ul,
+.vehi-tech-content ol {
+    font-size: 14px;
+}
 
 #vehi-desc:checked ~ #vehi-desc-content,
 #vehi-spec:checked ~ #vehi-spec-content,
