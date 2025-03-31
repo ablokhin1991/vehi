@@ -231,12 +231,24 @@
     color: #666;
     font-weight: normal;
 }
-
-/* Стиль для активного таба */
-.vehi-tabs input[type="radio"]:checked + .vehi-tab-labels label {
-    color: #008000;
+/* Исправленные стили для активного таба */
+#vehi-desc:checked ~ .vehi-tab-labels label[for="vehi-desc"],
+#vehi-spec:checked ~ .vehi-tab-labels label[for="vehi-spec"],
+#vehi-tech:checked ~ .vehi-tab-labels label[for="vehi-tech"] {
+    color: #52bc4a;
     font-weight: 700;
-    position: relative;
+}
+/* Подчеркивание для активного таба */
+#vehi-desc:checked ~ .vehi-tab-labels label[for="vehi-desc"]::after,
+#vehi-spec:checked ~ .vehi-tab-labels label[for="vehi-spec"]::after,
+#vehi-tech:checked ~ .vehi-tab-labels label[for="vehi-tech"]::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #008000;
 }
 
 /* Опционально: добавление подчеркивания для активного таба */
