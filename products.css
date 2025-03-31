@@ -428,3 +428,25 @@
     font-weight: bold;
     cursor: pointer;
 }
+.vehi-lightbox .prev,
+.vehi-lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.vehi-lightbox .prev { left: 20px; }
+.vehi-lightbox .next { right: 20px; }
+
+.vehi-lightbox .prev:hover,
+.vehi-lightbox .next:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
