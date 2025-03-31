@@ -16,3 +16,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Этот скрипт откроет изображение в увеличенном виде при клике:
+document.addEventListener("DOMContentLoaded", function () {
+    const mainImage = document.querySelector(".vehi-main-image img.active");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".vehi-lightbox .close");
+
+    mainImage.addEventListener("click", function () {
+        lightbox.style.display = "flex";
+        lightboxImg.src = this.src;
+    });
+
+    closeBtn.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", function (e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    });
+});
