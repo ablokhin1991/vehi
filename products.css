@@ -496,3 +496,77 @@ section#steps-section {
 .vehi-lightbox .next:hover {
     background: rgba(255, 255, 255, 0.3);
 }
+/**********************БЛОК ОПТОВЫХ ЦЕН************************************/
+/* Стили для оптовых цен */
+.wholesale-prices {
+    margin-top: 20px;
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.price-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 0;
+}
+
+.price-row:after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px dotted #bde6ba;
+    z-index: 1;
+}
+
+.wholesale-title {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-right: 8px;
+    font-size: 15px;
+}
+
+.wholesale-value {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-left: 8px;
+    text-align: right;
+}
+
+.discount-label {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .price-row {
+        flex-wrap: wrap;
+        padding: 8px 0;
+    }
+    
+    .wholesale-title,
+    .wholesale-value {
+        font-size: 14px;
+        padding: 4px;
+    }
+    
+    .discount-label {
+        display: block;
+        margin: 4px 0 0 0;
+    }
+    
+    .price-row:after {
+        bottom: 16px;
+    }
+}
