@@ -122,11 +122,12 @@ section#steps-section {
 .price-title {
     color: #333;
     justify-self: start; /* Прижимаем к левому краю */
+    font-weight: 500;
 }
 
 .current-price {
-    font-weight: 600;
-    color: #52bc4a;
+    font-weight: 700;
+    color: #53b14c;
     font-size: 18px;
     justify-self: center; /* Центрируем цену */
 }
@@ -135,7 +136,8 @@ section#steps-section {
     color: #999;
     text-decoration: line-through;
     font-size: 14px;
-    /*justify-self: end; Прижимаем к правому краю */
+    font-weight: 500;
+    justify-self: end;
 }
 
 /**************ДЛЯ СТРАНИЦ ТОВАРА*******************/
