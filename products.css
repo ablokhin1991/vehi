@@ -110,7 +110,7 @@ section#steps-section {
 
 .price {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
     gap: 15px;
 }
