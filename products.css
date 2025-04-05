@@ -121,7 +121,7 @@ section#steps-section {
 
 .price-title {
     color: #333;
-    justify-self: start; /* Прижимаем к левому краю */
+    justify-self: start;
     font-weight: 500;
 }
 
@@ -129,7 +129,7 @@ section#steps-section {
     font-weight: 500;
     color: #53b14c;
     font-size: 18px;
-    justify-self: center; /* Центрируем цену */
+    justify-self: center;
 }
 
 .old-price {
