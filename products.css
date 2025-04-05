@@ -116,7 +116,7 @@ section#steps-section {
 }
 
 .price > span {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .price-title {
