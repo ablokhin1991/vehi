@@ -116,7 +116,7 @@ section#steps-section {
 }
 
 .price > span {
-    /*white-space: nowrap;*/
+    white-space: nowrap;
 }
 
 .price-title {
@@ -517,6 +517,13 @@ section#steps-section {
     align-items: baseline;
     padding: 12px 0;
 }
+.price-row-2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px 0;
+}
 
 .price-row:after {
     content: "";
@@ -555,6 +562,10 @@ section#steps-section {
 /* Мобильная адаптация */
 @media (max-width: 768px) {
     .price-row {
+        flex-wrap: wrap;
+        padding: 8px 0;
+    }
+    .price-row-2 {
         flex-wrap: wrap;
         padding: 8px 0;
     }
