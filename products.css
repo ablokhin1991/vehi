@@ -38,7 +38,8 @@ section#steps-section {
     width: 100%;
     height: auto;
     display: block;
-    padding: 20px 20px 0 20px;
+    /*padding: 20px 20px 0 20px;*/
+    border-radius: 10px;
 }
 
 .product-content .more-btn {
