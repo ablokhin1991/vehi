@@ -38,7 +38,7 @@ section#steps-section {
 .product-image {
     width: 100%;
     height: auto;
-    /*display: block;*/
+    display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
