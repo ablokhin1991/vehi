@@ -32,6 +32,7 @@ section#steps-section {
     width: 100%;
     height: auto;
     display: block;
+    padding: 20px;
 }
 .product-image {
     width: 100%;
