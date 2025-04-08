@@ -122,6 +122,9 @@ section#steps-section {
 .price > span {
     white-space: nowrap;
 }
+.price-row-2 > price_1 {
+    background: #52bc4a;
+}
 
 .price-title {
     color: #333;
