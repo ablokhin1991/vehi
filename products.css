@@ -378,6 +378,9 @@ section#steps-section {
 .vehi-product-details {
     background: #eee;
     padding: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
 }
 .vehi-prices {
     margin-top: 15px;
