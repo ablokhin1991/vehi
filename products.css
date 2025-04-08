@@ -26,6 +26,7 @@ section#steps-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 15px;
 }
 .product-inner {
     width: 100%;
