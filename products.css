@@ -214,6 +214,8 @@ section#steps-section {
     border: 1px solid #e0e0e0;
     border-radius: 25px;
     overflow: hidden;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .vehi-thumbs-column {
@@ -384,6 +386,8 @@ section#steps-section {
     border-radius: 25px;
     overflow: hidden;
     position: relative;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 .vehi-prices {
     margin-top: 15px;
