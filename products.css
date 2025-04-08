@@ -34,7 +34,8 @@ section#steps-section {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product-content .more-btn {
