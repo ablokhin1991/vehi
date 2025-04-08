@@ -16,6 +16,7 @@ section#steps-section {
     /*background: #eee;*/
     border-radius: 25px;
     border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .product-content {
@@ -64,7 +65,7 @@ section#steps-section {
 
 .product-content > p {
     padding-bottom: 15px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
   }
 
 .product-content .more-btn:before {
@@ -131,6 +132,9 @@ section#steps-section {
     background: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top: 1px solid #eee;
 }
 
 .price {
