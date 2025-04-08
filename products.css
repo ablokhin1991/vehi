@@ -259,6 +259,7 @@ section#steps-section {
 
 .vehi-main-image img.active {
     display: block;
+    border-radius: 20px;
 }
 
 /* Табы */
