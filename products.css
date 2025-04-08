@@ -14,6 +14,7 @@ section#steps-section {
 .product-card {
     display: grid;
     background: #eee;
+    border-radius: 25px;
     /*border-right: 2px solid #bebebe;
     border-bottom: 2px solid #bebebe;
     border-top: 1px solid #ccc;
@@ -52,6 +53,11 @@ section#steps-section {
 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transform: translateY(0);
+    transition: 
+        transform 0.1s ease, 
+        box-shadow 0.1s ease, 
+        background 0.3s ease, 
+        color 0.3s ease;  
 }
 .product-content .more-btn:active {
     transform: translateY(2px); /* Сдвиг вниз при нажатии */
