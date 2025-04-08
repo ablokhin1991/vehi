@@ -68,10 +68,10 @@ section#steps-section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени */
 }
 
-.product-content > p {
+/*.product-content > p {
     padding-bottom: 15px;
-    /*border-bottom: 1px solid #ccc;*/
-  }
+    border-bottom: 1px solid #ccc;
+  }*/
 
 .product-content .more-btn:before {
     content: '';
