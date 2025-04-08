@@ -23,13 +23,12 @@ section#steps-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 15px;
+    margin: 0px 20px 20px 20px;
 }
 .product-inner {
     width: 100%;
     height: auto;
     display: block;
-    padding: 20px;
 }
 .product-image {
     width: 100%;
