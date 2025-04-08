@@ -23,7 +23,6 @@ section#steps-section {
 }
 
 .product-content {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
