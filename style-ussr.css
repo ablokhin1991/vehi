@@ -210,7 +210,9 @@ section {
   padding: 20px;
   align-self: start; 
   border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .products-menu h3 {
