@@ -13,13 +13,9 @@ section#steps-section {
 
 .product-card {
     display: grid;
-    background: #eee;
+    /*background: #eee;*/
     border-radius: 25px;
-    border: 1px solid #ccc;
-    /*border-right: 2px solid #bebebe;
-    border-bottom: 2px solid #bebebe;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;*/
+    border: 1px solid #eee;
 }
 
 .product-content {
