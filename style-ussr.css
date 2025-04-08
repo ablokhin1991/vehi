@@ -205,11 +205,12 @@ section {
 }
 /* Сайдбар */
 .main-sidebar {
-  order: -1; /* Перемещаем сайдбар в начало сетки */
+  order: -1;
   background: #eee;
   padding: 20px;
-  /*border-radius: 6px;*/
-  align-self: start; /* Фиксируем высоту по содержимому */
+  align-self: start; 
+  border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .products-menu h3 {
