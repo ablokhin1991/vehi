@@ -227,9 +227,12 @@ section#steps-section {
 .vehi-thumb {
     width: 100px;
     height: 100px;
-    /*border: 2px solid #ccc;*/
+    border: 2px solid #ccc;
     overflow: hidden;
     cursor: pointer;
+    margin-left: 8px;
+    margin-top: 8px;
+    border-radius: 15px;
 }
 
 .vehi-thumb.active {
