@@ -67,6 +67,7 @@ section#steps-section {
 .product-content .more-btn:active {
     transform: translateY(2px); /* Сдвиг вниз при нажатии */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени */
+    color: #fff;
 }
 
 /*.product-content > p {
@@ -81,7 +82,7 @@ section#steps-section {
     left: 0;
     width: 0;
     height: 100%;
-    background: #45a043;
+    background: #52bc4a;
     transition: all 0.5s ease;
     z-index: -1; 
 }
