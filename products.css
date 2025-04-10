@@ -26,6 +26,7 @@ section#steps-section {
     border-top: 1px solid #e0e0e0;
 }
 .product-content h3 {
+   font-weight: 500;
    font-size: 16px;
    margin-top: 20px;
 }
