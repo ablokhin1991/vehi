@@ -150,8 +150,8 @@ section {
 .cover-content .more-btn {
   margin-top: auto; 
   display: inline-block;
-  background: linear-gradient(90deg, #def2dc 0%, #52bc4a 100%);
-  color: #fff;
+  background: #fff;
+  color: #52bc4a;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 14px;
@@ -163,8 +163,7 @@ section {
 
 .cover-content .more-btn:hover {
   color: #fff;
-  background: linear-gradient(90deg, #52bc4a 0%, #def2dc 100%);
-  /*border: 1px solid #fff;*/
+  background: #45a043;
 }
 
 
