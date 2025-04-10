@@ -167,6 +167,9 @@ section#steps-section {
     border-left: 4px solid #ffcc00;
     padding: 10px 15px;
     background: #fff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
 }
 
 .vehi-product-main {
@@ -353,13 +356,9 @@ section#steps-section {
     }
 }
 .vehi-product-details {
-    background: #eee;
     padding: 20px;
-    border-radius: 25px;
     overflow: hidden;
     position: relative;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 .vehi-prices {
     margin-top: 15px;
