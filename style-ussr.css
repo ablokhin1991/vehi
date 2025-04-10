@@ -170,9 +170,9 @@ section {
 
 .cover-image {
   width: 100%;
-  height: 100%; /* Занимаем всю высоту ячейки grid */
+  height: 100%; 
   object-fit: cover;
-  /*border-radius: 6px;*/
+  border-radius: 9px;
 }
 
 /* Преимущества */
