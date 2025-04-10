@@ -150,7 +150,7 @@ section {
 .cover-content .more-btn {
   margin-top: auto; 
   display: inline-block;
-  background: #e7e7e7;
+  background: #fff;
   color: #333;
   padding: 10px 20px;
   text-decoration: none;
@@ -162,7 +162,7 @@ section {
 
 .cover-content .more-btn:hover {
   color: #fff;
-  background: #2c3e50;
+  background: #52bc4a;
 }
 
 
