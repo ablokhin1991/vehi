@@ -148,17 +148,16 @@ section {
 }
 
 .cover-content .more-btn {
-  margin-top: auto; /* Прижимаем кнопку к низу контейнера */
+  margin-top: auto; 
   display: inline-block;
   background: #e7e7e7;
-  color: #2c3e50;
+  color: #333;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 14px;
   margin-top: 15px;
-  border-right: 2px solid #2c3e50;
-  border-bottom: 2px solid #2c3e50;
-  transition: background 0.3s, color 0.3s; /* Плавный переход */
+  transition: background 0.3s, color 0.3s;
+  border-radius: 9px;
 }
 
 .cover-content .more-btn:hover {
