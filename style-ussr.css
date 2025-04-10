@@ -91,7 +91,7 @@ p {
   /*width: 90%;
   max-width: 1200px;
   width: 80%;*/
-  margin: 20px auto;
+  margin: 80px auto;
   display: grid;
   grid-template-columns: 28% 70%;
   gap: 20px;
