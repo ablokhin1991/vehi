@@ -10,6 +10,15 @@ section#steps-section {
     padding: 0;
     box-sizing: border-box;
 }
+.products-grid-container-catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0px 0 20px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .product-card {
     display: grid;
@@ -73,6 +82,10 @@ section#steps-section {
 /* Мобильная версия */
 @media (max-width: 768px) {
     .products-grid-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .products-grid-container-catalog {
         grid-template-columns: 1fr;
         width: 100%;
     }
