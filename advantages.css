@@ -15,7 +15,7 @@
   }
 
 .stats-grid .stats-card:not(:first-child) {
-    border-left: 2px solid #ccc;
+    border-left: 1px solid #ccc;
 }
   
   .card-header {
