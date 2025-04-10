@@ -206,13 +206,14 @@ section {
 /* Сайдбар */
 .main-sidebar {
   order: -1;
-  background: #eee;
+  /*background: #eee;*/
   padding: 20px;
   align-self: start; 
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  /*border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;*/
+  border-radius: 25px;
   border: 1px solid #e0e0e0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);*/
 }
 
 .products-menu h3 {
