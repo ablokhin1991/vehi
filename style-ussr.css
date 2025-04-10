@@ -164,7 +164,7 @@ section {
 .cover-content .more-btn:hover {
   color: #fff;
   background: #52bc4a;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
 }
 
 
