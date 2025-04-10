@@ -200,8 +200,8 @@ section#steps-section {
 }
 
 .vehi-thumb {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     cursor: pointer;
     margin-left: 8px;
