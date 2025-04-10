@@ -45,7 +45,8 @@ p {
 }
 
 .header-container {
-  width: 90%;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -88,7 +89,8 @@ p {
 
 /* Основной контейнер */
 .main-container {
-  width: 90%;
+  max-width: 1400px;
+  width: 100%;
   margin: 80px auto;
   display: grid;
   grid-template-columns: 28% 70%;
