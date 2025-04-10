@@ -64,10 +64,12 @@ section#steps-section {
         color 0.3s ease;  
 
 }
+.product-content .more-btn:hover {
+    color: #fff;
+  }
 .product-content .more-btn:active {
     transform: translateY(2px); /* Сдвиг вниз при нажатии */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени */
-    color: #fff;
 }
 
 /*.product-content > p {
