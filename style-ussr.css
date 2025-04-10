@@ -89,7 +89,6 @@ p {
 /* Основной контейнер */
 .main-container {
   width: 90%;
-  max-width: 1200px;
   margin: 80px auto;
   display: grid;
   grid-template-columns: 28% 70%;
