@@ -66,16 +66,12 @@ section#steps-section {
 }
 .product-content .more-btn:hover {
     color: #fff;
+    background: #52bc4a;
   }
-.product-content .more-btn:active {
+/*.product-content .more-btn:active {
     transform: translateY(2px); /* Сдвиг вниз при нажатии */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени */
+ /*   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени 
 }
-
-/*.product-content > p {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ccc;
-  }*/
 
 .product-content .more-btn:before {
     content: '';
@@ -91,7 +87,7 @@ section#steps-section {
 
 .product-content .more-btn:hover:before {
     width: 100%;
-}
+}*/
 
 
 /* Мобильная версия */
