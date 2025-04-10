@@ -1,4 +1,4 @@
-/* Стили футера */
+
 .main-footer {
     background: #333;
     color: white;
@@ -7,8 +7,7 @@
   }
   
   .footer-container {
-    width: 100%;
-    /*max-width: 1200px;*/
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,7 +15,6 @@
     padding: 0 20px 20px 20px;
   }
   
-  /* Первая колонка */
   .footer-logo-block {
     display: flex;
     gap: 10px;
@@ -47,7 +45,6 @@
     height: 16px;
   }
   
-  /* Общие стили для всех колонок */
   .footer-title {
     color: #ccc;
     font-size: 18px;
@@ -82,12 +79,10 @@
     color: #52bc4a;
   }
   
-  /* Копирайт */
   .footer-copyright {
     border-top: 1px solid #4a5561;
     padding-top: 20px;
     width: 100%;
-    /*max-width: 1200px;*/
     margin: 0 auto;
     padding: 20px 20px 20px 20px;
   }
@@ -97,9 +92,6 @@
     font-size: 12px;
   }
 
- 
-  
-  /* Мобильная версия */
   @media (max-width: 768px) {
     .footer-container {
       grid-template-columns: 1fr;
