@@ -13,10 +13,8 @@ section#steps-section {
 
 .product-card {
     display: grid;
-    background: #eee;
     border-radius: 25px;
     border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     overflow: hidden;
 }
 
@@ -25,6 +23,7 @@ section#steps-section {
     flex-direction: column;
     justify-content: space-between;
     margin: 0px 20px 20px 20px;
+    border-top: 1px solid #e0e0e0;
 }
 .product-content h3 {
    font-size: 16px;
@@ -45,9 +44,10 @@ section#steps-section {
 
 .product-content .more-btn {
     margin-top: auto;
-    background: #52bc4a;
-    border-color: #45a043;
-    color: #fff;
+    font-weight: 700;
+    border-color: #52bc4a;
+    border: 1px solid #52bc4a;
+    color: #52bc4a;
     position: relative;
     overflow: hidden;
     transition: all 500ms ease;
@@ -63,10 +63,6 @@ section#steps-section {
         background 0.3s ease, 
         color 0.3s ease;  
 
-    box-shadow: 
-        0 3px 6px rgba(0, 0, 0, 0.1),   /* Низ */
-        -4px 0 6px rgba(0, 0, 0, 0.1),  /* Лево */
-        4px 0 6px rgba(0, 0, 0, 0.1);   /* Право */
 }
 .product-content .more-btn:active {
     transform: translateY(2px); /* Сдвиг вниз при нажатии */
@@ -145,14 +141,9 @@ section#steps-section {
     background: #fff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-top: 1px solid #eee;
-
-    box-shadow: 
-        0 -3px 6px rgba(0, 0, 0, 0.05),
-        -4px 0 6px rgba(0, 0, 0, 0.05),
-        4px 0 6px rgba(0, 0, 0, 0.05);
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 
 .price {
