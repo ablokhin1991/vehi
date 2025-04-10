@@ -68,27 +68,6 @@ section#steps-section {
     color: #fff;
     background: #52bc4a;
   }
-/*.product-content .more-btn:active {
-    transform: translateY(2px); /* Сдвиг вниз при нажатии */
- /*   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Уменьшение тени 
-}
-
-.product-content .more-btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #52bc4a;
-    transition: all 0.2s ease;
-    z-index: -1; 
-}
-
-.product-content .more-btn:hover:before {
-    width: 100%;
-}*/
-
 
 /* Мобильная версия */
 @media (max-width: 768px) {

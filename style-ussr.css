@@ -636,16 +636,9 @@ section {
   margin: 0px auto;
   width: 100%;
   box-sizing: border-box;
-  background: #eee;
+  background: #f5f5f5;
   margin-bottom: 20px;
-
-  /*border-right: 2px solid #bebebe;
-  border-bottom: 2px solid #bebebe;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;*/
   border-radius: 25px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Для мобилок */
