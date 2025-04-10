@@ -45,7 +45,7 @@ p {
 }
 
 .header-container {
-  /*width: 80%;*/
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
