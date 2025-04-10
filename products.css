@@ -88,6 +88,11 @@ section#steps-section {
     border-left: 4px solid #52bc4a;
     padding: 10px 15px;
     margin-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 
 .more-btn {
