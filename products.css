@@ -230,13 +230,13 @@ section#steps-section {
     display: block;
     border-radius: 20px;
 }
+.vehi-product-container {
+    border: 1px solid #e0e0e0;
+}
 
 /* Табы */
 .vehi-tabs {
     width: 100%;
-    border-radius: 25px;
-    border: 1px solid #e0e0e0;
-    
 }
 
 .vehi-tab-labels {
