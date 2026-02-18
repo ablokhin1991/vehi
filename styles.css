@@ -93,6 +93,7 @@
       color:var(--white);
       letter-spacing:0.04em;
       text-transform:uppercase;
+      font-style: italic;
     }
     .logo-text-sub{
       font-size:0.58rem;color:var(--steel-4);
