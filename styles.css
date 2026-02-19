@@ -1047,7 +1047,7 @@
       .burger-btn{display:flex}
       .mobile-nav-overlay{display:block}
       .hero-inner{grid-template-columns:1fr;gap:40px}
-      .hero-right{order:1}.hero-left{order:2}
+      .hero-right{order:2}.hero-left{order:1}
       .hero-stat-cards{grid-template-columns:repeat(3,1fr);position:static;margin-top:0}
       .hero-img-wrapper{ aspect-ratio:16/9; max-height:360px; }
       .about-grid{grid-template-columns:1fr;gap:36px}
