@@ -640,8 +640,6 @@
       /* Высота = высота левой колонки: достигается через align-self:stretch */
       align-self:stretch;
       overflow:hidden;
-      border:1px solid var(--iron-4);
-      border-left:2px solid var(--green);
     }
     .product-card-desc-right img{
       width:100%;
