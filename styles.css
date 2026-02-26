@@ -584,9 +584,26 @@
       padding:2px 8px;border-radius:0;
       background:transparent;
     }
-    .product-card-body{padding:20px 24px 24px;flex:1;display:flex;flex-direction:column}
-    .product-card-desc{font-size:0.85rem;color:var(--steel-2);line-height:1.7;margin-bottom:16px}
-    .product-features{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+    .product-card-body{
+      padding:20px 24px 24px;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      gap:0;
+    }
+    .product-card-desc{
+      font-size:0.85rem;
+      color:var(--steel-2);
+      line-height:1.7;
+      margin-bottom:12px;
+    }
+    .product-features{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-top:auto;
+      flex:1;
+    }
     .product-feature{
       display:flex;align-items:center;gap:10px;
       font-size:0.82rem;color:var(--steel-2);
@@ -597,6 +614,43 @@
       content:'';width:4px;height:14px;
       background:var(--green);flex-shrink:0;border-radius:0;
     }
+
+        .product-tag-list{display:flex;flex-wrap:wrap;gap:4px;margin-top:14px}
+
+    /* PRODUCT BODY WITH IMAGE */
+    .product-card-body-location{
+      display:flex;
+      flex-direction:row;
+      gap:16px;
+      flex:1;
+      /* Ключевое: растягиваем на всю доступную высоту до тегов */
+      margin-bottom:0;
+    }
+    .product-card-desc-left{
+      /* Левая часть — текст и фичи — занимает свободное место */
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      min-width:0; /* Предотвращает переполнение flex-контейнера */
+    }
+    .product-card-desc-right{
+      /* Правая часть — фото — ровно по высоте левой колонки */
+      flex-shrink:0;
+      width:120px;       /* Фиксированная ширина на десктопе */
+      /* Высота = высота левой колонки: достигается через align-self:stretch */
+      align-self:stretch;
+      overflow:hidden;
+      border:1px solid var(--iron-4);
+      border-left:2px solid var(--green);
+    }
+    .product-card-desc-right img{
+      width:100%;
+      height:100%;         /* Фото занимает всю высоту правой колонки */
+      object-fit:cover;
+      object-position:center top;
+      display:block;
+    }
+
     .product-tag-list{display:flex;flex-wrap:wrap;gap:4px;margin-top:14px}
     .product-tag{
       font-size:0.65rem;padding:3px 8px;
@@ -606,6 +660,8 @@
       color:var(--steel-2);font-weight:600;
       text-transform:uppercase;letter-spacing:0.06em;
     }
+
+
 
     /* ===== PROCESS ===== */
     #process{padding:88px 0;background:var(--iron)}
@@ -1064,6 +1120,14 @@
       .footer-grid{grid-template-columns:1fr 1fr}
     }
     @media(max-width:768px){
+      .product-card-body-location{flex-direction:column}
+      .product-card-desc-right{
+        width:100%;
+        height:160px; 
+        align-self:auto;
+        border-left:none;
+        border-top:2px solid var(--green);
+      }
       #hero{padding:48px 0 56px}
       section{padding:56px 0}
       #about,#products,#process,#trust,#target,#faq,#contacts{padding:56px 0}
@@ -1078,6 +1142,7 @@
     }
     @media(max-width:576px){
       .container{padding:0 16px}
+      .product-card-desc-right{display:none}
       .hero-cta-group{flex-direction:column;align-items:stretch;text-align:center}
       .btn-primary,.btn-secondary{justify-content:center}
       .hero-stat-cards{grid-template-columns:1fr}
