@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #52bc4a;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="carpentry-icon" class="cls-1" d="M111,35h50V225H111V35Zm229,0h50V225H340V35Zm0,0V85H161V35H340Zm0,140v50H161V175H340ZM111,276h50V466H111V276Zm229,0h50V466H340V276Zm0,0v50H161V276H340Zm0,140v50H161V416H340ZM161,108V85h61l118,68v22H277Zm0,241V326h61l118,68v22H277Z"/>
+</svg>
