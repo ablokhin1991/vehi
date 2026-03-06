@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #52bc4a;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="glued-icon" class="cls-1" d="M111,35h60V465H111V35ZM269,142.5L330,89V196Zm0,108L330,197V304Zm0,109L330,306V413Zm-37-56L171,357V250Zm0,107L171,464V357Zm0-213L171,251V144Zm0-108L171,143V36ZM390,465H330V35h60V465Zm-60,0V413l-61,53Zm0-430V87L269,34Z"/>
+</svg>
