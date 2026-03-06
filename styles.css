@@ -566,7 +566,7 @@
       margin-bottom:14px;border-radius:0;
     }
     .product-icon svg{width:22px;height:22px;fill:var(--green)}
-    .material-symbols-outlined {
+    .product-icon__image {
     color: var(--green) !important;
     }
     .product-card-title{
