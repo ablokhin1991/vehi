@@ -1,0 +1,11 @@
+<svg id="process_icons" data-name="process icons" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #52bc4a;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="lumber-icon" class="cls-1" d="M148,310H352l78,120H70Zm5.1-114H346.9L421,310H79ZM250.5,0L412,196H89ZM211,430h79v70H211V430Z"/>
+</svg>
