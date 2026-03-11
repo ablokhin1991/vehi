@@ -1000,7 +1000,7 @@
     }
     .footer-logo-icon svg{width:20px;height:20px;fill:white}
     .footer-logo-text{
-      font-size:1rem;font-weight:800;
+      font-size:1rem;font-weight:800;font-style: italic;
       color:var(--white);
       text-transform:uppercase;letter-spacing:0.06em;
     }
