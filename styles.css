@@ -132,18 +132,18 @@
 
 
 
-    .header-mail{
+    .header-cta{
       display:flex;align-items:center;gap:8px;
       font-size:0.88rem;font-weight:700;
-      color:var(--white);
+      color:var(--steel-4);
       white-space:nowrap;
       padding:8px 16px;
       border:1px solid rgba(82,188,74,0.5);
       transition:border-color var(--transition),background var(--transition);
       border-radius:0;
     }
-    .header-mail:hover{border-color:var(--green);background:rgba(82,188,74,0.08)}
-    .header-mail svg{width:14px;height:14px;fill:var(--green);flex-shrink:0}
+    .header-cta:hover{border-color:var(--green);background:rgba(82,188,74,0.08); color:var(--white);}
+    .header-cta svg{width:14px;height:14px;fill:var(--green);flex-shrink:0}
 
     /* BURGER */
     .burger-btn{
