@@ -1339,10 +1339,40 @@
               Документ введён в действие: 01 января 2025 г.
             </div>
             <div class="policy-sign-stamp" aria-hidden="true">
-              
-                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-              ООО<br>ВЕХИ<br>М.П.
-            </div>
+  <svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+    <!-- Внешняя окружность -->
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#52bc4a" stroke-width="2"/>
+    <!-- Внутренняя окружность -->
+    <circle cx="100" cy="100" r="76" fill="none" stroke="#52bc4a" stroke-width="1" stroke-dasharray="3 4"/>
+
+    <!-- Текст по кругу (верхняя дуга) -->
+    <defs>
+      <path id="stamp-arc-top"
+        d="M 12,100 A 88,88 0 1,1 188,100"
+      />
+      <path id="stamp-arc-bottom"
+        d="M 20,110 A 80,80 0 0,0 180,110"
+      />
+    </defs>
+
+    <text font-family="inherit" font-size="12" fill="#52bc4a" font-weight="600" letter-spacing="2">
+      <textPath href="#stamp-arc-top" startOffset="50%" text-anchor="middle">
+        ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+      </textPath>
+    </text>
+
+    <text font-family="inherit" font-size="10" fill="#52bc4a" font-weight="400" letter-spacing="1.5">
+      <textPath href="#stamp-arc-bottom" startOffset="50%" text-anchor="middle">
+        ОГРН 1023303153895
+      </textPath>
+    </text>
+
+    <!-- Центр печати -->
+    <text x="100" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#52bc4a" font-family="inherit">ООО</text>
+    <text x="100" y="112" text-anchor="middle" font-size="18" font-weight="800" fill="#52bc4a" font-family="inherit">ВЕХИ</text>
+    <text x="100" y="130" text-anchor="middle" font-size="9" fill="#52bc4a" font-family="inherit" letter-spacing="3">М.П.</text>
+  </svg>
+</div>
           </div>
         </section>
 
