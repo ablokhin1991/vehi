@@ -139,7 +139,7 @@
       white-space:nowrap;
       padding:8px 16px;
       border:1px solid rgba(82,188,74,0.5);
-      transition:border-color var(--transition),background var(--transition);
+      transition:border-color var(--transition),background var(--transition), color var(--transition);
       border-radius:0;
     }
     .header-cta:hover{border-color:var(--green);background:rgba(82,188,74,0.08); color:var(--white);}
